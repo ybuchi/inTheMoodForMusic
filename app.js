@@ -134,16 +134,16 @@ function handleUserInterface(data){
   console.log(data);
 
   //Erase the entry for Client ID and User ID
-  dashboard.innerHTML = "";
+  dashboard.innerHTML = `
+    <div class="row">
+      <div class="col-md-12">
+        <h1><img src=${data.images[0].url} alt="User Picture" id="profile-pic">  Welcome, ${data.display_name}</h1>
+      </div>
+    </div>
+  `;
 
-  //Once we get the response data, we want to display the user's name and set up their dashboard
-  let userLabel = document.createElement('div');
-  userLabel.className = "user-label";
-  userLabel.innerText = `Welcome, ${data.display_name}!`;
 
-  //Handle cases if the access token has expired, then refresh the acces token 
-
-  dashboard.append(userLabel);
+  //TO DO: Handle cases if the access token has expired, then refresh the acces token 
 }
 //Once we are redirected to the Spotify authentication page and we click "Accept", the new URL includes the code that will be used for the next step
 
