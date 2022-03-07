@@ -43,6 +43,15 @@ function callAuthorizationApi(body){
   xhr.onload = handleAuthorizationResponse;
 }
 
+function refreshAccessToken(){
+  refresh_token = localStorage.getItem("refresh_token");
+  let body = "grant-type=refresh_token";
+  body += "&refresh_token=" + refresh_token;
+  body += "&client_id=" + client_id;
+  callAuthorizationApi();
+
+}
+
 function handleAuthorizationResponse(){
   if (this.status == 200){
     var data = JSON.parse(this.responseText);
@@ -106,15 +115,33 @@ function refreshName(access_token){
   fetch("https://api.spotify.com/v1/me", configObj)
   .then(res => res.json())
   .then(data => handleUserInterface(data))
+
+  // fetch("https://api.spotify.com/v1/me", configObj)
+  // .then(res => {
+  //   if(res.status === 200){
+  //     res.json();
+  //   }else if(res.status === 401){
+  //     refreshAccessToken();
+  //   }else{
+  //     console.log(res.responseText);
+  //     alert(res.responseText);
+  //   }
+  // })
+  // .then(data => handleUserInterface(data));
 }
 
 function handleUserInterface(data){
+  console.log(data);
+
   //Erase the entry for Client ID and User ID
   dashboard.innerHTML = "";
+
   //Once we get the response data, we want to display the user's name and set up their dashboard
   let userLabel = document.createElement('div');
   userLabel.className = "user-label";
   userLabel.innerText = `Welcome, ${data.display_name}!`;
+
+  //Handle cases if the access token has expired, then refresh the acces token 
 
   dashboard.append(userLabel);
 }
