@@ -1,8 +1,6 @@
-const redirect_uri = "http://127.0.0.1:5501/index.html";
+const redirect_uri = "http://127.0.0.1:5501/dashboard.html";
 let client_id = "";
 let client_secret = "";
-
-const dashboard = document.getElementById("dashboard");
 
 const AUTHORIZE = "https://accounts.spotify.com/authorize"
 const TOKEN = "https://accounts.spotify.com/api/token"
@@ -132,15 +130,14 @@ function refreshName(access_token){
 
 function handleUserInterface(data){
   console.log(data);
+  const dashboard = document.getElementById("dashboard");
+  const userLabel = document.getElementById("user-name");
+  const userImg = document.getElementById("user-pic");
+ 
+  userLabel.innerText = `${data.display_name}`
+  userImg.src = `${data.images[0].url}`
 
   //Erase the entry for Client ID and User ID
-  dashboard.innerHTML = `
-    <div class="row">
-      <div class="col-md-12">
-        <h1><img src=${data.images[0].url} alt="User Picture" id="profile-pic">  Welcome, ${data.display_name}</h1>
-      </div>
-    </div>
-  `;
 
 
   //TO DO: Handle cases if the access token has expired, then refresh the acces token 
