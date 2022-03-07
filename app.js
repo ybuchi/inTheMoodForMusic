@@ -46,8 +46,7 @@ function refreshAccessToken(){
   let body = "grant-type=refresh_token";
   body += "&refresh_token=" + refresh_token;
   body += "&client_id=" + client_id;
-  callAuthorizationApi();
-
+  callAuthorizationApi(body);
 }
 
 function handleAuthorizationResponse(){
@@ -64,7 +63,7 @@ function handleAuthorizationResponse(){
       localStorage.setItem("refresh_token", refresh_token);
     }
     onPageLoad();
-    refreshName(access_token);
+    accessDashboard(access_token);
     
   }else{
     console.log(this.responseText);
@@ -101,7 +100,7 @@ function requestAuthorization(){
   window.location.href = url;//Show Spotify's authorization screen.
 }
 
-function refreshName(access_token){
+function accessDashboard(access_token){
   const configObj = {
     method: 'GET',
     headers: {
@@ -109,39 +108,44 @@ function refreshName(access_token){
       'Authorization': 'Bearer ' + access_token
     }
   }
-
+  //Make a GET request to the Spotify API to get user data
   fetch("https://api.spotify.com/v1/me", configObj)
   .then(res => res.json())
   .then(data => handleUserInterface(data))
 
-  // fetch("https://api.spotify.com/v1/me", configObj)
-  // .then(res => {
-  //   if(res.status === 200){
-  //     res.json();
-  //   }else if(res.status === 401){
-  //     refreshAccessToken();
-  //   }else{
-  //     console.log(res.responseText);
-  //     alert(res.responseText);
-  //   }
-  // })
-  // .then(data => handleUserInterface(data));
+}
+
+function handleUserData(data){
+  const userLabel = document.getElementById("user-name");
+  const userImg = document.getElementById("user-pic");
+  console.log(data);
+  userLabel.innerText = data[0].name;
+  userImg.src = data[0].profile_img;
 }
 
 function handleUserInterface(data){
   console.log(data);
-  const dashboard = document.getElementById("dashboard");
-  const userLabel = document.getElementById("user-name");
-  const userImg = document.getElementById("user-pic");
- 
-  userLabel.innerText = `${data.display_name}`
-  userImg.src = `${data.images[0].url}`
-
-  //Erase the entry for Client ID and User ID
-
-
+  //We want to save this data into our fake database on JSON server so the data persists
+  userData = {
+    "name": data.display_name,
+    "profile_img": data.images[0].url
+  }
+  let userConfigObj = {
+    method: "PATCH", 
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(userData)
+  }
+  
+  //Make a PATCH call to the JSON server to patch the user data we received from Spotify.
+  fetch("http://localhost:4000/user/1", userConfigObj)
   //TO DO: Handle cases if the access token has expired, then refresh the acces token 
 }
+
+fetch("http://localhost:4000/user")
+  .then(res => res.json())
+  .then(data => handleUserData(data));
 //Once we are redirected to the Spotify authentication page and we click "Accept", the new URL includes the code that will be used for the next step
 
 // "http://127.0.0.1:5501/index.html?code="
