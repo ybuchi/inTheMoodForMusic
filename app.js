@@ -1,12 +1,16 @@
+//VARIABLES
+
+//Variables Needed for API Authorization
 const redirect_uri = "http://127.0.0.1:5501/dashboard.html";
+const AUTHORIZE = "https://accounts.spotify.com/authorize";
+const TOKEN = "https://accounts.spotify.com/api/token";
+
+//Client ID and Client Secret Will Be Taken From the Form in the Index.html File
 let client_id = "";
 let client_secret = "";
 
-const AUTHORIZE = "https://accounts.spotify.com/authorize"
-const TOKEN = "https://accounts.spotify.com/api/token"
 
-
-//Gets called during handleAuthorizationResponse
+//On page load, stores the client id and client secret so we can use it later on
 function onPageLoad(){
   client_id = localStorage.getItem("client_id");
   client_secret = localStorage.getItem("client_secret");
@@ -119,7 +123,7 @@ function handleUserData(data){
   const userLabel = document.getElementById("user-name");
   const userImg = document.getElementById("user-pic");
   console.log(data);
-  userLabel.innerText = data[0].name;
+  userLabel.innerText = `${data[0].name}!`;
   userImg.src = data[0].profile_img;
 }
 
