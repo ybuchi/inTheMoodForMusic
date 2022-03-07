@@ -1,3 +1,8 @@
-.user-label {
+.user-info {
     font-size: 30px;
+    font-family: 'Sarina', cursive;
+}
+#user-pic{
+    border-radius: 50%;
+    height: 40px;
 }

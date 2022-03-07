@@ -1,8 +1,6 @@
-const redirect_uri = "http://127.0.0.1:5501/index.html";
+const redirect_uri = "http://127.0.0.1:5501/dashboard.html";
 let client_id = "";
 let client_secret = "";
-
-const dashboard = document.getElementById("dashboard");
 
 const AUTHORIZE = "https://accounts.spotify.com/authorize"
 const TOKEN = "https://accounts.spotify.com/api/token"
@@ -132,18 +130,17 @@ function refreshName(access_token){
 
 function handleUserInterface(data){
   console.log(data);
+  const dashboard = document.getElementById("dashboard");
+  const userLabel = document.getElementById("user-name");
+  const userImg = document.getElementById("user-pic");
+ 
+  userLabel.innerText = `${data.display_name}`
+  userImg.src = `${data.images[0].url}`
 
   //Erase the entry for Client ID and User ID
-  dashboard.innerHTML = "";
 
-  //Once we get the response data, we want to display the user's name and set up their dashboard
-  let userLabel = document.createElement('div');
-  userLabel.className = "user-label";
-  userLabel.innerText = `Welcome, ${data.display_name}!`;
 
-  //Handle cases if the access token has expired, then refresh the acces token 
-
-  dashboard.append(userLabel);
+  //TO DO: Handle cases if the access token has expired, then refresh the acces token 
 }
 //Once we are redirected to the Spotify authentication page and we click "Accept", the new URL includes the code that will be used for the next step
 
