@@ -12,10 +12,61 @@
   <body onLoad="onPageLoad()">
       <div class="container" id="dashboard">
           <div class="row">
-              <div class="col-md-12 user-info">
-                  <img id="user-pic">
-                  Welcome, <strong id="user-name"></strong>
-                </div>
+
+              <div class="col-md-9">
+                  <h1>
+                      <img id="user-pic">
+                        Welcome,
+                      <!-- Username gets inserted here -->
+                      <strong id="user-name"></strong>
+                  </h1>
+
+                  <div class="container" id="track">
+                      <div class="row">
+                        <div class="col-md-12">
+                            <h2>Fetch Me A Random Chune!</h2>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <!-- Music image and buttons go in here -->
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-md-12" id="track-img">
+                                        <!-- Track album image -->
+                                        <div id="album-cover">
+
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-12" id="track-btns">
+                                        <!-- Playback buttons -->
+                                        <button> < </button>
+                                        <button> || </button>
+                                        <button> > </button>
+                                        <button>Get a Random Song</button>
+                                        <button>Add to My Playlist</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <!-- Music metadata goes here -->
+                              <h2>Track</h2>
+                              <h3>Artist</h3>
+                              <h4>Album</h4>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div class="col-md-3" id="playlists">
+                  <h1>Playlists <span>+</span></h1>
+                  <!-- Populate playlists here -->
+              </div>
+
           </div>
       </div>
   </body>
