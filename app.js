@@ -1,5 +1,5 @@
 //VARIABLES
-
+const trackList = document.querySelector('#track-list')
 //Variables Needed for API Authorization
 const redirect_uri = "http://127.0.0.1:5501/dashboard.html";
 const AUTHORIZE = "https://accounts.spotify.com/authorize";
@@ -158,11 +158,48 @@ function displayPlaylist(playlist){
   playlistCard.style.backgroundImage = `url(${playlist.images[0].url})`;
   playlistCard.style.backgroundSize = "200px 200px";
 
+  playlistCard.addEventListener("click", () => {
+    access_token = localStorage.getItem("access_token")
+    console.log(playlist.tracks.href)
+    const configObj = {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + access_token
+      }
+    }
+
+    fetch(`${playlist.tracks.href}`, configObj)
+    .then( res => res.json())
+    .then( data => 
+      renderPaylistTracks(data.items)
+      )
+    
+
+
+  })
+
   let playlistName = document.createElement("h3");
   playlistName.innerText = playlist.name;
 
   playlistContainer.append(playlistName, playlistCard);
 
+}
+
+function renderPaylistTracks(songInfo){
+  trackList.innerHTML = "";
+
+  songInfo.forEach(listTracks)
+
+
+}
+
+
+function listTracks(trackInfo){
+  
+  const track = document.createElement('li')
+  track.innerText = trackInfo.track.name;
+  trackList.append(track)
 }
 
 function handleUserData(data){
