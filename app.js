@@ -138,10 +138,19 @@ function displayPlaylist(playlist){
   //Create card for the playlist
   const playlistContainer = document.getElementById("playlist-container");
   let playlistCard = document.createElement("div");
-  playlistCard.className = "playlist-card";
-  playlistCard.style.height = "200px";
-  playlistCard.style.width = "200px";
-  playlistCard.style.backgroundColor = "lightgray";
+
+  playlistCard.innerHTML = `
+    <div class="playlist-card">
+      <img src="${playlist.images[0].url}>
+      <h3>${playlist.}
+    </div>
+  `
+  // playlistCard.className = "playlist-card";
+  // playlistCard.style.height = "200px";
+  // playlistCard.style.width = "200px";
+  // playlistCard.style.backgroundColor = "lightgray";
+  // playlistCard.style.backgroundImage = `url(${playlist.images[0].url})`;
+  // playlistCard.style.backgroundSize = "200px 200px";
 
   playlistContainer.append(playlistCard);
 
