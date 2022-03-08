@@ -115,12 +115,27 @@ function accessDashboard(access_token){
   //Make a GET request to the Spotify API to get user data
   fetch("https://api.spotify.com/v1/me", configObj)
   .then(res => res.json())
-  .then(data => handleUserInterface(data))
+  .then(data => {
+    console.log(data)
+    //handleUserInterface(data)
+  })
 
   //Make a Get request to the Spotify API to get playlists
   fetch("https://api.spotify.com/v1/me/playlists", configObj)
   .then(res=> res.json())
-  .then(data => renderPlaylists(data));
+  .then(data => {
+    renderPlaylists(data)
+  });
+
+  fetch(`https://api.spotify.com/v1/playlists/7HL1Cd6dVbLJPcOGoVzjSq/tracks`, configObj)
+  .then( res => res.json())
+  .then( data => {
+    for (const song of data.items){
+      console.log(song)
+    }
+    console.log(data)
+  })
+  
 
 }
 
@@ -133,24 +148,38 @@ function renderPlaylists(playlistData){
 
 }
 
+function extractSongs(playlistAddress){
+  console.log(playlistAddress)
+  const uri = playlistAddress.replace("spotify:playlist:", "");
+  console.log(uri);
+
+  // fetch(`https://api.spotify.com/v1/playlists/7HL1Cd6dVbLJPcOGoVzjSq/tracks`)
+  // .then( res => res.json())
+  // .then( data => console.log(data))
+
+
+}
+
 function displayPlaylist(playlist){
-  console.log(playlist);
+  // console.log(playlist.uri);
+
+  const playlistURI = playlist.uri;
+
   //Create card for the playlist
   const playlistContainer = document.getElementById("playlist-container");
   let playlistCard = document.createElement("div");
+  
+  playlistCard.className = "playlist-card";
+  playlistCard.style.height = "200px";
+  playlistCard.style.width = "200px";
+  playlistCard.style.backgroundColor = "lightgray";
+  playlistCard.style.backgroundImage = `url(${playlist.images[0].url})`;
+  playlistCard.style.backgroundSize = "200px 200px";
 
-  playlistCard.innerHTML = `
-    <div class="playlist-card">
-      <img src="${playlist.images[0].url}>
-      <h3>${playlist.}
-    </div>
-  `
-  // playlistCard.className = "playlist-card";
-  // playlistCard.style.height = "200px";
-  // playlistCard.style.width = "200px";
-  // playlistCard.style.backgroundColor = "lightgray";
-  // playlistCard.style.backgroundImage = `url(${playlist.images[0].url})`;
-  // playlistCard.style.backgroundSize = "200px 200px";
+  playlistCard.addEventListener("click", () => {
+    console.log("helol")
+    extractSongs(playlistURI)
+  })
 
   playlistContainer.append(playlistCard);
 
