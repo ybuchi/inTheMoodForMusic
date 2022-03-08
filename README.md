@@ -5,4 +5,8 @@ inTheMoodForMusic is an application that allows you to generate random songs and
 
 ## _Resources_
 
-This application prototype uses the JSON Server npm package, so after installing the dependencies, you need to run json server.
+This application prototype uses the JSON Server npm package, so after installing the dependencies, you need to run json server on port 4000:
+
+```json-server -p 4000 db.json```
+
+
