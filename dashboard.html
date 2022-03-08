@@ -13,7 +13,7 @@
       <div class="container" id="dashboard">
           <div class="row">
 
-              <div class="col-md-9">
+              <div class="col-sm-9">
                   <h1>
                       <img id="user-pic">
                         Welcome,
@@ -21,44 +21,43 @@
                       <strong id="user-name"></strong>
                   </h1>
 
-                  <div class="container" id="track">
-                      <div class="row">
-                        <div class="col-md-12">
-                            <h2>Fetch Me A Random Chune!</h2>
+                  
+                    <div class="row" id="track">
+                        <div class="col-sm-12">
+                            <h2 class="box-lbl">Currently Playing</h2>
                         </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-md-6">
-                              <!-- Music image and buttons go in here -->
-                              <div class="container">
-                                  <div class="row">
-                                      <div class="col-md-12" id="track-img">
-                                        <!-- Track album image -->
-                                        <div id="album-cover">
+                    </div>
+                    <div class="row row-section">
 
-                                        </div>
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-md-12" id="track-btns">
-                                        <!-- Playback buttons -->
-                                        <button> &lt; </button>
-                                        <button> || </button>
-                                        <button> &gt; </button>
-                                        <button>Get a Random Song</button>
-                                        <button>Add to My Playlist</button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <!-- Music metadata goes here -->
-                              <h2>Track</h2>
-                              <h3>Artist</h3>
-                              <h4>Album</h4>
-                          </div>
-                      </div>
-                  </div>
+                        <div class="col-sm-6" id="current-track">
+                            <!-- Music image and buttons go in here -->
+                                <div class="row">
+                                    <div class="col-sm-12" id="track-img">
+                                    <!-- Track album image -->
+                                    <div id="album-cover">
+
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12" id="track-btns">
+                                    <!-- Playback buttons -->
+                                    <button> &lt; </button>
+                                    <button> || </button>
+                                    <button> &gt; </button>
+                                    <button>Get a Random Song</button>
+                                    <button>Add to My Playlist</button>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-sm-6" id="current-track-metadata">
+                            <!-- Music metadata goes here -->
+                            <h2>Track</h2>
+                            <h3>Artist</h3>
+                            <h4>Album</h4>
+                        </div>
+                    </div>
+                  
 
               </div>
 
@@ -66,7 +65,7 @@
                   <h1>Playlists <span>+</span></h1>
                   <!-- Populate playlists here -->
                   <div id="playlist-container">
-                      
+
                   </div>
               </div>
 
