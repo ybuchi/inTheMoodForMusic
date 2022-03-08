@@ -117,12 +117,40 @@ function accessDashboard(access_token){
   .then(res => res.json())
   .then(data => handleUserInterface(data))
 
+  //Make a Get request to the Spotify API to get playlists
+  fetch("https://api.spotify.com/v1/me/playlists", configObj)
+  .then(res=> res.json())
+  .then(data => renderPlaylists(data));
+
+}
+
+function renderPlaylists(playlistData){
+  //This returns an array of objects with info for each playlist
+  console.log(playlistData.items);
+  let playlistsObj = playlistData.items;
+
+  playlistsObj.forEach(displayPlaylist)
+
+}
+
+function displayPlaylist(playlist){
+  console.log(playlist);
+  //Create card for the playlist
+  const playlistContainer = document.getElementById("playlist-container");
+  let playlistCard = document.createElement("div");
+  playlistCard.className = "playlist-card";
+  playlistCard.style.height = "200px";
+  playlistCard.style.width = "200px";
+  playlistCard.style.backgroundColor = "lightgray";
+
+  playlistContainer.append(playlistCard);
+
 }
 
 function handleUserData(data){
   const userLabel = document.getElementById("user-name");
   const userImg = document.getElementById("user-pic");
-  console.log(data);
+  // console.log(data);
   userLabel.innerText = `${data[0].name}!`;
   userImg.src = data[0].profile_img;
 }
