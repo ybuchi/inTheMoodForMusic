@@ -120,16 +120,29 @@ function accessDashboard(access_token){
   //Make a Get request to the Spotify API to get playlists
   fetch("https://api.spotify.com/v1/me/playlists", configObj)
   .then(res=> res.json())
-  .then(data => renderPlaylists(data));
+  .then(data => saveUserPlaylists(data));
 
 }
 
-function renderPlaylists(playlistData){
+function saveUserPlaylists(playlistData){
   //This returns an array of objects with info for each playlist
-  console.log(playlistData.items);
-  let playlistsObj = playlistData.items;
+  console.log(playlistData); 
 
-  playlistsObj.forEach(displayPlaylist)
+  //Make a PATCH call to refresh the database with all current playlists
+  let playlistsData = {
+    "total": playlistData.total,
+    "items": playlistData.items
+  }
+  let playlistConfigObj = {
+    method: "PATCH", 
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(playlistsData)
+  }
+  fetch("http://localhost:4000/playlists/1", playlistConfigObj);
+
+  //Iterate over each item in the object
 
 }
 
@@ -138,21 +151,17 @@ function displayPlaylist(playlist){
   //Create card for the playlist
   const playlistContainer = document.getElementById("playlist-container");
   let playlistCard = document.createElement("div");
+  playlistCard.className = "playlist-card";
+  playlistCard.style.height = "200px";
+  playlistCard.style.width = "200px";
+  playlistCard.style.backgroundColor = "lightgray";
+  playlistCard.style.backgroundImage = `url(${playlist.images[0].url})`;
+  playlistCard.style.backgroundSize = "200px 200px";
 
-  playlistCard.innerHTML = `
-    <div class="playlist-card">
-      <img src="${playlist.images[0].url}>
-      <h3>${playlist.}
-    </div>
-  `
-  // playlistCard.className = "playlist-card";
-  // playlistCard.style.height = "200px";
-  // playlistCard.style.width = "200px";
-  // playlistCard.style.backgroundColor = "lightgray";
-  // playlistCard.style.backgroundImage = `url(${playlist.images[0].url})`;
-  // playlistCard.style.backgroundSize = "200px 200px";
+  let playlistName = document.createElement("h3");
+  playlistName.innerText = playlist.name;
 
-  playlistContainer.append(playlistCard);
+  playlistContainer.append(playlistName, playlistCard);
 
 }
 
@@ -181,12 +190,16 @@ function handleUserInterface(data){
   
   //Make a PATCH call to the JSON server to patch the user data we received from Spotify.
   fetch("http://localhost:4000/user/1", userConfigObj)
-  //TO DO: Handle cases if the access token has expired, then refresh the acces token 
 }
 
 fetch("http://localhost:4000/user")
   .then(res => res.json())
   .then(data => handleUserData(data));
+
+//Once the playlists are refreshed, make another fetch call to use the refreshed playlist data
+fetch("http://localhost:4000/playlists")
+.then(res => res.json())
+.then(data => data[0].items.forEach(displayPlaylist))
 //Once we are redirected to the Spotify authentication page and we click "Accept", the new URL includes the code that will be used for the next step
 
 // "http://127.0.0.1:5501/index.html?code="
