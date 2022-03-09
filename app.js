@@ -1,5 +1,6 @@
 //VARIABLES
 const trackList = document.querySelector('#track-list')
+const randomSongBtn = document.querySelector('#randomize')
 //Variables Needed for API Authorization
 const redirect_uri = "http://127.0.0.1:5501/dashboard.html";
 const AUTHORIZE = "https://accounts.spotify.com/authorize";
@@ -227,6 +228,29 @@ function handleUserInterface(data){
   
   //Make a PATCH call to the JSON server to patch the user data we received from Spotify.
   fetch("http://localhost:4000/user/1", userConfigObj)
+}
+
+randomSongBtn.addEventListener('click', () => { // adds event listener on song button
+    fetchRandomSong()
+})
+
+function fetchRandomSong(){
+  access_token = localStorage.getItem("access_token")
+  const configObj = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + access_token
+    }
+  }
+  
+  const chars = 'abcdefghijklmnopqrstuvwxyz';
+  const randChar = chars.charAt(Math.floor(Math.random() * chars.length))
+  console.log(randChar)
+
+  fetch(`https://api.spotify.com/v1/search?q=%25${randChar}%25&type=track&offset=${Math.floor(Math.random() * 1000)}`, configObj)
+  .then( res => res.json())
+  .then( data => console.log(data))
 }
 
 fetch("http://localhost:4000/user")
