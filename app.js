@@ -99,7 +99,7 @@ function requestAuthorization(){
   client_id = document.getElementById("clientId").value
   client_secret = document.getElementById("clientSecret").value
   localStorage.setItem("client_id", client_id)
-  //IN REAL APP YOU SHOULD NOT EXPOSE THE CLIENT SECRET! FIND A WAY TO HIDE THIS!!!
+  //IN REAL APP YOU SHOULD NOT EXPOSE THE CLIENT SECRET!
   localStorage.setItem("client_secret", client_secret)
 
   let url = AUTHORIZE;
@@ -257,8 +257,8 @@ function setActiveDevice(deviceData, track){
         //Play the Song
         fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device.id}`, trackConfigObj);
 
-        //TO DO: Use Eamon's function to display this track on the correct "Currently Playing" container.
-
+        //TO DO: Once we've set the device to active, display the track in the current song container.
+        displaySongInfo(track.track);
         
         break;
       }else{
