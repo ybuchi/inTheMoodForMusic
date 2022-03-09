@@ -1,6 +1,7 @@
 //VARIABLES
 const trackList = document.querySelector('#track-list')
 const randomSongBtn = document.querySelector('#randomize')
+const albumCover = document.querySelector("#album-cover")
 //Variables Needed for API Authorization
 const redirect_uri = "http://127.0.0.1:5501/dashboard.html";
 const AUTHORIZE = "https://accounts.spotify.com/authorize";
@@ -148,7 +149,7 @@ function saveUserPlaylists(playlistData){
 }
 
 function displayPlaylist(playlist){
-  console.log(playlist);
+  // console.log(playlist);
   //Create card for the playlist
   const playlistContainer = document.getElementById("playlist-container");
   let playlistCard = document.createElement("div");
@@ -232,9 +233,10 @@ function handleUserInterface(data){
 
 randomSongBtn.addEventListener('click', () => { // adds event listener on song button
     fetchRandomSong()
+    albumCover.innerHTML = ''
 })
 
-function fetchRandomSong(){
+function fetchRandomSong(){ //function that grabs a 'random' song
   access_token = localStorage.getItem("access_token")
   const configObj = {
     method: 'GET',
@@ -244,13 +246,38 @@ function fetchRandomSong(){
     }
   }
   
-  const chars = 'abcdefghijklmnopqrstuvwxyz';
+  const chars = 'abcdefghijklmnopqrstuvwxyz'; // establishes alphabet string to pull random character for search query
   const randChar = chars.charAt(Math.floor(Math.random() * chars.length))
   console.log(randChar)
 
-  fetch(`https://api.spotify.com/v1/search?q=%25${randChar}%25&type=track&offset=${Math.floor(Math.random() * 1000)}`, configObj)
+  fetch(`https://api.spotify.com/v1/search?q=%25${randChar}%25&type=track&offset=${Math.floor(Math.random() * 1000)}`, configObj) // searches for song with random character as search query, picks 20 tracks  from results
   .then( res => res.json())
-  .then( data => console.log(data))
+  .then( data => {
+    console.log(data.tracks.items)
+    const randomSong = data.tracks.items[Math.floor(Math.random() * 20)]
+    console.log(randomSong)
+    displaySongInfo(randomSong)
+    
+  })
+}
+
+function displaySongInfo(track){
+  console.log(track)
+  
+  const currentTrackMetadata = document.querySelector("#current-track-metadata")
+
+  const trackTitle = document.querySelector(".track-title")
+  trackTitle.textContent = "Track: " + track.name;
+  const artistName = document.querySelector(".artist-name")
+  artistName.textContent = "Artist: " + track.artists[0].name;
+  const albumName = document.querySelector(".album-name")
+  albumName.textContent = "Album: " + track.album.name;
+
+  const coverArt = document.createElement('img');
+  coverArt.src = track.album.images[1].url
+  console.log(coverArt)
+  albumCover.append(coverArt)
+  
 }
 
 fetch("http://localhost:4000/user")
