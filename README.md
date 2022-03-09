@@ -13,4 +13,9 @@ Once the server is up and running, you need to feed in a client id and client se
 
 **Note:** Because we are using json server and not a real database, it is important to always go through the authentication page or else the dashboard will display the last data that was saved in the db.json file. 
 
+##Limitations
+Using the Spotify API to play music has certain limitations:
+1. You can only play a song through the Spotify app to one of the devices you have registered in your Spotify account.
+2. For now, our application limits the ability to play a song to a device of type "Computer". 
+
 

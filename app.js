@@ -255,7 +255,7 @@ function setActiveDevice(deviceData, track){
         fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device.id}`, trackConfigObj);
         break;
       }else{
-        console.log("No Computer Device is active");
+        alert("Uh oh. Seems like you don't have a computer device to play from...")
       }
   }
 }
