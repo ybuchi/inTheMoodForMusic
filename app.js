@@ -252,7 +252,12 @@ function setActiveDevice(deviceData, track){
           },
           body: JSON.stringify({"uris": [track.track.uri]})
         }
+        //Play the Song
         fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device.id}`, trackConfigObj);
+
+        //TO DO: Use Eamon's function to display this track on the correct "Currently Playing" container.
+
+        
         break;
       }else{
         alert("Uh oh. Seems like you don't have a computer device to play from...")
