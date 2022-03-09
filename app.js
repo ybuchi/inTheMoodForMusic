@@ -1,7 +1,12 @@
 //VARIABLES
 const trackList = document.querySelector('#track-list')
+
+const currentPlaylistName = document.getElementById('playlist-name')
+const currentPlaylistImg = document.getElementById('playlist-img')
 const randomSongBtn = document.querySelector('#randomize')
+
 const albumCover = document.querySelector("#album-cover")
+
 //Variables Needed for API Authorization
 const redirect_uri = "http://127.0.0.1:5501/dashboard.html";
 const AUTHORIZE = "https://accounts.spotify.com/authorize";
@@ -160,9 +165,10 @@ function displayPlaylist(playlist){
   playlistCard.style.backgroundImage = `url(${playlist.images[0].url})`;
   playlistCard.style.backgroundSize = "200px 200px";
 
+  //When we click on a playlist image, it gets displayed on the Currently Selected Playlist container
   playlistCard.addEventListener("click", () => {
     access_token = localStorage.getItem("access_token")
-    console.log(playlist.tracks.href)
+    console.log(playlist)
     const configObj = {
       method: 'GET',
       headers: {
@@ -170,39 +176,105 @@ function displayPlaylist(playlist){
         'Authorization': 'Bearer ' + access_token
       }
     }
-
+    //TO DO: NEEDS ACCESS TOKEN REFRESH HANDLING
     fetch(`${playlist.tracks.href}`, configObj)
     .then( res => res.json())
     .then( data => 
       renderPaylistTracks(data.items)
       )
     
-
-
+    //Display the selected playlist name and image on the current playlist container
+    currentPlaylistName.innerText = "";
+    currentPlaylistName.innerText = playlist.name;
+    currentPlaylistImg.src = playlist.images[0].url;
   })
 
   let playlistName = document.createElement("h3");
   playlistName.innerText = playlist.name;
-
   playlistContainer.append(playlistName, playlistCard);
 
 }
 
 function renderPaylistTracks(songInfo){
+  //Makes sure to empty the list of tracks so they don't accumulate
   trackList.innerHTML = "";
-
   songInfo.forEach(listTracks)
-
-
 }
 
 
 function listTracks(trackInfo){
-  
-  const track = document.createElement('li')
+
+  const track = document.createElement('li');
+  const trackArtist = document.createElement('strong');
+
+  //Create an event listener for the list items. When clicked, play the track.
+  track.addEventListener('click', e => playTrack(trackInfo))
+
+  trackArtist.innerText = ` - ${trackInfo.track.artists[0].name}`
   track.innerText = trackInfo.track.name;
-  trackList.append(track)
+  track.append(trackArtist);
+  trackList.append(track);
+  // currentPlaylistName.innerText =
 }
+
+function playTrack(track){
+  console.log("This is the track", track.track);
+  //First we need to get a list of devices
+  access_token = localStorage.getItem("access_token")
+  const deviceConfigObj = {
+    method: "GET", 
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + access_token
+    }
+  }
+  //FETCH CALL TO GET DEVICES - REQUIRED TO PLAY FROM THE DEVICE
+  fetch("https://api.spotify.com/v1/me/player/devices", deviceConfigObj)
+  .then(res => res.json())
+  .then(data => setActiveDevice(data, track))
+}
+
+function setActiveDevice(deviceData, track){
+  console.log('This is the activeDeviceData:', deviceData.devices)
+  //If there are any active devices, play from the active device. If none are active, play from the computer. If there are no computer devices, choose the first device and let the user know which device is being targeted.
+  for (let i = 0; i < deviceData.devices.length; i++){
+      console.log(deviceData.devices[i]);
+      let device = deviceData.devices[i]
+
+      if(device.type === "Computer"){
+        //Activate Device
+        device.is_active = true;
+        console.log("Device is Active. Play from this device: ", device, track.track.uri);
+        //Make our Play Song Fetch call
+        const trackConfigObj = {
+          method: "PUT", 
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + access_token
+          },
+          body: JSON.stringify({"uris": [track.track.uri]})
+        }
+        //Play the Song
+        fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device.id}`, trackConfigObj);
+
+        //TO DO: Use Eamon's function to display this track on the correct "Currently Playing" container.
+
+        
+        break;
+      }else{
+        alert("Uh oh. Seems like you don't have a computer device to play from...")
+      }
+  }
+}
+
+// function checkDeviceStatus(device) {
+//   if(device.is_active === true){
+//     //THEN play from this device (fetch call goes here)
+//     console.log(device.id)
+//   }else{
+//     //THEN 
+//   }
+// }
 
 function handleUserData(data){
   const userLabel = document.getElementById("user-name");
