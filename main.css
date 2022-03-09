@@ -80,17 +80,21 @@ div#playlists + h1 {
   text-align: center;
 }
 .row-section {
-  background-color: beige;
+  background-color: black;
+  color: white;
   border: black solid 3px;
   border-radius: 3px;
   margin-right: 5px;
   padding: 20px 10px;
 }
 #current-album-row {
-    background-color: beige;
+    background-color: black;
+    color: white;
 }
 #playlist-img {
     width: 400px;
+    border: solid black 4px;
+    border-radius: 100%;
 }
 
 #cover-art {
