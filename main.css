@@ -15,9 +15,7 @@
 }
 
 #dashboard {
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 20px;
 }
 #album-cover {
   height: 200px;
@@ -60,6 +58,7 @@
   background-color: white;
   border: black solid 3px;
   border-radius: 3px;
+  margin-right: 5px;
 }
 #playlist-img {
     width: 300px;
