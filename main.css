@@ -29,13 +29,20 @@
 #playlists {
   background-color: sandybrown;
   color: white;
-  height: fit-content;
+  height: 1000px;
+  overflow: scroll;
 }
 .playlist-card {
   margin: 5px;
   height: 200px;
   width: 200px;
   background: white;
+}
+#current-song-info{
+    text-align: center;
+}
+div#playlists + h1 {
+    font-size: 10px;
 }
 #playlist-name {
     font-size: 40px;

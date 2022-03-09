@@ -189,7 +189,7 @@ function displayPlaylist(playlist){
     currentPlaylistImg.src = playlist.images[0].url;
   })
 
-  let playlistName = document.createElement("h3");
+  let playlistName = document.createElement("h2");
   playlistName.innerText = playlist.name;
   playlistContainer.append(playlistName, playlistCard);
 
