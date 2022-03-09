@@ -3,12 +3,12 @@
     {
       "name": "Eamon Sheil",
       "id": 1,
-      "profile_img": "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-1/71947240_2916990978315463_1642915073364066304_n.jpg?stp=dst-jpg_p320x320&_nc_cat=102&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=048NJpl2GCEAX8ouAVX&_nc_ht=scontent-ort2-1.xx&edm=AP4hL3IEAAAA&oh=00_AT8FKT7gwkLZOoxP_5b_Sbw93aOsVqBfoTGo66ZdMoN37A&oe=624E512D"
+      "profile_img": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-1/71947240_2916990978315463_1642915073364066304_n.jpg?stp=dst-jpg_p320x320&_nc_cat=102&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=048NJpl2GCEAX808n2D&_nc_ht=scontent-iad3-1.xx&edm=AP4hL3IEAAAA&oh=00_AT_6lIDskFpE37md-7Ek3MknLb47-YaQQCcEfoTJsW5rOg&oe=624E512D"
     }
   ],
   "playlists": [
     {
-      "total": 94,
+      "total": 92,
       "items": [
         {
           "collaborative": false,
@@ -346,7 +346,7 @@
           },
           "primary_color": null,
           "public": false,
-          "snapshot_id": "Mjc0NDU3NzUsMDAwMDAwMDAyMTI0ZmMzNDE5MzYzYzg3MDc3NTlmNjRiZGZmNjAyNw==",
+          "snapshot_id": "Mjc0NDcxOTgsMDAwMDAwMDBiOGIyN2JlZjExOTI3N2IxYzNlOWU0N2U5YWMzMDM3MQ==",
           "tracks": {
             "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO17CrqE/tracks",
             "total": 51
@@ -529,7 +529,7 @@
           "images": [
             {
               "height": null,
-              "url": "https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/tk06Qe3FfMn0B8dQtFQ_w_IjW3ceWjsqD_M1igIivXiqzphbCP5ksiaE6dqJAPtinVMQHD1kGTuxuEDnAJmiqNCNQGAR5Pt5nnJ2RdN2_TmAllurKiZ4n_jibVqfa4b9el5CghB1dxt4azLhFFrUXIoGebsTMKaL2ZiSjoJC0QNAPOJEbgpFrnSVmxgVeLrEf3pRXmQuxcNrLb5sX3_bX6ne9uu_Stx9D0X3wbPCb9UEcF7020hl5r14bTvGsqN2R1hHmSSUKpZoqYYhGpM0qGgxa_D1Fk8ieHi_Sy1rGMp0Ty_2P9RGRkMb605Hpf-pkwQRhV7GlO9RL1OYt7Rj5W_7q7qAU6gtroWSgieShm5XO3clKaitvvrh7JOnjIwj8UZ9nQmIVBtU4grpl8bSL1e936JnaJVeTkdbxIQI8HQ=/OTA6NzA6MDFUNzEtMzAtMg==",
+              "url": "https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/-3kt6RQitdznxXau65eaX9cdEuJBSqbEpEGbLsN-eqjxRL9At8GjkLfzClG9GLkONdijlOmS9y7t_0_m5Jnw_XjGQDxSY3Po7ov8U9E1ELNklqkAb4i6Kw35eZFKSu52NpLa_GtjTt9CUpWvZfxBC5ZfhFf6o6Nj93kTLL29vthlmQcMG-Jr61jkcJTLmJFMF_5uEPC1Tt3J-fZAgGbT0Ahc7hmpjN4lbf0eWMicVMx5rV37dUhMYNHHUWP_bFJNB4UcjQ51wbMviI7cs9vyv7NPZzfQ6PftFX5MLY3Xa-YulB3dcwGvyH1CpfD55gTRVvueppqELYKhmWG5TIlF2y-x4K3mCOOdAsPCA8RMTYXPyUAH1oFzcbd-TpImsVr88R8nDhhdyaQQLC1nDt3RYjcd2z2uIOTBNWNztJ18A5E=/OTA6MTU6OTBUNzEtMzAtMg==",
               "width": null
             }
           ],
@@ -630,42 +630,6 @@
           "collaborative": false,
           "description": "",
           "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/2j6qNk7Z7WlbgqyA9HHKOQ"
-          },
-          "href": "https://api.spotify.com/v1/playlists/2j6qNk7Z7WlbgqyA9HHKOQ",
-          "id": "2j6qNk7Z7WlbgqyA9HHKOQ",
-          "images": [
-            {
-              "height": 640,
-              "url": "https://i.scdn.co/image/ab67616d0000b27354c9067bb7acc92aac7aed44",
-              "width": 640
-            }
-          ],
-          "name": "Liked from Radio",
-          "owner": {
-            "display_name": "Eamon Sheil",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/124519097"
-            },
-            "href": "https://api.spotify.com/v1/users/124519097",
-            "id": "124519097",
-            "type": "user",
-            "uri": "spotify:user:124519097"
-          },
-          "primary_color": null,
-          "public": false,
-          "snapshot_id": "Myw2YzM5ZDA1NTUzNzgyYTQyZDMyN2IyZDg2N2QxMzE0YTRhMzY3OGE0",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/2j6qNk7Z7WlbgqyA9HHKOQ/tracks",
-            "total": 1
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:2j6qNk7Z7WlbgqyA9HHKOQ"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
             "spotify": "https://open.spotify.com/playlist/3IEkMGBJMnELMOtUxSOImn"
           },
           "href": "https://api.spotify.com/v1/playlists/3IEkMGBJMnELMOtUxSOImn",
@@ -702,42 +666,6 @@
           "collaborative": false,
           "description": "",
           "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/2bxFblCGctMrLobiUfmSg8"
-          },
-          "href": "https://api.spotify.com/v1/playlists/2bxFblCGctMrLobiUfmSg8",
-          "id": "2bxFblCGctMrLobiUfmSg8",
-          "images": [
-            {
-              "height": 640,
-              "url": "https://i.scdn.co/image/ab67616d0000b27340ab858454935be81a14d0fc",
-              "width": 640
-            }
-          ],
-          "name": "tecital",
-          "owner": {
-            "display_name": "Eamon Sheil",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/124519097"
-            },
-            "href": "https://api.spotify.com/v1/users/124519097",
-            "id": "124519097",
-            "type": "user",
-            "uri": "spotify:user:124519097"
-          },
-          "primary_color": null,
-          "public": false,
-          "snapshot_id": "NSwwNmJiZTM5MDY3YjEyYTQwNGNlYjJjMTNjMWQxY2RkYmI5ODBjMTdm",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/2bxFblCGctMrLobiUfmSg8/tracks",
-            "total": 3
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:2bxFblCGctMrLobiUfmSg8"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
             "spotify": "https://open.spotify.com/playlist/1daZXAksev1PwrUXVqxSdo"
           },
           "href": "https://api.spotify.com/v1/playlists/1daZXAksev1PwrUXVqxSdo",
@@ -769,6 +697,78 @@
           },
           "type": "playlist",
           "uri": "spotify:playlist:1daZXAksev1PwrUXVqxSdo"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/7eJVDDs7YTmzWBQsGCog1M"
+          },
+          "href": "https://api.spotify.com/v1/playlists/7eJVDDs7YTmzWBQsGCog1M",
+          "id": "7eJVDDs7YTmzWBQsGCog1M",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2738e6c680adf202206ff644ee7",
+              "width": 640
+            }
+          ],
+          "name": "The O'Jays – Family Reunion",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "MywyMjE5ZmRiNjhlMzJjZTY1NTMxZWQxMjI2NDEwNDA5ODBiNDMyYzEx",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/7eJVDDs7YTmzWBQsGCog1M/tracks",
+            "total": 8
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:7eJVDDs7YTmzWBQsGCog1M"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/0HLXu7J6jIV0JQva02LvTT"
+          },
+          "href": "https://api.spotify.com/v1/playlists/0HLXu7J6jIV0JQva02LvTT",
+          "id": "0HLXu7J6jIV0JQva02LvTT",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273a693e54b360f7ca0defd726c",
+              "width": 640
+            }
+          ],
+          "name": "Mark Turner – Mark Turner",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "NCw5NjEzM2RlM2Q0ZGQ3MTJlODE5ZmI2N2E1OTYyMGM1MTg5NGQ5Yzdl",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/0HLXu7J6jIV0JQva02LvTT/tracks",
+            "total": 17
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:0HLXu7J6jIV0JQva02LvTT"
         }
       ],
       "id": 1
