@@ -1,6 +1,10 @@
 //VARIABLES
 const trackList = document.querySelector('#track-list')
+
+const currentPlaylistName = document.getElementById('playlist-name')
+const currentPlaylistImg = document.getElementById('playlist-img')
 const randomSongBtn = document.querySelector('#randomize')
+
 //Variables Needed for API Authorization
 const redirect_uri = "http://127.0.0.1:5501/dashboard.html";
 const AUTHORIZE = "https://accounts.spotify.com/authorize";
@@ -159,9 +163,10 @@ function displayPlaylist(playlist){
   playlistCard.style.backgroundImage = `url(${playlist.images[0].url})`;
   playlistCard.style.backgroundSize = "200px 200px";
 
+  //When we click on a playlist image, it gets displayed on the Currently Selected Playlist container
   playlistCard.addEventListener("click", () => {
     access_token = localStorage.getItem("access_token")
-    console.log(playlist.tracks.href)
+    console.log(playlist)
     const configObj = {
       method: 'GET',
       headers: {
@@ -169,38 +174,44 @@ function displayPlaylist(playlist){
         'Authorization': 'Bearer ' + access_token
       }
     }
-
+    //TO DO: NEEDS ACCESS TOKEN REFRESH HANDLING
     fetch(`${playlist.tracks.href}`, configObj)
     .then( res => res.json())
     .then( data => 
       renderPaylistTracks(data.items)
       )
     
-
-
+    //Display the selected playlist name and image on the current playlist container
+    currentPlaylistName.innerText = "";
+    currentPlaylistName.innerText = playlist.name;
+    currentPlaylistImg.src = playlist.images[0].url;
   })
 
   let playlistName = document.createElement("h3");
   playlistName.innerText = playlist.name;
-
   playlistContainer.append(playlistName, playlistCard);
 
 }
 
 function renderPaylistTracks(songInfo){
+  //Makes sure to empty the list of tracks so they don't accumulate
   trackList.innerHTML = "";
-
   songInfo.forEach(listTracks)
-
-
 }
 
 
 function listTracks(trackInfo){
-  
-  const track = document.createElement('li')
+
+  const track = document.createElement('li');
+  const trackArtist = document.createElement('strong');
+
+  // console.log(trackInfo.track.artists[0].name)
+
+  trackArtist.innerText = ` - ${trackInfo.track.artists[0].name}`
   track.innerText = trackInfo.track.name;
-  trackList.append(track)
+  track.append(trackArtist);
+  trackList.append(track);
+  // currentPlaylistName.innerText =
 }
 
 function handleUserData(data){
