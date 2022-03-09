@@ -15,9 +15,7 @@
 }
 
 #dashboard {
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 20px;
 }
 #album-cover {
   height: 200px;
@@ -49,9 +47,9 @@
   background-color: white;
 }
 #current-track-metadata {
-  background-color: black;
-  height: 100%;
-  color: white;
+  /* background-color: black; */
+  height: fit-content;
+  /* color: white; */
 }
 .box-blb {
   text-align: center;
@@ -60,7 +58,9 @@
   background-color: white;
   border: black solid 3px;
   border-radius: 3px;
+  margin-right: 5px;
 }
+
 #playlist-img {
     width: 300px;
 }
