@@ -305,7 +305,6 @@ function handleUserInterface(data){
 
 randomSongBtn.addEventListener('click', () => { // adds event listener on song button
     fetchRandomSong()
-    albumCover.innerHTML = ''
 })
 
 function fetchRandomSong(){ //function that grabs a 'random' song
@@ -334,6 +333,7 @@ function fetchRandomSong(){ //function that grabs a 'random' song
 }
 
 function displaySongInfo(track){
+  albumCover.innerHTML = ''
   console.log(track)
   
   const currentTrackMetadata = document.querySelector("#current-track-metadata")
@@ -346,6 +346,7 @@ function displaySongInfo(track){
   albumName.textContent = "Album: " + track.album.name;
 
   const coverArt = document.createElement('img');
+  coverArt.id = "cover-art"
   coverArt.src = track.album.images[1].url
   console.log(coverArt)
   albumCover.append(coverArt)
