@@ -171,7 +171,7 @@ function displayPlaylist(playlist){
         'Authorization': 'Bearer ' + access_token
       }
     }
-
+    //TO DO: NEEDS ACCESS TOKEN REFRESH HANDLING
     fetch(`${playlist.tracks.href}`, configObj)
     .then( res => res.json())
     .then( data => 
@@ -182,14 +182,10 @@ function displayPlaylist(playlist){
     currentPlaylistName.innerText = "";
     currentPlaylistName.innerText = playlist.name;
     currentPlaylistImg.src = playlist.images[0].url;
-
-
-
   })
 
   let playlistName = document.createElement("h3");
   playlistName.innerText = playlist.name;
-
   playlistContainer.append(playlistName, playlistCard);
 
 }
@@ -203,9 +199,15 @@ function renderPaylistTracks(songInfo){
 
 function listTracks(trackInfo){
 
-  const track = document.createElement('li')
+  const track = document.createElement('li');
+  const trackArtist = document.createElement('strong');
+
+  // console.log(trackInfo.track.artists[0].name)
+
+  trackArtist.innerText = ` - ${trackInfo.track.artists[0].name}`
   track.innerText = trackInfo.track.name;
-  trackList.append(track)
+  track.append(trackArtist);
+  trackList.append(track);
   // currentPlaylistName.innerText =
 }
 

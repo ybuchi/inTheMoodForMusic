@@ -61,4 +61,6 @@
   border: black solid 3px;
   border-radius: 3px;
 }
-
+#playlist-img {
+    width: 300px;
+}
