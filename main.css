@@ -33,7 +33,15 @@
   width: 200px;
   background: white;
 }
-
+#playlist-name {
+    font-size: 40px;
+}
+.playlist-item {
+    font-size: 25px;
+}
+.playlist-item:hover{
+    font-size: 27px;
+}
 #album-cover {
   margin: auto;
   margin-top: 10px;
@@ -62,7 +70,7 @@
 }
 
 #playlist-img {
-    width: 300px;
+    width: 400px;
 }
 
 #cover-art {

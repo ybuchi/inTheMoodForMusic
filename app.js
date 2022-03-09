@@ -210,6 +210,7 @@ function listTracks(trackInfo){
   //Create an event listener for the list items. When clicked, play the track.
   track.addEventListener('click', e => playTrack(trackInfo))
 
+  track.className = "playlist-item"
   trackArtist.innerText = ` - ${trackInfo.track.artists[0].name}`
   track.innerText = trackInfo.track.name;
   track.append(trackArtist);
