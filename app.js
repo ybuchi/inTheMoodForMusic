@@ -205,7 +205,8 @@ function listTracks(trackInfo){
   const track = document.createElement('li');
   const trackArtist = document.createElement('strong');
 
-  // console.log(trackInfo.track.artists[0].name)
+  //Create an event listener for the list items. When clicked, play the track.
+  track.addEventListener('click', e => playTrack(trackInfo))
 
   trackArtist.innerText = ` - ${trackInfo.track.artists[0].name}`
   track.innerText = trackInfo.track.name;
@@ -213,6 +214,60 @@ function listTracks(trackInfo){
   trackList.append(track);
   // currentPlaylistName.innerText =
 }
+
+function playTrack(track){
+  console.log("This is the track", track.track);
+  //First we need to get a list of devices
+  access_token = localStorage.getItem("access_token")
+  const deviceConfigObj = {
+    method: "GET", 
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + access_token
+    }
+  }
+  //FETCH CALL TO GET DEVICES - REQUIRED TO PLAY FROM THE DEVICE
+  fetch("https://api.spotify.com/v1/me/player/devices", deviceConfigObj)
+  .then(res => res.json())
+  .then(data => setActiveDevice(data, track))
+}
+
+function setActiveDevice(deviceData, track){
+  console.log('This is the activeDeviceData:', deviceData.devices)
+  //If there are any active devices, play from the active device. If none are active, play from the computer. If there are no computer devices, choose the first device and let the user know which device is being targeted.
+  for (let i = 0; i < deviceData.devices.length; i++){
+      console.log(deviceData.devices[i]);
+      let device = deviceData.devices[i]
+
+      if(device.type === "Computer"){
+        //Activate Device
+        device.is_active = true;
+        console.log("Device is Active. Play from this device: ", device, track.track.uri);
+        //Make our Play Song Fetch call
+        const trackConfigObj = {
+          method: "PUT", 
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + access_token
+          },
+          body: JSON.stringify({"uris": [track.track.uri]})
+        }
+        fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device.id}`, trackConfigObj);
+        break;
+      }else{
+        console.log("No Computer Device is active");
+      }
+  }
+}
+
+// function checkDeviceStatus(device) {
+//   if(device.is_active === true){
+//     //THEN play from this device (fetch call goes here)
+//     console.log(device.id)
+//   }else{
+//     //THEN 
+//   }
+// }
 
 function handleUserData(data){
   const userLabel = document.getElementById("user-name");
