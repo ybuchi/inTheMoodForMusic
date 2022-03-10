@@ -161,11 +161,17 @@ function displayPlaylist(playlist){
   
   let playlistCard = document.createElement("div");
   playlistCard.className = "playlist-card";
-  playlistCard.style.height = "200px";
-  playlistCard.style.width = "200px";
+  playlistCard.style.height = "300px";
+  playlistCard.style.width = "300px";
   playlistCard.style.backgroundColor = "lightgray";
   playlistCard.style.backgroundImage = `url(${playlist.images[0].url})`;
-  playlistCard.style.backgroundSize = "200px 200px";
+  playlistCard.style.backgroundSize = "300px 300px";
+
+  let playlistName = document.createElement("h2");
+  playlistName.className = "playlist-lbl"
+  playlistName.innerText = playlist.name;
+  playlistCard.append(playlistName);
+  playlistContainer.append(playlistCard);
 
   //When we click on a playlist image, it gets displayed on the Currently Selected Playlist container
   playlistCard.addEventListener("click", () => {
@@ -191,11 +197,10 @@ function displayPlaylist(playlist){
     currentPlaylistName.innerText = "";
     currentPlaylistName.innerText = playlist.name;
     currentPlaylistImg.src = playlist.images[0].url;
+    currentPlaylistImg.style.border = "solid black 4px"
   })
 
-  let playlistName = document.createElement("h2");
-  playlistName.innerText = playlist.name;
-  playlistContainer.append(playlistName, playlistCard);
+
 
 }
 
@@ -238,8 +243,8 @@ function listTracks(trackInfo){
   //Create an event listener for the list items. When clicked, play the track.
   track.addEventListener('click', e => playTrack(trackInfo.track))
 
-  track.className = "playlist-item"
-  trackArtist.innerText = ` - ${trackInfo.track.artists[0].name}`
+  track.className = "playlist-item";
+  trackArtist.innerText = ` - ${trackInfo.track.artists[0].name}`;
   track.innerText = trackInfo.track.name;
   track.append(trackArtist);
   trackList.append(track);

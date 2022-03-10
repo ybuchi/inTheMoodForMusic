@@ -2,17 +2,12 @@
 <html>
   <head>
     <title>Chunes</title>
-    <link
-      rel="stylesheet"
-      href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sarina&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./main.css" />
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css"/>
     <script defer src="/app.js"></script>
   </head>
   <body onLoad="onPageLoad()">
@@ -40,34 +35,33 @@
               <div class="row"></div>
             </div>
             <div class="col-sm-6" id="current-track-metadata">
-              <div class="col-sm-12" id="current-song-info">
-                <!-- Music metadata goes here -->
-                <h2 class="track-title">Track</h2>
-                <h3 class="artist-name">Artist</h3>
-                <h4 class="album-name">Album</h4>
-              </div>
-              <div class="col-sm-12" id="track-btns">
-                <!-- Playback buttons -->
-                <button>&lt;</button>
-                <button>||</button>
-                <button>&gt;</button>
-                <button id="randomize">Play a Random Song</button>
-                <button id="playlist-adder">Add to My Playlist</button>
-              </div>
+
+                <div class="col-sm-12" id="current-song-info">
+                    <!-- Music metadata goes here -->
+                    <h2 class="track-title">Track</h2>
+                    <h3 class="artist-name">Artist</h3>
+                    <h4 class="album-name">Album</h4>
+                </div>
+                <div class="col-sm-12" id="track-btns">
+                    <!-- Playback buttons -->
+                    <button class="player-btn btn btn-outline-primary">&lt;</button>
+                    <button class="player-btn btn btn-outline-primary">||</button>
+                    <button class="player-btn btn btn-outline-primary">&gt;</button>
+                    <br>
+                    <button class="player-btn" id="randomize">Play a Random Song</button>
+                    <button class="player-btn" id="playlist-adder">Add to My Playlist</button>
+                  </div>
             </div>
           </div>
-          <div class="row" id="album-tracks">
-            <div class="col-sm-12">
-              <h2>Selected Playlist</h2>
-              <h3 id="playlist-name">Playlist Name</h3>
-              <div class="row">
-                <div class="col-sm-6">
-                  <ol id="track-list"></ol>
-                </div>
-                <div class="col-sm-6">
-                  <img id="playlist-img" />
-                </div>
-              </div>
+
+          <div class="row" id="playlist-tracks">
+            <h2>Selected Playlist</h2>
+            <div class="col-sm-6">
+                <h3 id="playlist-name">Playlist Name</h3>
+                <ol id="track-list"></ol>
+            </div>
+            <div class="col-sm-6" id="record-player">
+                <img id="playlist-img">
             </div>
           </div>
         </div>
