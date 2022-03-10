@@ -1,6 +1,6 @@
 #welcome {
     margin-left: 20px;
-    font-size: 60px;
+    font-size: 50px;
 }
 #user-name {
   color: lightblue;
@@ -32,12 +32,17 @@
   height: 1000px;
   overflow: scroll;
 }
+
+div#playlist-container h2 {
+    text-align: center;
+}
 .playlist-card {
-  margin: 5px;
-  height: 200px;
-  width: 200px;
+  margin: auto;
+  height: 300px;
+  width: 300px;
   background: white;
 }
+
 #current-song-info{
     text-align: center;
 }
@@ -54,10 +59,14 @@ div#playlists + h1 {
 }
 .playlist-item {
     font-size: 25px;
-    text-align: center;
 }
 .playlist-item:hover{
-    font-size: 27px;
+    background-color: black;
+    color: white;
+}
+.player-btn {
+    color: black;
+    margin: 5px;
 }
 #album-cover {
   margin: auto;
@@ -100,4 +109,13 @@ div#playlists + h1 {
 #cover-art {
     width: 200px;
     height: 200px;
+    border: white solid 3px;
+}
+
+.playlist-lbl{
+    background-color: rgba(255, 255, 255, 0.774);
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+    border-bottom: black solid 3px;
 }
