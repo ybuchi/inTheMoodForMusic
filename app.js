@@ -5,6 +5,7 @@ const playlistContainer = document.getElementById("playlist-container");
 const currentPlaylistName = document.getElementById('playlist-name')
 const currentPlaylistImg = document.getElementById('playlist-img')
 const randomSongBtn = document.querySelector('#randomize')
+const currentTrackMetadata = document.querySelector("#current-track-metadata")
 
 const albumCover = document.querySelector("#album-cover")
 
@@ -180,8 +181,10 @@ function displayPlaylist(playlist){
     //TO DO: NEEDS ACCESS TOKEN REFRESH HANDLING
     fetch(`${playlist.tracks.href}`, configObj)
     .then( res => res.json())
-    .then( data => 
-      renderPaylistTracks(data.items)
+    .then( data => {
+      renderPlaylistTracks(data.items)
+      //data.items.forEach(savePlaylistTracks)
+    }
       )
     
     //Display the selected playlist name and image on the current playlist container
@@ -196,7 +199,30 @@ function displayPlaylist(playlist){
 
 }
 
-function renderPaylistTracks(songInfo){
+function savePlaylistTracks(songItem){
+console.log(songItem.track)
+access_token = localStorage.getItem("access_token")
+let trackData = {
+  "name": songItem.track.name,
+  "artists": songItem.track.artists[0].name,
+  "album": songItem.track.album.name,
+  "uri": songItem.track.uri,
+  "href": songItem.track.href
+ }
+
+fetch(`http://localhost:4000/current_playlist/`, {
+    method: "PATCH",
+    headers: {
+        "Content-Type": "application/json",
+        'Authorization': 'Bearer ' + access_token
+    },
+    body: JSON.stringify(trackData)
+})
+
+console.log(trackData)
+}
+
+function renderPlaylistTracks(songInfo){
   //Makes sure to empty the list of tracks so they don't accumulate
   console.log(songInfo)
   trackList.innerHTML = "";
@@ -333,8 +359,6 @@ function fetchRandomSong(){ //function that grabs a 'random' song
     console.log(randomSong)
 
     saveSong(randomSong)
-    //displaySongInfo(randomSong)
-    // playTrack(randomSong)
     })
 }
 
@@ -343,7 +367,7 @@ function displaySongInfo(track){
   albumCover.innerHTML = ''
   console.log(track)
   
-  const currentTrackMetadata = document.querySelector("#current-track-metadata")
+  
 
   const trackTitle = document.querySelector(".track-title")
   trackTitle.textContent = "Track: " + track.name;
@@ -369,7 +393,6 @@ function saveSong(randomSong){ // saves data from our randomly generated song to
      "uri": randomSong.uri,
      "href": randomSong.href
     }
-    console.log(trackData)
   trackDataConfigObj = {
     method: "PATCH",
     headers: {
@@ -381,34 +404,32 @@ function saveSong(randomSong){ // saves data from our randomly generated song to
     console.log(randomSong)
 
   fetch(`http://localhost:4000/random_track/1`, trackDataConfigObj)
-//  .then( res => res.json())
-//  .then( data => console.log(data))
 }
 
-function addSongToPlaylist(song){
-console.log(song)
+addToPlaylistBtn.addEventListener("click", () =>{
+  fetch(`http://localhost:4000/random_track/1`)
+  .then( res => res.json())
+  .then( data => {addSongToPlaylist(data)})
+})
 
-  addToPlaylistBtn.addEventListener("click", () =>{
+function addSongToPlaylist(song){
+
      const artist = document.createElement('strong');
      artist.innerText = ` - ${song.artists[0].name}`;
      const li = document.createElement('li');
      li.textContent = song.name;
-
      li.append(artist);
-
+      li.className = "playlist-item";
      li.addEventListener('click', () => playTrack(song))
      trackList.append(li)
-// console.log(song)
-})
 }
 
 fetch(`http://localhost:4000/random_track/1`)
   .then( res => res.json())
   .then( data => {
-    addSongToPlaylist(data)
+    console.log(data)
     displaySongInfo(data)
     playTrack(data)})
-
 
 
 fetch("http://localhost:4000/user")
