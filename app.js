@@ -1,13 +1,13 @@
 //VARIABLES
-const trackList = document.querySelector('#track-list')
-const addToPlaylistBtn = document.querySelector('#playlist-adder')
+const trackList = document.querySelector('#track-list');
+const addToPlaylistBtn = document.querySelector('#playlist-adder');
 const playlistContainer = document.getElementById("playlist-container");
-const currentPlaylistName = document.getElementById('playlist-name')
-const currentPlaylistImg = document.getElementById('playlist-img')
-const randomSongBtn = document.querySelector('#randomize')
-const currentTrackMetadata = document.querySelector("#current-track-metadata")
+const currentPlaylistName = document.getElementById('playlist-name');
+const currentPlaylistImg = document.getElementById('playlist-img');
+const randomSongBtn = document.querySelector('#randomize');
+const currentTrackMetadata = document.querySelector("#current-track-metadata");
 
-const albumCover = document.querySelector("#album-cover")
+const albumCover = document.querySelector("#album-cover");
 
 //Variables Needed for API Authorization
 const redirect_uri = "http://127.0.0.1:5501/dashboard.html";
@@ -120,7 +120,7 @@ function requestAuthorization(){
   url += "&response_type=code";
   url += "&redirect_uri=" + encodeURI(redirect_uri);
   url += "&show_dialogue=true";
-  url += "&scope=user-read-private user-read-email user-modify-playback-state user-read-playback-position user-library-read streaming user-read-playback-state user-read-recently-played playlist-read-private"
+  url += "&scope=user-read-private user-read-email user-modify-playback-state user-read-playback-position user-library-read streaming user-read-playback-state user-read-recently-played playlist-read-private playlist-modify-public playlist-modify-private"
   window.location.href = url;//Show Spotify's authorization screen.
 }
 
@@ -162,12 +162,10 @@ function saveUserPlaylists(playlistData){
   }
   fetch("http://localhost:4000/playlists/1", playlistConfigObj);
 
-  //Iterate over each item in the object
-
 }
 
 function displayPlaylist(playlist){
-  // console.log(playlist);
+
   //Create card for the playlist
   
   let playlistCard = document.createElement("div");
@@ -182,6 +180,7 @@ function displayPlaylist(playlist){
   playlistName.className = "playlist-lbl"
   playlistName.innerText = playlist.name;
   playlistCard.append(playlistName);
+  // playlistCard.id = playlist.
   playlistContainer.append(playlistCard);
 
   //When we click on a playlist image, it gets displayed on the Currently Selected Playlist container
@@ -200,14 +199,14 @@ function displayPlaylist(playlist){
     .then( res => res.json())
     .then( data => {
       renderPlaylistTracks(data.items)
-      //data.items.forEach(savePlaylistTracks)
     }
       )
-    
+    // console.log('This is the chosen playlist:', playlist.id);
     //Display the selected playlist name and image on the current playlist container
     currentPlaylistName.innerText = "";
     currentPlaylistName.innerText = playlist.name;
     currentPlaylistImg.src = playlist.images[0].url;
+    currentPlaylistImg.value = playlist.id;
     currentPlaylistImg.style.border = "solid black 4px"
   })
 
@@ -364,13 +363,11 @@ function fetchRandomSong(){ //function that grabs a 'random' song
   const chars = 'abcdefghijklmnopqrstuvwxyz'; // establishes alphabet string to pull random character for search query
   const randChar = chars.charAt(Math.floor(Math.random() * chars.length))
 
+  //Retrieve a random song from the Spotify API
   fetch(`https://api.spotify.com/v1/search?q=%25${randChar}%25&type=track&offset=${Math.floor(Math.random() * 1000)}`, configObj) // searches for song with random character as search query, picks 20 tracks  from results
   .then( res => res.json())
   .then( data => {
-    console.log(data.tracks.items)
     const randomSong = data.tracks.items[Math.floor(Math.random() * 20)]
-    console.log(randomSong)
-
     saveSong(randomSong)
     })
 }
@@ -396,22 +393,19 @@ function saveSong(randomSong){ // saves data from our randomly generated song to
   
   //Make a fetch PATCH request to the database to save the random song
   fetch(`http://localhost:4000/random_track/1`, trackDataConfigObj)
+  console.log("Random song:", randomSong.name);
   //Fetch the random song from the JSON DB
-  fetch(`http://localhost:4000/random_track/1`)
-  .then( res => res.json())
-  .then( data => {
-    displaySongInfo(data)
-    playTrack(data)
-  })
+  // fetch(`http://localhost:4000/random_track/1`)
+  // .then( res => res.json())
+  // .then( data => {
+  //   displaySongInfo(data)
+  //   playTrack(data)
+  // })
 }
 
 function displaySongInfo(track){
 
-  albumCover.innerHTML = ''
-  console.log(track)
-  
-  
-
+  albumCover.innerHTML = '';
   const trackTitle = document.querySelector(".track-title")
   trackTitle.textContent = "Track: " + track.name;
   const artistName = document.querySelector(".artist-name")
@@ -428,25 +422,49 @@ function displaySongInfo(track){
 }
 
 addToPlaylistBtn.addEventListener("click", () =>{
-  //Make a fetch call to add the random song to the playlist
+  //Make a fetch GET call to add the random song to the playlist
+  let playlistId = currentPlaylistImg.value;
+  console.log(playlistId);
 
   fetch(`http://localhost:4000/random_track/1`)
   .then( res => res.json())
-  .then( data => {addSongToPlaylist(data)})
+  .then( data => {addSongToPlaylist(data, playlistId)})
 })
 
-function addSongToPlaylist(song){
-
+function addSongToPlaylist(song, playlistId){
     //TO DO:
     //IF there is no playlist selected, the prompt the user to select one
     //IF there is a playlist selected, make a POST call to add the song to the playlist;
+    if(trackList.innerHTML === ""){
+      alert("Please select a playlist.")
+    }else{
+      //Add song to playlist
+      access_token = localStorage.getItem("access_token")
+      const addSongObject = {
+        "uris": [song.uri],
+        "position": 0
+      }
+      const addSongConfigObj = {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + access_token,
+          Accept: 'application/json'
+        },
+        body: JSON.stringify(addSongObject)
+      }
 
-     const artist = document.createElement('strong');
-     artist.innerText = ` - ${song.artists[0].name}`;
-     const li = document.createElement('li');
-     li.textContent = song.name;
-     li.append(artist);
-      li.className = "playlist-item";
-     li.addEventListener('click', () => playTrack(song));
-     trackList.append(li);
+      //Make a fetch call to add song to playlist;
+
+      //TO DO: add to client scope so that we can write on playlists;
+      fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks`, addSongConfigObj);
+    }
+    //  const artist = document.createElement('strong');
+    //  artist.innerText = ` - ${song.artists[0].name}`;
+    //  const li = document.createElement('li');
+    //  li.textContent = song.name;
+    //  li.append(artist);
+    //   li.className = "playlist-item";
+    //  li.addEventListener('click', () => playTrack(song));
+    //  trackList.append(li);
 }
