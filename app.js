@@ -1,6 +1,7 @@
 //VARIABLES
 const trackList = document.querySelector('#track-list')
-
+const addToPlaylistBtn = document.querySelector('#playlist-adder')
+const playlistContainer = document.getElementById("playlist-container");
 const currentPlaylistName = document.getElementById('playlist-name')
 const currentPlaylistImg = document.getElementById('playlist-img')
 const randomSongBtn = document.querySelector('#randomize')
@@ -156,7 +157,7 @@ function saveUserPlaylists(playlistData){
 function displayPlaylist(playlist){
   // console.log(playlist);
   //Create card for the playlist
-  const playlistContainer = document.getElementById("playlist-container");
+  
   let playlistCard = document.createElement("div");
   playlistCard.className = "playlist-card";
   playlistCard.style.height = "300px";
@@ -202,18 +203,19 @@ function displayPlaylist(playlist){
 
 function renderPaylistTracks(songInfo){
   //Makes sure to empty the list of tracks so they don't accumulate
+  console.log(songInfo)
   trackList.innerHTML = "";
   songInfo.forEach(listTracks)
 }
 
 
 function listTracks(trackInfo){
-
+   
   const track = document.createElement('li');
   const trackArtist = document.createElement('strong');
 
   //Create an event listener for the list items. When clicked, play the track.
-  track.addEventListener('click', e => playTrack(trackInfo))
+  track.addEventListener('click', e => playTrack(trackInfo.track))
 
   track.className = "playlist-item";
   trackArtist.innerText = ` - ${trackInfo.track.artists[0].name}`;
@@ -224,7 +226,7 @@ function listTracks(trackInfo){
 }
 
 function playTrack(track){
-  console.log("This is the track", track.track);
+  console.log("This is the track", track);
   //First we need to get a list of devices
   access_token = localStorage.getItem("access_token")
   const deviceConfigObj = {
@@ -250,7 +252,7 @@ function setActiveDevice(deviceData, track){
       if(device.type === "Computer"){
         //Activate Device
         device.is_active = true;
-        console.log("Device is Active. Play from this device: ", device, track.track.uri);
+        console.log("Device is Active. Play from this device: ", device, track.uri);
         //Make our Play Song Fetch call
         const trackConfigObj = {
           method: "PUT", 
@@ -258,13 +260,14 @@ function setActiveDevice(deviceData, track){
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + access_token
           },
-          body: JSON.stringify({"uris": [track.track.uri]})
+          body: JSON.stringify({"uris": [track.uri]})
         }
         //Play the Song
         fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device.id}`, trackConfigObj);
 
-        //TO DO: Once we've set the device to active, display the track in the current song container.
-        displaySongInfo(track.track);
+        //TO DO: Use Eamon's function to display this track on the correct "Currently Playing" container.
+          displaySongInfo(track) //displays track on currently playing container
+
         
         break;
       }else{
@@ -309,6 +312,7 @@ function handleUserInterface(data){
   fetch("http://localhost:4000/user/1", userConfigObj)
 }
 
+
 randomSongBtn.addEventListener('click', () => { // adds event listener on song button
     fetchRandomSong()
 })
@@ -325,7 +329,6 @@ function fetchRandomSong(){ //function that grabs a 'random' song
   
   const chars = 'abcdefghijklmnopqrstuvwxyz'; // establishes alphabet string to pull random character for search query
   const randChar = chars.charAt(Math.floor(Math.random() * chars.length))
-  console.log(randChar)
 
   fetch(`https://api.spotify.com/v1/search?q=%25${randChar}%25&type=track&offset=${Math.floor(Math.random() * 1000)}`, configObj) // searches for song with random character as search query, picks 20 tracks  from results
   .then( res => res.json())
@@ -333,12 +336,15 @@ function fetchRandomSong(){ //function that grabs a 'random' song
     console.log(data.tracks.items)
     const randomSong = data.tracks.items[Math.floor(Math.random() * 20)]
     console.log(randomSong)
-    displaySongInfo(randomSong)
-    
-  })
+
+    saveSong(randomSong)
+    //displaySongInfo(randomSong)
+    // playTrack(randomSong)
+    })
 }
 
 function displaySongInfo(track){
+
   albumCover.innerHTML = ''
   console.log(track)
   
@@ -348,16 +354,67 @@ function displaySongInfo(track){
   trackTitle.textContent = "Track: " + track.name;
   const artistName = document.querySelector(".artist-name")
   artistName.textContent = "Artist: " + track.artists[0].name;
-  const albumName = document.querySelector(".album-name")
+  const albumName = document.querySelector(".album-name");
   albumName.textContent = "Album: " + track.album.name;
 
   const coverArt = document.createElement('img');
+
   coverArt.id = "cover-art"
   coverArt.src = track.album.images[1].url
   console.log(coverArt)
   albumCover.append(coverArt)
-  
 }
+
+function saveSong(randomSong){ // saves data from our randomly generated song to the db.json file
+  let trackData = {
+     "id": 1,
+     "name": randomSong.name,
+     "artists": randomSong.artists,
+     "album": randomSong.album,
+     "uri": randomSong.uri,
+     "href": randomSong.href
+    }
+    console.log(trackData)
+  trackDataConfigObj = {
+    method: "PATCH",
+    headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+        },
+    body: JSON.stringify(trackData)
+    }   
+    console.log(randomSong)
+
+  fetch(`http://localhost:4000/random_track/1`, trackDataConfigObj)
+//  .then( res => res.json())
+//  .then( data => console.log(data))
+}
+
+function addSongToPlaylist(song){
+console.log(song)
+
+  addToPlaylistBtn.addEventListener("click", () =>{
+     const artist = document.createElement('strong');
+     artist.innerText = ` - ${song.artists[0].name}`;
+     const li = document.createElement('li');
+     li.textContent = song.name;
+
+     li.append(artist);
+
+     li.addEventListener('click', () => playTrack(song))
+     trackList.append(li)
+// console.log(song)
+})
+}
+
+fetch(`http://localhost:4000/random_track/1`)
+  .then( res => res.json())
+  .then( data => {
+    addSongToPlaylist(data)
+    displaySongInfo(data)
+    playTrack(data)})
+
+
 
 fetch("http://localhost:4000/user")
   .then(res => res.json())
