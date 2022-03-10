@@ -100,7 +100,7 @@ function requestAuthorization(){
   client_id = document.getElementById("clientId").value
   client_secret = document.getElementById("clientSecret").value
   localStorage.setItem("client_id", client_id)
-  //IN REAL APP YOU SHOULD NOT EXPOSE THE CLIENT SECRET! FIND A WAY TO HIDE THIS!!!
+  //IN REAL APP YOU SHOULD NOT EXPOSE THE CLIENT SECRET!
   localStorage.setItem("client_secret", client_secret)
 
   let url = AUTHORIZE;
@@ -190,7 +190,7 @@ function displayPlaylist(playlist){
     currentPlaylistImg.src = playlist.images[0].url;
   })
 
-  let playlistName = document.createElement("h3");
+  let playlistName = document.createElement("h2");
   playlistName.innerText = playlist.name;
   playlistContainer.append(playlistName, playlistCard);
 
@@ -212,6 +212,7 @@ function listTracks(trackInfo){
   //Create an event listener for the list items. When clicked, play the track.
   track.addEventListener('click', e => playTrack(trackInfo.track))
 
+  track.className = "playlist-item"
   trackArtist.innerText = ` - ${trackInfo.track.artists[0].name}`
   track.innerText = trackInfo.track.name;
   track.append(trackArtist);
@@ -261,6 +262,7 @@ function setActiveDevice(deviceData, track){
 
         //TO DO: Use Eamon's function to display this track on the correct "Currently Playing" container.
           displaySongInfo(track) //displays track on currently playing container
+
         
         break;
       }else{
@@ -305,8 +307,9 @@ function handleUserInterface(data){
   fetch("http://localhost:4000/user/1", userConfigObj)
 }
 
-randomSongBtn.addEventListener('click', () => { // adds event listener on song button  
-  fetchRandomSong()
+
+randomSongBtn.addEventListener('click', () => { // adds event listener on song button
+    fetchRandomSong()
 })
 
 function fetchRandomSong(){ //function that grabs a 'random' song
@@ -336,8 +339,11 @@ function fetchRandomSong(){ //function that grabs a 'random' song
 }
 
 function displaySongInfo(track){
-  // console.log(track.artists[0].name)
+
   albumCover.innerHTML = ''
+  console.log(track)
+  
+  const currentTrackMetadata = document.querySelector("#current-track-metadata")
 
   const trackTitle = document.querySelector(".track-title")
   trackTitle.textContent = "Track: " + track.name;
@@ -347,10 +353,9 @@ function displaySongInfo(track){
   albumName.textContent = "Album: " + track.album.name;
 
   const coverArt = document.createElement('img');
-  coverArt.src = track.album.images[1].url;
-  coverArt.style.height = '200px';
-  coverArt.style.height = '200px';
 
+  coverArt.id = "cover-art"
+  coverArt.src = track.album.images[1].url
   console.log(coverArt)
   albumCover.append(coverArt)
 }
