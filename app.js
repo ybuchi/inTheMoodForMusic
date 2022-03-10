@@ -120,7 +120,7 @@ function requestAuthorization(){
   url += "&response_type=code";
   url += "&redirect_uri=" + encodeURI(redirect_uri);
   url += "&show_dialogue=true";
-  url += "&scope=user-read-private user-read-email user-modify-playback-state user-read-playback-position user-library-read streaming user-read-playback-state user-read-recently-played playlist-read-private"
+  url += "&scope=user-read-private user-read-email user-modify-playback-state user-read-playback-position user-library-read streaming user-read-playback-state user-read-recently-played playlist-read-private playlist-modify-public playlist-modify-private"
   window.location.href = url;//Show Spotify's authorization screen.
 }
 
@@ -363,13 +363,11 @@ function fetchRandomSong(){ //function that grabs a 'random' song
   const chars = 'abcdefghijklmnopqrstuvwxyz'; // establishes alphabet string to pull random character for search query
   const randChar = chars.charAt(Math.floor(Math.random() * chars.length))
 
+  //Retrieve a random song from the Spotify API
   fetch(`https://api.spotify.com/v1/search?q=%25${randChar}%25&type=track&offset=${Math.floor(Math.random() * 1000)}`, configObj) // searches for song with random character as search query, picks 20 tracks  from results
   .then( res => res.json())
   .then( data => {
-    console.log(data.tracks.items)
     const randomSong = data.tracks.items[Math.floor(Math.random() * 20)]
-    console.log(randomSong)
-
     saveSong(randomSong)
     })
 }
@@ -395,13 +393,14 @@ function saveSong(randomSong){ // saves data from our randomly generated song to
   
   //Make a fetch PATCH request to the database to save the random song
   fetch(`http://localhost:4000/random_track/1`, trackDataConfigObj)
+  console.log("Random song:", randomSong.name);
   //Fetch the random song from the JSON DB
-  fetch(`http://localhost:4000/random_track/1`)
-  .then( res => res.json())
-  .then( data => {
-    displaySongInfo(data)
-    playTrack(data)
-  })
+  // fetch(`http://localhost:4000/random_track/1`)
+  // .then( res => res.json())
+  // .then( data => {
+  //   displaySongInfo(data)
+  //   playTrack(data)
+  // })
 }
 
 function displaySongInfo(track){
@@ -423,7 +422,7 @@ function displaySongInfo(track){
 }
 
 addToPlaylistBtn.addEventListener("click", () =>{
-  //Make a fetch call to add the random song to the playlist
+  //Make a fetch GET call to add the random song to the playlist
   let playlistId = currentPlaylistImg.value;
   console.log(playlistId);
 
@@ -433,7 +432,6 @@ addToPlaylistBtn.addEventListener("click", () =>{
 })
 
 function addSongToPlaylist(song, playlistId){
-  console.log('This is the playlist ID we want to grab:', )
     //TO DO:
     //IF there is no playlist selected, the prompt the user to select one
     //IF there is a playlist selected, make a POST call to add the song to the playlist;
