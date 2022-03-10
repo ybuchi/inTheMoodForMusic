@@ -28,7 +28,12 @@ function onPageLoad(){
   fetch("http://localhost:4000/user")
   .then(res => res.json())
   .then(data => handleUserData(data));
-  
+
+  //Once the playlists are refreshed, make another fetch call to use the refreshed playlist data
+  fetch("http://localhost:4000/playlists")
+  .then(res => res.json())
+  .then(data => data[0].items.forEach(displayPlaylist))
+
   //The window.location.search property is the search (?) part of the url provided to the browser
   //We are telling the browser to check whether we are making a new http request
   if (window.location.search.length > 0){
@@ -296,11 +301,7 @@ function setActiveDevice(deviceData, track){
         }
         //Play the Song
         fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device.id}`, trackConfigObj);
-
-        //TO DO: Use Eamon's function to display this track on the correct "Currently Playing" container.
           displaySongInfo(track) //displays track on currently playing container
-
-        
         break;
       }else{
         alert("Uh oh. Seems like you don't have a computer device to play from...")
@@ -327,6 +328,7 @@ function handleUserData(data){
 
 function handleUserInterface(data){
   console.log(data);
+
   //We want to save this data into our fake database on JSON server so the data persists
   userData = {
     "name": data.display_name,
@@ -373,28 +375,6 @@ function fetchRandomSong(){ //function that grabs a 'random' song
     })
 }
 
-function displaySongInfo(track){
-
-  albumCover.innerHTML = ''
-  console.log(track)
-  
-  
-
-  const trackTitle = document.querySelector(".track-title")
-  trackTitle.textContent = "Track: " + track.name;
-  const artistName = document.querySelector(".artist-name")
-  artistName.textContent = "Artist: " + track.artists[0].name;
-  const albumName = document.querySelector(".album-name");
-  albumName.textContent = "Album: " + track.album.name;
-
-  const coverArt = document.createElement('img');
-
-  coverArt.id = "cover-art"
-  coverArt.src = track.album.images[1].url
-  console.log(coverArt)
-  albumCover.append(coverArt)
-}
-
 function saveSong(randomSong){ // saves data from our randomly generated song to the db.json file
   let trackData = {
      "id": 1,
@@ -425,8 +405,31 @@ function saveSong(randomSong){ // saves data from our randomly generated song to
   })
 }
 
+function displaySongInfo(track){
+
+  albumCover.innerHTML = ''
+  console.log(track)
+  
+  
+
+  const trackTitle = document.querySelector(".track-title")
+  trackTitle.textContent = "Track: " + track.name;
+  const artistName = document.querySelector(".artist-name")
+  artistName.textContent = "Artist: " + track.artists[0].name;
+  const albumName = document.querySelector(".album-name");
+  albumName.textContent = "Album: " + track.album.name;
+
+  const coverArt = document.createElement('img');
+
+  coverArt.id = "cover-art"
+  coverArt.src = track.album.images[1].url
+  console.log(coverArt)
+  albumCover.append(coverArt)
+}
+
 addToPlaylistBtn.addEventListener("click", () =>{
   //Make a fetch call to add the random song to the playlist
+
   fetch(`http://localhost:4000/random_track/1`)
   .then( res => res.json())
   .then( data => {addSongToPlaylist(data)})
@@ -434,27 +437,16 @@ addToPlaylistBtn.addEventListener("click", () =>{
 
 function addSongToPlaylist(song){
 
+    //TO DO:
+    //IF there is no playlist selected, the prompt the user to select one
+    //IF there is a playlist selected, make a POST call to add the song to the playlist;
+
      const artist = document.createElement('strong');
      artist.innerText = ` - ${song.artists[0].name}`;
      const li = document.createElement('li');
      li.textContent = song.name;
      li.append(artist);
       li.className = "playlist-item";
-     li.addEventListener('click', () => playTrack(song))
-     trackList.append(li)
+     li.addEventListener('click', () => playTrack(song));
+     trackList.append(li);
 }
-
-// //Retrieve the user data
-// fetch("http://localhost:4000/user")
-//   .then(res => res.json())
-//   .then(data => handleUserData(data));
-
-//Once the playlists are refreshed, make another fetch call to use the refreshed playlist data
-fetch("http://localhost:4000/playlists")
-.then(res => res.json())
-.then(data => data[0].items.forEach(displayPlaylist))
-//Once we are redirected to the Spotify authentication page and we click "Accept", the new URL includes the code that will be used for the next step
-
-// "http://127.0.0.1:5501/index.html?code="
-
-// let code = "AQBzKbNiyxWlTt0Mh6YsuHvU3C4Q3iyqz-ITB3F1idxNpsK-CXzftsGgl03K5V8vjofmsA3RPYrVcikyDtoW0ZsSf0zBrOeLLMzzyLXB_05ObmG9GfNXLtGQ7SuTUMBTNphuAUo634-nSuoKTumZJ72eHcjGxDSY3y5UbI9HAmKizZN7kon4EDWwKQMMSmWZs-1PkFwEnK9-reU4XUFvSagYPSU7CKf4Ta4eh--Lr1bp5YoiqCZIQwVuwrPgGQcQdc0khlikpY5ABNQ2z2JYpB7Egp1ZgTI8E0lPjrGbEA2E40j_FbsARcCe9SeuPFf9ge43L82IERJV_jpQcaV5Tt0RHAdPznbpiEVaY1ZPPYk2ivePSqF81sk407odY6KuNUatY24w8Q7oPOlKh3985UEmkLgIKC6xqEeXrp3F_T7eyOimeWAV2MmrbA"

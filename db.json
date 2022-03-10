@@ -320,10 +320,10 @@
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "MjQsMDc5MDg4ZWRhMzI1ZmRhZGE4ZWZmNTFmYzA2YjcxNDNjM2FjMWUzMA==",
+          "snapshot_id": "MjYsZmYyYTRjZmI0YzliYzVlN2MwOGNlZWMxYjgwODRlYjM1MjNiY2FkYQ==",
           "tracks": {
             "href": "https://api.spotify.com/v1/playlists/6rwEtZ2WdP2jHW9ODnFVKM/tracks",
-            "total": 21
+            "total": 23
           },
           "type": "playlist",
           "uri": "spotify:playlist:6rwEtZ2WdP2jHW9ODnFVKM"
@@ -767,17 +767,27 @@
   "random_track": [
     {
       "id": 1,
-      "name": "Softcore",
+      "name": "Gangsta's Paradise",
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/77SW9BnxLY8rJ0RciFqkHh"
+            "spotify": "https://open.spotify.com/artist/3y24n3XhZ96wgwRXjvS17T"
           },
-          "href": "https://api.spotify.com/v1/artists/77SW9BnxLY8rJ0RciFqkHh",
-          "id": "77SW9BnxLY8rJ0RciFqkHh",
-          "name": "The Neighbourhood",
+          "href": "https://api.spotify.com/v1/artists/3y24n3XhZ96wgwRXjvS17T",
+          "id": "3y24n3XhZ96wgwRXjvS17T",
+          "name": "Coolio",
           "type": "artist",
-          "uri": "spotify:artist:77SW9BnxLY8rJ0RciFqkHh"
+          "uri": "spotify:artist:3y24n3XhZ96wgwRXjvS17T"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2LhsePRtgCo4THVKULQBL7"
+          },
+          "href": "https://api.spotify.com/v1/artists/2LhsePRtgCo4THVKULQBL7",
+          "id": "2LhsePRtgCo4THVKULQBL7",
+          "name": "L.V.",
+          "type": "artist",
+          "uri": "spotify:artist:2LhsePRtgCo4THVKULQBL7"
         }
       ],
       "album": {
@@ -785,13 +795,13 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/77SW9BnxLY8rJ0RciFqkHh"
+              "spotify": "https://open.spotify.com/artist/3y24n3XhZ96wgwRXjvS17T"
             },
-            "href": "https://api.spotify.com/v1/artists/77SW9BnxLY8rJ0RciFqkHh",
-            "id": "77SW9BnxLY8rJ0RciFqkHh",
-            "name": "The Neighbourhood",
+            "href": "https://api.spotify.com/v1/artists/3y24n3XhZ96wgwRXjvS17T",
+            "id": "3y24n3XhZ96wgwRXjvS17T",
+            "name": "Coolio",
             "type": "artist",
-            "uri": "spotify:artist:77SW9BnxLY8rJ0RciFqkHh"
+            "uri": "spotify:artist:3y24n3XhZ96wgwRXjvS17T"
           }
         ],
         "available_markets": [
@@ -981,36 +991,36 @@
           "ZW"
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/0ODLCdHBFVvKwJGeSfd1jy"
+          "spotify": "https://open.spotify.com/album/0BJYNipGyMrw4ngKDJXzXZ"
         },
-        "href": "https://api.spotify.com/v1/albums/0ODLCdHBFVvKwJGeSfd1jy",
-        "id": "0ODLCdHBFVvKwJGeSfd1jy",
+        "href": "https://api.spotify.com/v1/albums/0BJYNipGyMrw4ngKDJXzXZ",
+        "id": "0BJYNipGyMrw4ngKDJXzXZ",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b2739b6ac98a52f62d5cb473da40",
+            "url": "https://i.scdn.co/image/ab67616d0000b273c31d3c870a3dbaf7b53186cc",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e029b6ac98a52f62d5cb473da40",
+            "url": "https://i.scdn.co/image/ab67616d00001e02c31d3c870a3dbaf7b53186cc",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d000048519b6ac98a52f62d5cb473da40",
+            "url": "https://i.scdn.co/image/ab67616d00004851c31d3c870a3dbaf7b53186cc",
             "width": 64
           }
         ],
-        "name": "Hard To Imagine The Neighbourhood Ever Changing",
-        "release_date": "2018-11-02",
+        "name": "Gangsta's Paradise",
+        "release_date": "1995-10-02",
         "release_date_precision": "day",
-        "total_tracks": 21,
+        "total_tracks": 14,
         "type": "album",
-        "uri": "spotify:album:0ODLCdHBFVvKwJGeSfd1jy"
+        "uri": "spotify:album:0BJYNipGyMrw4ngKDJXzXZ"
       },
-      "uri": "spotify:track:2K7xn816oNHJZ0aVqdQsha",
-      "href": "https://api.spotify.com/v1/tracks/2K7xn816oNHJZ0aVqdQsha"
+      "uri": "spotify:track:1DIXPcTDzTj8ZMHt3PDt8p",
+      "href": "https://api.spotify.com/v1/tracks/1DIXPcTDzTj8ZMHt3PDt8p"
     }
   ],
   "current_playlist": [
