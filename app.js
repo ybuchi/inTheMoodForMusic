@@ -23,6 +23,12 @@ let client_secret = "";
 function onPageLoad(){
   client_id = localStorage.getItem("client_id");
   client_secret = localStorage.getItem("client_secret");
+
+  //Retrieve the user data
+  fetch("http://localhost:4000/user")
+  .then(res => res.json())
+  .then(data => handleUserData(data));
+  
   //The window.location.search property is the search (?) part of the url provided to the browser
   //We are telling the browser to check whether we are making a new http request
   if (window.location.search.length > 0){
@@ -438,10 +444,10 @@ function addSongToPlaylist(song){
      trackList.append(li)
 }
 
-
-fetch("http://localhost:4000/user")
-  .then(res => res.json())
-  .then(data => handleUserData(data));
+// //Retrieve the user data
+// fetch("http://localhost:4000/user")
+//   .then(res => res.json())
+//   .then(data => handleUserData(data));
 
 //Once the playlists are refreshed, make another fetch call to use the refreshed playlist data
 fetch("http://localhost:4000/playlists")
