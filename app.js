@@ -395,18 +395,17 @@ function saveSong(randomSong){ // saves data from our randomly generated song to
   //Make a fetch PATCH request to the database to save the random song
   fetch(`http://localhost:4000/random_track/1`, trackDataConfigObj)
   .then(res => res.json())
-  .then(data => {fetchAndPlayRandomSong});
-}
-
-function fetchAndPlayRandomSong(){
-   //  Fetch the random song from the JSON DB
+  .then(data => {
+    //  Fetch the random song from the JSON DB
    fetch(`http://localhost:4000/random_track/1`)
    .then( res => res.json())
    .then( data => {
      displaySongInfo(data)
      playTrack(data)
    });
+  });
 }
+
 
 
 

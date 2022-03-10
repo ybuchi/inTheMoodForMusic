@@ -21,17 +21,17 @@
           "images": [
             {
               "height": 640,
-              "url": "https://mosaic.scdn.co/640/ab67616d0000b2732a038d3bf875d23e4aeaa84eab67616d0000b2734718e2b124f79258be7bc452ab67616d0000b273b5b0e65c77ebd944f869e308ab67616d0000b273c6e5b04b2c40eb6272246998",
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b2732a038d3bf875d23e4aeaa84eab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273c6e5b04b2c40eb6272246998ab67616d0000b273dafa7c464c09d5bf5fc9c620",
               "width": 640
             },
             {
               "height": 300,
-              "url": "https://mosaic.scdn.co/300/ab67616d0000b2732a038d3bf875d23e4aeaa84eab67616d0000b2734718e2b124f79258be7bc452ab67616d0000b273b5b0e65c77ebd944f869e308ab67616d0000b273c6e5b04b2c40eb6272246998",
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b2732a038d3bf875d23e4aeaa84eab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273c6e5b04b2c40eb6272246998ab67616d0000b273dafa7c464c09d5bf5fc9c620",
               "width": 300
             },
             {
               "height": 60,
-              "url": "https://mosaic.scdn.co/60/ab67616d0000b2732a038d3bf875d23e4aeaa84eab67616d0000b2734718e2b124f79258be7bc452ab67616d0000b273b5b0e65c77ebd944f869e308ab67616d0000b273c6e5b04b2c40eb6272246998",
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b2732a038d3bf875d23e4aeaa84eab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273c6e5b04b2c40eb6272246998ab67616d0000b273dafa7c464c09d5bf5fc9c620",
               "width": 60
             }
           ],
@@ -48,10 +48,10 @@
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "NyxlNGFkNDhkYzg3NzljODExMTNhNWI2NzUzZGExOTgyZmUwYWZmOTI3",
+          "snapshot_id": "OSwwZjNhZjEwYWEyZjM0NDI4ZTUwY2FjYmE2NmQ3MTBhY2RiNmI3ZjMw",
           "tracks": {
             "href": "https://api.spotify.com/v1/playlists/14365iAPNnJ7KDkuKLya7k/tracks",
-            "total": 6
+            "total": 8
           },
           "type": "playlist",
           "uri": "spotify:playlist:14365iAPNnJ7KDkuKLya7k"
@@ -777,17 +777,17 @@
   "random_track": [
     {
       "id": 1,
-      "name": "Hell of a Year",
+      "name": "Rät",
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/0Z8XVUAOBPM4x12wKnFHEQ"
+            "spotify": "https://open.spotify.com/artist/3u6lPufHw4Oww6D88rv6sB"
           },
-          "href": "https://api.spotify.com/v1/artists/0Z8XVUAOBPM4x12wKnFHEQ",
-          "id": "0Z8XVUAOBPM4x12wKnFHEQ",
-          "name": "Parker McCollum",
+          "href": "https://api.spotify.com/v1/artists/3u6lPufHw4Oww6D88rv6sB",
+          "id": "3u6lPufHw4Oww6D88rv6sB",
+          "name": "Penelope Scott",
           "type": "artist",
-          "uri": "spotify:artist:0Z8XVUAOBPM4x12wKnFHEQ"
+          "uri": "spotify:artist:3u6lPufHw4Oww6D88rv6sB"
         }
       ],
       "album": {
@@ -795,13 +795,13 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/0Z8XVUAOBPM4x12wKnFHEQ"
+              "spotify": "https://open.spotify.com/artist/3u6lPufHw4Oww6D88rv6sB"
             },
-            "href": "https://api.spotify.com/v1/artists/0Z8XVUAOBPM4x12wKnFHEQ",
-            "id": "0Z8XVUAOBPM4x12wKnFHEQ",
-            "name": "Parker McCollum",
+            "href": "https://api.spotify.com/v1/artists/3u6lPufHw4Oww6D88rv6sB",
+            "id": "3u6lPufHw4Oww6D88rv6sB",
+            "name": "Penelope Scott",
             "type": "artist",
-            "uri": "spotify:artist:0Z8XVUAOBPM4x12wKnFHEQ"
+            "uri": "spotify:artist:3u6lPufHw4Oww6D88rv6sB"
           }
         ],
         "available_markets": [
@@ -991,36 +991,36 @@
           "ZW"
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/6C9MVfh8Zhx1Q8xtR6ZVV2"
+          "spotify": "https://open.spotify.com/album/0G2RxSCixG5Nl6jpjwiw2g"
         },
-        "href": "https://api.spotify.com/v1/albums/6C9MVfh8Zhx1Q8xtR6ZVV2",
-        "id": "6C9MVfh8Zhx1Q8xtR6ZVV2",
+        "href": "https://api.spotify.com/v1/albums/0G2RxSCixG5Nl6jpjwiw2g",
+        "id": "0G2RxSCixG5Nl6jpjwiw2g",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273dafa7c464c09d5bf5fc9c620",
+            "url": "https://i.scdn.co/image/ab67616d0000b273512ced983959d4b2e259e907",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e02dafa7c464c09d5bf5fc9c620",
+            "url": "https://i.scdn.co/image/ab67616d00001e02512ced983959d4b2e259e907",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d00004851dafa7c464c09d5bf5fc9c620",
+            "url": "https://i.scdn.co/image/ab67616d00004851512ced983959d4b2e259e907",
             "width": 64
           }
         ],
-        "name": "Probably Wrong",
-        "release_date": "2017-11-10",
+        "name": "Public Void",
+        "release_date": "2020-09-25",
         "release_date_precision": "day",
-        "total_tracks": 10,
+        "total_tracks": 7,
         "type": "album",
-        "uri": "spotify:album:6C9MVfh8Zhx1Q8xtR6ZVV2"
+        "uri": "spotify:album:0G2RxSCixG5Nl6jpjwiw2g"
       },
-      "uri": "spotify:track:4RYTi6AJnzLu6qYtkjZGvZ",
-      "href": "https://api.spotify.com/v1/tracks/4RYTi6AJnzLu6qYtkjZGvZ"
+      "uri": "spotify:track:25z6kpmIwkCUqk2IORrJ5v",
+      "href": "https://api.spotify.com/v1/tracks/25z6kpmIwkCUqk2IORrJ5v"
     }
   ],
   "current_playlist": [
