@@ -1,14 +1,16 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
 #welcome {
     margin-left: 20px;
     font-size: 50px;
+    font-family: 'Pacifico', cursive;
 }
 #user-name {
   color: lightblue;
 }
-.user-info {
-  font-size: 30px;
-  font-family: "Sarina", cursive;
-}
+
 #user-pic {
   border-radius: 50%;
   border: solid black 2px;
@@ -42,7 +44,15 @@ div#playlist-container h2 {
   width: 300px;
   background: white;
 }
+#playlist-tracks {
+    margin: 5px;
+    padding: 5px;
+}
 
+#record-player{
+    padding: 10px;
+    text-align: center;
+}
 #current-song-info{
     text-align: center;
 }
@@ -58,7 +68,7 @@ div#playlists + h1 {
     margin: 20px 10px 30px 10px;
 }
 .playlist-item {
-    font-size: 25px;
+    font-size: 15px;
 }
 .playlist-item:hover{
     background-color: black;
@@ -102,7 +112,6 @@ div#playlists + h1 {
 }
 #playlist-img {
     width: 400px;
-    border: solid black 4px;
     border-radius: 100%;
 }
 
@@ -118,4 +127,8 @@ div#playlists + h1 {
     font-size: 30px;
     padding: 5px;
     border-bottom: black solid 3px;
+}
+#current-playlist {
+    border: 2px black solid;
+    margin-right: 5px;
 }

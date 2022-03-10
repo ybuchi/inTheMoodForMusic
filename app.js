@@ -193,6 +193,7 @@ function displayPlaylist(playlist){
     currentPlaylistName.innerText = "";
     currentPlaylistName.innerText = playlist.name;
     currentPlaylistImg.src = playlist.images[0].url;
+    currentPlaylistImg.style.border = "solid black 4px"
   })
 
 
