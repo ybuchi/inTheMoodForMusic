@@ -1,777 +1,1048 @@
 {
   "user": [
     {
-      "name": "Yannik",
+      "name": "Eamon Sheil",
       "id": 1,
-      "profile_img": "https://i.scdn.co/image/ab6775700000ee85cc47999fe3f123e8923c1279"
+      "profile_img": "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-1/71947240_2916990978315463_1642915073364066304_n.jpg?stp=dst-jpg_p320x320&_nc_cat=102&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=048NJpl2GCEAX8AS4zz&_nc_ht=scontent-ort2-1.xx&edm=AP4hL3IEAAAA&oh=00_AT_4m4Wxt-tJdC-FuQRUY3-TQEdKEwQuEf6AEVnCA1Lhbw&oe=624E512D"
     }
   ],
   "playlists": [
     {
-      "total": 36,
+      "total": 92,
       "items": [
         {
           "collaborative": false,
-          "description": "Songs that ooze the sweet aroma of pancakes and eggs in the morning.",
+          "description": "",
           "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/2ILgxPkWDlFxZELDde8E9H"
+            "spotify": "https://open.spotify.com/playlist/7HL1Cd6dVbLJPcOGoVzjSq"
           },
-          "href": "https://api.spotify.com/v1/playlists/2ILgxPkWDlFxZELDde8E9H",
-          "id": "2ILgxPkWDlFxZELDde8E9H",
+          "href": "https://api.spotify.com/v1/playlists/7HL1Cd6dVbLJPcOGoVzjSq",
+          "id": "7HL1Cd6dVbLJPcOGoVzjSq",
           "images": [
             {
               "height": 640,
-              "url": "https://mosaic.scdn.co/640/ab67616d0000b273503aff3e57307af5164d6c11ab67616d0000b273defd7f3171f62b46f59e230fab67616d0000b273ece46afd34a7eeff4ba1cfc6ab67616d0000b273fe229e74967683bfacb89d40",
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b273c5e9e847ca9c0982b4c91d4bab67616d0000b273de0ccd19b3f72c1c4db92497ab67616d0000b273ea8ab1a548312b79ac955266ab67616d0000b273ed0ddbe4b2590f448e9845be",
               "width": 640
             },
             {
               "height": 300,
-              "url": "https://mosaic.scdn.co/300/ab67616d0000b273503aff3e57307af5164d6c11ab67616d0000b273defd7f3171f62b46f59e230fab67616d0000b273ece46afd34a7eeff4ba1cfc6ab67616d0000b273fe229e74967683bfacb89d40",
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b273c5e9e847ca9c0982b4c91d4bab67616d0000b273de0ccd19b3f72c1c4db92497ab67616d0000b273ea8ab1a548312b79ac955266ab67616d0000b273ed0ddbe4b2590f448e9845be",
               "width": 300
             },
             {
               "height": 60,
-              "url": "https://mosaic.scdn.co/60/ab67616d0000b273503aff3e57307af5164d6c11ab67616d0000b273defd7f3171f62b46f59e230fab67616d0000b273ece46afd34a7eeff4ba1cfc6ab67616d0000b273fe229e74967683bfacb89d40",
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b273c5e9e847ca9c0982b4c91d4bab67616d0000b273de0ccd19b3f72c1c4db92497ab67616d0000b273ea8ab1a548312b79ac955266ab67616d0000b273ed0ddbe4b2590f448e9845be",
               "width": 60
             }
           ],
-          "name": "Petit déjeuner ",
+          "name": "stevie wonder",
           "owner": {
-            "display_name": "Yannik",
+            "display_name": "Eamon Sheil",
             "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
+              "spotify": "https://open.spotify.com/user/124519097"
             },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
             "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
+            "uri": "spotify:user:124519097"
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "MTcsNmE1MWQ2ODQwZTA2YzNiOWRkMmM2NWNkYzI4ZGY0OTQ3NTY1OGU4OQ==",
+          "snapshot_id": "MTYsMDE2OTYxNDI3M2E3Njg5MzQwYTcyYzBmMTM0ZWJkMjM3NWY2MjBhMg==",
           "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/2ILgxPkWDlFxZELDde8E9H/tracks",
+            "href": "https://api.spotify.com/v1/playlists/7HL1Cd6dVbLJPcOGoVzjSq/tracks",
             "total": 15
           },
           "type": "playlist",
-          "uri": "spotify:playlist:2ILgxPkWDlFxZELDde8E9H"
+          "uri": "spotify:playlist:7HL1Cd6dVbLJPcOGoVzjSq"
         },
         {
           "collaborative": false,
           "description": "",
           "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/6SPi0xT4e2j1JvXHMLSUwO"
+            "spotify": "https://open.spotify.com/playlist/1YGMLg4cVrB3AqTpoYVYBz"
           },
-          "href": "https://api.spotify.com/v1/playlists/6SPi0xT4e2j1JvXHMLSUwO",
-          "id": "6SPi0xT4e2j1JvXHMLSUwO",
+          "href": "https://api.spotify.com/v1/playlists/1YGMLg4cVrB3AqTpoYVYBz",
+          "id": "1YGMLg4cVrB3AqTpoYVYBz",
           "images": [
             {
               "height": 640,
-              "url": "https://mosaic.scdn.co/640/ab67616d0000b2734dba6cde1236bd752d2ba0faab67616d0000b27363f58f54f8c6598dad01ddc9ab67616d0000b273708576cb1537ec9900e82afdab67616d0000b273fe229e74967683bfacb89d40",
+              "url": "https://i.scdn.co/image/ab67616d0000b2739e6d509055af4ea2fdf2ceaf",
               "width": 640
-            },
-            {
-              "height": 300,
-              "url": "https://mosaic.scdn.co/300/ab67616d0000b2734dba6cde1236bd752d2ba0faab67616d0000b27363f58f54f8c6598dad01ddc9ab67616d0000b273708576cb1537ec9900e82afdab67616d0000b273fe229e74967683bfacb89d40",
-              "width": 300
-            },
-            {
-              "height": 60,
-              "url": "https://mosaic.scdn.co/60/ab67616d0000b2734dba6cde1236bd752d2ba0faab67616d0000b27363f58f54f8c6598dad01ddc9ab67616d0000b273708576cb1537ec9900e82afdab67616d0000b273fe229e74967683bfacb89d40",
-              "width": 60
             }
           ],
-          "name": "Espanyol",
+          "name": "Wings – Back To The Egg",
           "owner": {
-            "display_name": "Yannik",
+            "display_name": "Eamon Sheil",
             "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
+              "spotify": "https://open.spotify.com/user/124519097"
             },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
             "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
+            "uri": "spotify:user:124519097"
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "OSxhYWJhOGVjYTE5ZWRkZWRlOGVkZThkNDU4OTBjODNlYTYyNjFkOTFl",
+          "snapshot_id": "MiwxZTZlODM1MjIzY2JiODdmZTZjMDA3NDYxMjgxYzFlNzdjYjllZTQz",
           "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/6SPi0xT4e2j1JvXHMLSUwO/tracks",
+            "href": "https://api.spotify.com/v1/playlists/1YGMLg4cVrB3AqTpoYVYBz/tracks",
+            "total": 14
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:1YGMLg4cVrB3AqTpoYVYBz"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/4gp3PmNfIoF8nLATLbGQWj"
+          },
+          "href": "https://api.spotify.com/v1/playlists/4gp3PmNfIoF8nLATLbGQWj",
+          "id": "4gp3PmNfIoF8nLATLbGQWj",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2738d2b233791303359af7ee67c",
+              "width": 640
+            }
+          ],
+          "name": "Channel Live – Station Identification 2",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "MiwzN2QzMjA1OWVjYWZlYTNhYjFiNmI4M2Y2M2NlMjVjMTAzOGM5Y2U0",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/4gp3PmNfIoF8nLATLbGQWj/tracks",
+            "total": 15
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:4gp3PmNfIoF8nLATLbGQWj"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/01r83DPn17hUdHl79LxDQa"
+          },
+          "href": "https://api.spotify.com/v1/playlists/01r83DPn17hUdHl79LxDQa",
+          "id": "01r83DPn17hUdHl79LxDQa",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2734be05eb57177048c17656bea",
+              "width": 640
+            }
+          ],
+          "name": "Tom Harrell Quintet – Moon Alley",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "Myw3ZTg3MjBiYjAzYTg4ZGJhMDdlZGQ1YmFlZWI4ZmY3YjYyMTA2M2Fh",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/01r83DPn17hUdHl79LxDQa/tracks",
+            "total": 14
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:01r83DPn17hUdHl79LxDQa"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/43gyBwHH9zhFr1wq1dAXrv"
+          },
+          "href": "https://api.spotify.com/v1/playlists/43gyBwHH9zhFr1wq1dAXrv",
+          "id": "43gyBwHH9zhFr1wq1dAXrv",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27340ce0f1acc7a01b75ae3627b",
+              "width": 640
+            }
+          ],
+          "name": "Bill Evans – Symbiosis",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "MyxkM2FmNmI2ZTAxZmI3MmE4YjEzODVkYTk3Mjc0OGUxZWUyZGE2Njg3",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/43gyBwHH9zhFr1wq1dAXrv/tracks",
             "total": 6
           },
           "type": "playlist",
-          "uri": "spotify:playlist:6SPi0xT4e2j1JvXHMLSUwO"
+          "uri": "spotify:playlist:43gyBwHH9zhFr1wq1dAXrv"
         },
         {
           "collaborative": false,
           "description": "",
           "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/4afQQfllbAHwgO4Z4YnO2s"
+            "spotify": "https://open.spotify.com/playlist/6sYD5altf8cwsAsMHoTuJt"
           },
-          "href": "https://api.spotify.com/v1/playlists/4afQQfllbAHwgO4Z4YnO2s",
-          "id": "4afQQfllbAHwgO4Z4YnO2s",
+          "href": "https://api.spotify.com/v1/playlists/6sYD5altf8cwsAsMHoTuJt",
+          "id": "6sYD5altf8cwsAsMHoTuJt",
           "images": [
             {
               "height": 640,
-              "url": "https://i.scdn.co/image/ab67616d0000b273b31fdffced4f01510b26c0bb",
+              "url": "https://i.scdn.co/image/ab67616d0000b2735f74e86ccf584b1fb56d3889",
               "width": 640
             }
           ],
-          "name": "Cityscape",
+          "name": "Ella Fitzgerald – Twelve Nights In Hollywood",
           "owner": {
-            "display_name": "Yannik",
+            "display_name": "Eamon Sheil",
             "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
+              "spotify": "https://open.spotify.com/user/124519097"
             },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
             "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
+            "uri": "spotify:user:124519097"
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "NCxiY2RiYzE5ZTk2OTY3YzE3MGU4MjRkY2JiNDJiYzY0YzhmN2Q4MjFh",
+          "snapshot_id": "Miw1YmYyMzM3MGM5MDUwYjljZGM3NTkwMmE5NzhiNGFkMWVmYjA2Y2M0",
           "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/4afQQfllbAHwgO4Z4YnO2s/tracks",
-            "total": 3
+            "href": "https://api.spotify.com/v1/playlists/6sYD5altf8cwsAsMHoTuJt/tracks",
+            "total": 77
           },
           "type": "playlist",
-          "uri": "spotify:playlist:4afQQfllbAHwgO4Z4YnO2s"
+          "uri": "spotify:playlist:6sYD5altf8cwsAsMHoTuJt"
         },
         {
           "collaborative": false,
           "description": "",
           "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/1Vy840n6CEbdqsCoxCn8Y2"
+            "spotify": "https://open.spotify.com/playlist/6nGFrKOdTLFSxLz4j6h9Ev"
           },
-          "href": "https://api.spotify.com/v1/playlists/1Vy840n6CEbdqsCoxCn8Y2",
-          "id": "1Vy840n6CEbdqsCoxCn8Y2",
+          "href": "https://api.spotify.com/v1/playlists/6nGFrKOdTLFSxLz4j6h9Ev",
+          "id": "6nGFrKOdTLFSxLz4j6h9Ev",
           "images": [
             {
               "height": 640,
-              "url": "https://i.scdn.co/image/ab67616d0000b273b62b03a629fec8f1ac2d1c0d",
+              "url": "https://i.scdn.co/image/ab67616d0000b273a29a51716f82270f2b98f683",
               "width": 640
             }
           ],
-          "name": "Jazz",
+          "name": "Art Blakey & The Jazz Messengers – Art Blakey's Jazz Messengers With Thelonious Monk (Deluxe Edition)",
           "owner": {
-            "display_name": "Yannik",
+            "display_name": "Eamon Sheil",
             "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
+              "spotify": "https://open.spotify.com/user/124519097"
             },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
             "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
+            "uri": "spotify:user:124519097"
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "Miw5ODk5NzgxNTQ2MzNlOTY0YWQ4ZDU0M2M4NDQzYzg2YWY1ZTA1YzI4",
+          "snapshot_id": "MiwzMjBjZjlkODE5NjE3ZDUyY2RlN2Q3MjVmM2I4ZWJhZTRjMGI2NmZk",
           "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/1Vy840n6CEbdqsCoxCn8Y2/tracks",
-            "total": 1
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:1Vy840n6CEbdqsCoxCn8Y2"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/1H7mghqPvQcFcQMAUWLPrq"
-          },
-          "href": "https://api.spotify.com/v1/playlists/1H7mghqPvQcFcQMAUWLPrq",
-          "id": "1H7mghqPvQcFcQMAUWLPrq",
-          "images": [
-            {
-              "height": 640,
-              "url": "https://mosaic.scdn.co/640/ab67616d0000b2731dacfbc31cc873d132958af9ab67616d0000b27349fbed148b3e7142af846a5cab67616d0000b2734a767758e8ebe2443591c9fdab67616d0000b2737a532e95a476d428b5431fde",
-              "width": 640
-            },
-            {
-              "height": 300,
-              "url": "https://mosaic.scdn.co/300/ab67616d0000b2731dacfbc31cc873d132958af9ab67616d0000b27349fbed148b3e7142af846a5cab67616d0000b2734a767758e8ebe2443591c9fdab67616d0000b2737a532e95a476d428b5431fde",
-              "width": 300
-            },
-            {
-              "height": 60,
-              "url": "https://mosaic.scdn.co/60/ab67616d0000b2731dacfbc31cc873d132958af9ab67616d0000b27349fbed148b3e7142af846a5cab67616d0000b2734a767758e8ebe2443591c9fdab67616d0000b2737a532e95a476d428b5431fde",
-              "width": 60
-            }
-          ],
-          "name": "Workout",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "MTYsZTEwZjg0NWZkNzljZjc3ODYzNTdjOTQzY2VkOGQwNWNmYjMzNDlhOQ==",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/1H7mghqPvQcFcQMAUWLPrq/tracks",
-            "total": 15
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:1H7mghqPvQcFcQMAUWLPrq"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/0b8PW0oNwbn8VgP07Qz3dl"
-          },
-          "href": "https://api.spotify.com/v1/playlists/0b8PW0oNwbn8VgP07Qz3dl",
-          "id": "0b8PW0oNwbn8VgP07Qz3dl",
-          "images": [
-            {
-              "height": 640,
-              "url": "https://i.scdn.co/image/ab67616d0000b2739a821e0e5e798068ee8bf684",
-              "width": 640
-            }
-          ],
-          "name": "Morning Coffee",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "MyxiOGFjMGQ0ZGVhODc2Y2MzZWYyMzZlNTBiYTQ0YzcxNjNiY2RiNjBj",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/0b8PW0oNwbn8VgP07Qz3dl/tracks",
-            "total": 2
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:0b8PW0oNwbn8VgP07Qz3dl"
-        },
-        {
-          "collaborative": false,
-          "description": "A fusion of German artists and songs",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/6rwEtZ2WdP2jHW9ODnFVKM"
-          },
-          "href": "https://api.spotify.com/v1/playlists/6rwEtZ2WdP2jHW9ODnFVKM",
-          "id": "6rwEtZ2WdP2jHW9ODnFVKM",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebb183e044e595cf60a9cb7184b",
-              "width": null
-            }
-          ],
-          "name": "Germanica",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "MjQsMDc5MDg4ZWRhMzI1ZmRhZGE4ZWZmNTFmYzA2YjcxNDNjM2FjMWUzMA==",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/6rwEtZ2WdP2jHW9ODnFVKM/tracks",
-            "total": 21
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:6rwEtZ2WdP2jHW9ODnFVKM"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/2JUUXeDl3Ka8kxxq2pFo2U"
-          },
-          "href": "https://api.spotify.com/v1/playlists/2JUUXeDl3Ka8kxxq2pFo2U",
-          "id": "2JUUXeDl3Ka8kxxq2pFo2U",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebbf617c6a489f3959efd302faf",
-              "width": null
-            }
-          ],
-          "name": "Classical Repertoire",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "MTQsNzFlODcxNTg3NDZiM2UwNDgyYmU4MGRlNGM4MThhNTM5ODNlNjg4OQ==",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/2JUUXeDl3Ka8kxxq2pFo2U/tracks",
-            "total": 12
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:2JUUXeDl3Ka8kxxq2pFo2U"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/2UoYc48ucRKmGXMSHiWbsf"
-          },
-          "href": "https://api.spotify.com/v1/playlists/2UoYc48ucRKmGXMSHiWbsf",
-          "id": "2UoYc48ucRKmGXMSHiWbsf",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebbbe0a536b8e5a638ece5cdc15",
-              "width": null
-            }
-          ],
-          "name": "L’italiano",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "MjMsMWU4N2VlMTkxMWVkN2VlZTBhZWM5YTYwOTIzZWU5MTgwNWVlMjlhYg==",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/2UoYc48ucRKmGXMSHiWbsf/tracks",
-            "total": 17
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:2UoYc48ucRKmGXMSHiWbsf"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/4I93OkgN2Hpyhca9FyV8aG"
-          },
-          "href": "https://api.spotify.com/v1/playlists/4I93OkgN2Hpyhca9FyV8aG",
-          "id": "4I93OkgN2Hpyhca9FyV8aG",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebb3cb697e9632404e901cf5bc2",
-              "width": null
-            }
-          ],
-          "name": "Rome Antique",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": false,
-          "snapshot_id": "MTMsZGExMDA4OGY5NThmMGU5YmViYzJjNmE3ODk4ODg2ZTgyMzQxMmY0MA==",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/4I93OkgN2Hpyhca9FyV8aG/tracks",
+            "href": "https://api.spotify.com/v1/playlists/6nGFrKOdTLFSxLz4j6h9Ev/tracks",
             "total": 9
           },
           "type": "playlist",
-          "uri": "spotify:playlist:4I93OkgN2Hpyhca9FyV8aG"
+          "uri": "spotify:playlist:6nGFrKOdTLFSxLz4j6h9Ev"
         },
         {
           "collaborative": false,
-          "description": "What?..... Too Jazzy?",
+          "description": "The Competition.  A list of emcees from the 90&#x27;s not named Jay-Z, Biggie, Nas, Tupac, or Busta Rhymes.  Study up.",
           "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/4mTjtUlidkY4EITli9GW66"
+            "spotify": "https://open.spotify.com/playlist/6DgPnX9s8mWhL12Mjs2Mdx"
           },
-          "href": "https://api.spotify.com/v1/playlists/4mTjtUlidkY4EITli9GW66",
-          "id": "4mTjtUlidkY4EITli9GW66",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebb0002a332aaa2f52f1a7027ec",
-              "width": null
-            }
-          ],
-          "name": "Too Jazzy?",
-          "owner": {
-            "display_name": "Ian Martin",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/31v47wv5h5gu32kxi2g22bma45je"
-            },
-            "href": "https://api.spotify.com/v1/users/31v47wv5h5gu32kxi2g22bma45je",
-            "id": "31v47wv5h5gu32kxi2g22bma45je",
-            "type": "user",
-            "uri": "spotify:user:31v47wv5h5gu32kxi2g22bma45je"
-          },
-          "primary_color": null,
-          "public": false,
-          "snapshot_id": "NiwzYzBhMjhhODM4ZWY1OGI2NjUzMjQ2MWE3ZTFkZjI3ZTFiYzM4MWFi",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/4mTjtUlidkY4EITli9GW66/tracks",
-            "total": 2
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:4mTjtUlidkY4EITli9GW66"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/1hyDoQpnzENaB2UolDCYGu"
-          },
-          "href": "https://api.spotify.com/v1/playlists/1hyDoQpnzENaB2UolDCYGu",
-          "id": "1hyDoQpnzENaB2UolDCYGu",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebb19a08a58e66cc248edfb5af0",
-              "width": null
-            }
-          ],
-          "name": "Nostalgia Mania",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "MzgsYzllOTE2NjljM2M4Y2U3N2NhZmVmMWVjMzI5MGU5Mzk1OWExMmQ4NA==",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/1hyDoQpnzENaB2UolDCYGu/tracks",
-            "total": 33
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:1hyDoQpnzENaB2UolDCYGu"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/0tdEMJ4vP9bdM74A2mUTVn"
-          },
-          "href": "https://api.spotify.com/v1/playlists/0tdEMJ4vP9bdM74A2mUTVn",
-          "id": "0tdEMJ4vP9bdM74A2mUTVn",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebbf5a769e2395deb71212bdd86",
-              "width": null
-            }
-          ],
-          "name": "Chill Playlist 1",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "MTA2LGI3YmFjMTY0Y2MxMzZmOTVlODk3MjU3N2U1Yjk1NGVhZDBiZDE2N2M=",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/0tdEMJ4vP9bdM74A2mUTVn/tracks",
-            "total": 99
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:0tdEMJ4vP9bdM74A2mUTVn"
-        },
-        {
-          "collaborative": false,
-          "description": "French songs, francophone artists, French influence",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/6ISOt3Tk4FPDkpw8dy3A6U"
-          },
-          "href": "https://api.spotify.com/v1/playlists/6ISOt3Tk4FPDkpw8dy3A6U",
-          "id": "6ISOt3Tk4FPDkpw8dy3A6U",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebb3cdb0820c0493d2a8ff5c926",
-              "width": null
-            }
-          ],
-          "name": "The Francophone Connection",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "NjksMzcwNTRhYzI3ODE1YzE3NTBlYTZjMjAxNzM0MzZlNGNjYmM5YTQxNw==",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/6ISOt3Tk4FPDkpw8dy3A6U/tracks",
-            "total": 58
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:6ISOt3Tk4FPDkpw8dy3A6U"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/0hIE5s6wfKeBmVs4klIEsW"
-          },
-          "href": "https://api.spotify.com/v1/playlists/0hIE5s6wfKeBmVs4klIEsW",
-          "id": "0hIE5s6wfKeBmVs4klIEsW",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebb13d436d7946e5f22d8984916",
-              "width": null
-            }
-          ],
-          "name": "New Finds",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "MzYsMzc0MjlhZDkxMmJkNTlkM2E0ZmY3N2ZjZDE2MTMyZTFjZGM2NjBlMw==",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/0hIE5s6wfKeBmVs4klIEsW/tracks",
-            "total": 26
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:0hIE5s6wfKeBmVs4klIEsW"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/6k1WHYEf7MFdRNn3QE07Mb"
-          },
-          "href": "https://api.spotify.com/v1/playlists/6k1WHYEf7MFdRNn3QE07Mb",
-          "id": "6k1WHYEf7MFdRNn3QE07Mb",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebb9e9ec2cc73ae0aca9a012a8f",
-              "width": null
-            }
-          ],
-          "name": "Brittanica",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "MjksNTIzZWI5MTg5MGIwYzdmODBkNDJjNDBkNzNhYmY0NDQyZjExNjRmMA==",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/6k1WHYEf7MFdRNn3QE07Mb/tracks",
-            "total": 25
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:6k1WHYEf7MFdRNn3QE07Mb"
-        },
-        {
-          "collaborative": false,
-          "description": "A Time Capsule of American hits.",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/3M0xVeV4v08FTOnHbY7K5G"
-          },
-          "href": "https://api.spotify.com/v1/playlists/3M0xVeV4v08FTOnHbY7K5G",
-          "id": "3M0xVeV4v08FTOnHbY7K5G",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebb6f509c31ca51b805ee94c05c",
-              "width": null
-            }
-          ],
-          "name": "Americana",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "MzksNDVlMTAxNTNlMjViZGM4Y2I0ZjNhZWEwZDE4N2VhODlhYTY1NDcwMg==",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/3M0xVeV4v08FTOnHbY7K5G/tracks",
-            "total": 32
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:3M0xVeV4v08FTOnHbY7K5G"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/3CamrHHFmkCeMu101wZ8kE"
-          },
-          "href": "https://api.spotify.com/v1/playlists/3CamrHHFmkCeMu101wZ8kE",
-          "id": "3CamrHHFmkCeMu101wZ8kE",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebb48b9fdbdb3595d1236787d4d",
-              "width": null
-            }
-          ],
-          "name": "Favorites",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "MTYzLDZkNmVmMmExNTE4MDI0NWFkMWE4YTIwYTI3NDRmZGNjOTNhNzBkOTE=",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/3CamrHHFmkCeMu101wZ8kE/tracks",
-            "total": 63
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:3CamrHHFmkCeMu101wZ8kE"
-        },
-        {
-          "collaborative": false,
-          "description": "Music best blasted on the dance floor to get some groove going.",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/6sGCZ0CVUDK3VzB3SYYzfA"
-          },
-          "href": "https://api.spotify.com/v1/playlists/6sGCZ0CVUDK3VzB3SYYzfA",
-          "id": "6sGCZ0CVUDK3VzB3SYYzfA",
-          "images": [
-            {
-              "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebba12d8c1ed55a723717c03dec",
-              "width": null
-            }
-          ],
-          "name": "Groovy Tunes",
-          "owner": {
-            "display_name": "Yannik",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
-            },
-            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
-            "id": "22f6lbhijdpuovffu3ngs2tya",
-            "type": "user",
-            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "NzYsMjE1NDhjYWIwNmU1OTFkMThiNmZiMTM4NWZlYmRiMjBjZjBhMTRmMQ==",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/6sGCZ0CVUDK3VzB3SYYzfA/tracks",
-            "total": 47
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:6sGCZ0CVUDK3VzB3SYYzfA"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/5emJ78uknCxFal79ujnPv9"
-          },
-          "href": "https://api.spotify.com/v1/playlists/5emJ78uknCxFal79ujnPv9",
-          "id": "5emJ78uknCxFal79ujnPv9",
+          "href": "https://api.spotify.com/v1/playlists/6DgPnX9s8mWhL12Mjs2Mdx",
+          "id": "6DgPnX9s8mWhL12Mjs2Mdx",
           "images": [
             {
               "height": 640,
-              "url": "https://mosaic.scdn.co/640/ab67616d0000b2734a91996f05bcfcdbc2c88e0eab67616d0000b2739a821e0e5e798068ee8bf684ab67616d0000b273abc5193decc1a2984a93f31eab67616d0000b273ef36e8640d5b240fb772bcd2",
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b273019a1f59bba397fcf5b79f28ab67616d0000b2730b61016f7d155262aa6a012fab67616d0000b273dffb4ed3acf26dfcb3c629f0ab67616d0000b273eea1fe1521c776616cddf1d3",
               "width": 640
             },
             {
               "height": 300,
-              "url": "https://mosaic.scdn.co/300/ab67616d0000b2734a91996f05bcfcdbc2c88e0eab67616d0000b2739a821e0e5e798068ee8bf684ab67616d0000b273abc5193decc1a2984a93f31eab67616d0000b273ef36e8640d5b240fb772bcd2",
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b273019a1f59bba397fcf5b79f28ab67616d0000b2730b61016f7d155262aa6a012fab67616d0000b273dffb4ed3acf26dfcb3c629f0ab67616d0000b273eea1fe1521c776616cddf1d3",
               "width": 300
             },
             {
               "height": 60,
-              "url": "https://mosaic.scdn.co/60/ab67616d0000b2734a91996f05bcfcdbc2c88e0eab67616d0000b2739a821e0e5e798068ee8bf684ab67616d0000b273abc5193decc1a2984a93f31eab67616d0000b273ef36e8640d5b240fb772bcd2",
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b273019a1f59bba397fcf5b79f28ab67616d0000b2730b61016f7d155262aa6a012fab67616d0000b273dffb4ed3acf26dfcb3c629f0ab67616d0000b273eea1fe1521c776616cddf1d3",
               "width": 60
             }
           ],
-          "name": "Jonny's 1970s playlist",
+          "name": "Lyricist Lounge 2018",
           "owner": {
-            "display_name": "Coldplay",
+            "display_name": "9thwonderful",
             "external_urls": {
-              "spotify": "https://open.spotify.com/user/coldplay__"
+              "spotify": "https://open.spotify.com/user/9thwonderful"
             },
-            "href": "https://api.spotify.com/v1/users/coldplay__",
-            "id": "coldplay__",
+            "href": "https://api.spotify.com/v1/users/9thwonderful",
+            "id": "9thwonderful",
             "type": "user",
-            "uri": "spotify:user:coldplay__"
+            "uri": "spotify:user:9thwonderful"
           },
           "primary_color": null,
           "public": false,
-          "snapshot_id": "Miw0YWEwMzAyNjNmNDQ2MzUzMDQ0ZmNkMDQxZTg5NDNhNGUyMWJjMjYw",
+          "snapshot_id": "Mjc4LGVhM2I4NDU4ZDM4MGYzMmU3MmQ2MTk0MzJmNDJmZjViMjg0MzIxYWI=",
           "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/5emJ78uknCxFal79ujnPv9/tracks",
-            "total": 12
+            "href": "https://api.spotify.com/v1/playlists/6DgPnX9s8mWhL12Mjs2Mdx/tracks",
+            "total": 271
           },
           "type": "playlist",
-          "uri": "spotify:playlist:5emJ78uknCxFal79ujnPv9"
+          "uri": "spotify:playlist:6DgPnX9s8mWhL12Mjs2Mdx"
+        },
+        {
+          "collaborative": false,
+          "description": "This is De La Soul. The essential tracks, all in one playlist.",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO17CrqE"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO17CrqE",
+          "id": "37i9dQZF1DZ06evO17CrqE",
+          "images": [
+            {
+              "height": null,
+              "url": "https://thisis-images.scdn.co/37i9dQZF1DZ06evO17CrqE-large.jpg",
+              "width": null
+            }
+          ],
+          "name": "This Is De La Soul",
+          "owner": {
+            "display_name": "Spotify",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/spotify"
+            },
+            "href": "https://api.spotify.com/v1/users/spotify",
+            "id": "spotify",
+            "type": "user",
+            "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "Mjc0NDcxOTgsMDAwMDAwMDBiOGIyN2JlZjExOTI3N2IxYzNlOWU0N2U5YWMzMDM3MQ==",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO17CrqE/tracks",
+            "total": 51
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DZ06evO17CrqE"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/6pSulAsjHmlf48k0SmZY6v"
+          },
+          "href": "https://api.spotify.com/v1/playlists/6pSulAsjHmlf48k0SmZY6v",
+          "id": "6pSulAsjHmlf48k0SmZY6v",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273f19cefbb195215a0b23a4d21",
+              "width": 640
+            }
+          ],
+          "name": "Clifford Jordan – These Are My Roots: Clifford Jordan Plays Leadbelly",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "MyxiNDZkODIwNjdiNjY5MmE2MjViYjMwMWMxZWI5N2U0NzQ0MjBiZmY3",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/6pSulAsjHmlf48k0SmZY6v/tracks",
+            "total": 10
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:6pSulAsjHmlf48k0SmZY6v"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/5LDJA1iEkXIWVZbuFegs4s"
+          },
+          "href": "https://api.spotify.com/v1/playlists/5LDJA1iEkXIWVZbuFegs4s",
+          "id": "5LDJA1iEkXIWVZbuFegs4s",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b2732e8367f730ffbc95dc4ea9ecab67616d0000b273b11908f05b64dc262a8b5409ab67616d0000b273bbc23d7a2cc650d4660bd09dab67616d0000b273bf373fb956297a3c0aa3a9a0",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b2732e8367f730ffbc95dc4ea9ecab67616d0000b273b11908f05b64dc262a8b5409ab67616d0000b273bbc23d7a2cc650d4660bd09dab67616d0000b273bf373fb956297a3c0aa3a9a0",
+              "width": 300
+            },
+            {
+              "height": 60,
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b2732e8367f730ffbc95dc4ea9ecab67616d0000b273b11908f05b64dc262a8b5409ab67616d0000b273bbc23d7a2cc650d4660bd09dab67616d0000b273bf373fb956297a3c0aa3a9a0",
+              "width": 60
+            }
+          ],
+          "name": "Tina Brooks",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "NyxhOTI3ZTU1MzFjZjU2ZGRjMDYzYjFiNWU2NjYwYzRiOTVkZmFiN2Qx",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/5LDJA1iEkXIWVZbuFegs4s/tracks",
+            "total": 29
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:5LDJA1iEkXIWVZbuFegs4s"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/72gfTf1hP3pxK8fJVKneTP"
+          },
+          "href": "https://api.spotify.com/v1/playlists/72gfTf1hP3pxK8fJVKneTP",
+          "id": "72gfTf1hP3pxK8fJVKneTP",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2732e9517da29354f73b6db105f",
+              "width": 640
+            }
+          ],
+          "name": "Roy Ayers – Vibrations",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "MiwzOWM0ZWJlMjcxMWFjNDc2YzIyYzNhNmZkYTc3ZjYwYjE3NTYzNWRi",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/72gfTf1hP3pxK8fJVKneTP/tracks",
+            "total": 11
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:72gfTf1hP3pxK8fJVKneTP"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/1JbAjQvyM6kN1IvFd1lynI"
+          },
+          "href": "https://api.spotify.com/v1/playlists/1JbAjQvyM6kN1IvFd1lynI",
+          "id": "1JbAjQvyM6kN1IvFd1lynI",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b27399d5e13356b05f244af52d78ab67616d0000b273ce87451bd450fc5a177b5156ab67616d0000b273d7bada4859c1f617e337c474ab67616d0000b273e3f907e70bc502a263ee1bc0",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b27399d5e13356b05f244af52d78ab67616d0000b273ce87451bd450fc5a177b5156ab67616d0000b273d7bada4859c1f617e337c474ab67616d0000b273e3f907e70bc502a263ee1bc0",
+              "width": 300
+            },
+            {
+              "height": 60,
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b27399d5e13356b05f244af52d78ab67616d0000b273ce87451bd450fc5a177b5156ab67616d0000b273d7bada4859c1f617e337c474ab67616d0000b273e3f907e70bc502a263ee1bc0",
+              "width": 60
+            }
+          ],
+          "name": "SDTW",
+          "owner": {
+            "display_name": "Olivier Macharia",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/12158595749"
+            },
+            "href": "https://api.spotify.com/v1/users/12158595749",
+            "id": "12158595749",
+            "type": "user",
+            "uri": "spotify:user:12158595749"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "ODMsYzQ2OTFlNGQ2MDM3YmY2ZWFlOTUzMDBiMmViN2RhZGNmYWIzMmJkMw==",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/1JbAjQvyM6kN1IvFd1lynI/tracks",
+            "total": 50
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:1JbAjQvyM6kN1IvFd1lynI"
+        },
+        {
+          "collaborative": false,
+          "description": "Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/37i9dQZEVXcRRtnpbX785G"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXcRRtnpbX785G",
+          "id": "37i9dQZEVXcRRtnpbX785G",
+          "images": [
+            {
+              "height": null,
+
+              "url": "https://i.scdn.co/image/ab67706c0000bebb3cdb0820c0493d2a8ff5c926",
+
+              "width": null
+            }
+          ],
+          "name": "Discover Weekly",
+          "owner": {
+            "display_name": "Spotify",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/spotify"
+            },
+            "href": "https://api.spotify.com/v1/users/spotify",
+            "id": "spotify",
+            "type": "user",
+            "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "MCwwMDAwMDAwMGQ3NDQwMTFlMzJjODFlMTgxODU5MDUzY2RmZjZhZGI3",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXcRRtnpbX785G/tracks",
+            "total": 30
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZEVXcRRtnpbX785G"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/3kJZZlqhGN0yYh4FL8Fqed"
+          },
+          "href": "https://api.spotify.com/v1/playlists/3kJZZlqhGN0yYh4FL8Fqed",
+          "id": "3kJZZlqhGN0yYh4FL8Fqed",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2738302919bce4416fcbd548f7c",
+              "width": 640
+            }
+          ],
+          "name": "Charlie Parker – Jazz At The Philharmonic 1949",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "Myw1YjEyYTE1YmRlYWNiODU0MDFjNTdkYjRkY2E5YmNjYWY3ODAxNTE5",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/3kJZZlqhGN0yYh4FL8Fqed/tracks",
+            "total": 8
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:3kJZZlqhGN0yYh4FL8Fqed"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/0caYUJ6Rxu32n5pVyPAIcO"
+          },
+          "href": "https://api.spotify.com/v1/playlists/0caYUJ6Rxu32n5pVyPAIcO",
+          "id": "0caYUJ6Rxu32n5pVyPAIcO",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273750e3717684eca7e7decb281",
+              "width": 640
+            }
+          ],
+          "name": "Louis Armstrong – The Complete Hot Five And Hot Seven Recordings Volume 3",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": false,
+          "snapshot_id": "MyxjZDg5ZWRiYTg0OTYzMGQ5YzdjZWQ1OTgyZDU4NTVhY2I0Njg2NGQ0",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/0caYUJ6Rxu32n5pVyPAIcO/tracks",
+            "total": 22
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:0caYUJ6Rxu32n5pVyPAIcO"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/3IEkMGBJMnELMOtUxSOImn"
+          },
+          "href": "https://api.spotify.com/v1/playlists/3IEkMGBJMnELMOtUxSOImn",
+          "id": "3IEkMGBJMnELMOtUxSOImn",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273551e9326676c6a0a7c473dc9",
+              "width": 640
+            }
+          ],
+          "name": "Cannonball Adderley Sextet – In New York [Keepnews Collection]",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "NywxMzQ4NWYzNDM3OTRiMjk1NTk0NDA4NTFhYjViMWIzMGU5YWViZWI0",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/3IEkMGBJMnELMOtUxSOImn/tracks",
+            "total": 5
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:3IEkMGBJMnELMOtUxSOImn"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/1daZXAksev1PwrUXVqxSdo"
+          },
+          "href": "https://api.spotify.com/v1/playlists/1daZXAksev1PwrUXVqxSdo",
+          "id": "1daZXAksev1PwrUXVqxSdo",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273afc5bc0edf183558eda78639",
+              "width": 640
+            }
+          ],
+          "name": "John Coltrane – Coltrane Plays The Blues (US Release)",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "MyxhYTc5NjA0MzZkZWE5NTE3ZTQ3ZWExZmI4NWQ1MGVlNmJiYjhkMGU1",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/1daZXAksev1PwrUXVqxSdo/tracks",
+            "total": 11
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:1daZXAksev1PwrUXVqxSdo"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/7eJVDDs7YTmzWBQsGCog1M"
+          },
+          "href": "https://api.spotify.com/v1/playlists/7eJVDDs7YTmzWBQsGCog1M",
+          "id": "7eJVDDs7YTmzWBQsGCog1M",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2738e6c680adf202206ff644ee7",
+              "width": 640
+            }
+          ],
+          "name": "The O'Jays – Family Reunion",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "MywyMjE5ZmRiNjhlMzJjZTY1NTMxZWQxMjI2NDEwNDA5ODBiNDMyYzEx",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/7eJVDDs7YTmzWBQsGCog1M/tracks",
+            "total": 8
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:7eJVDDs7YTmzWBQsGCog1M"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/0HLXu7J6jIV0JQva02LvTT"
+          },
+          "href": "https://api.spotify.com/v1/playlists/0HLXu7J6jIV0JQva02LvTT",
+          "id": "0HLXu7J6jIV0JQva02LvTT",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273a693e54b360f7ca0defd726c",
+              "width": 640
+            }
+          ],
+          "name": "Mark Turner – Mark Turner",
+          "owner": {
+            "display_name": "Eamon Sheil",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/124519097"
+            },
+            "href": "https://api.spotify.com/v1/users/124519097",
+            "id": "124519097",
+            "type": "user",
+            "uri": "spotify:user:124519097"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "NCw5NjEzM2RlM2Q0ZGQ3MTJlODE5ZmI2N2E1OTYyMGM1MTg5NGQ5Yzdl",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/0HLXu7J6jIV0JQva02LvTT/tracks",
+            "total": 17
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:0HLXu7J6jIV0JQva02LvTT"
         }
       ],
       "id": 1
+    }
+  ],
+  "random_track": [
+    {
+      "id": 1,
+      "name": "¡Hola Casita!",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5NTEjLv3GEX1Vx0ITx9Pxe"
+          },
+          "href": "https://api.spotify.com/v1/artists/5NTEjLv3GEX1Vx0ITx9Pxe",
+          "id": "5NTEjLv3GEX1Vx0ITx9Pxe",
+          "name": "Germaine Franco",
+          "type": "artist",
+          "uri": "spotify:artist:5NTEjLv3GEX1Vx0ITx9Pxe"
+        }
+      ],
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4aXXDj9aZnlshx7mzj3W1N"
+            },
+            "href": "https://api.spotify.com/v1/artists/4aXXDj9aZnlshx7mzj3W1N",
+            "id": "4aXXDj9aZnlshx7mzj3W1N",
+            "name": "Lin-Manuel Miranda",
+            "type": "artist",
+            "uri": "spotify:artist:4aXXDj9aZnlshx7mzj3W1N"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5NTEjLv3GEX1Vx0ITx9Pxe"
+            },
+            "href": "https://api.spotify.com/v1/artists/5NTEjLv3GEX1Vx0ITx9Pxe",
+            "id": "5NTEjLv3GEX1Vx0ITx9Pxe",
+            "name": "Germaine Franco",
+            "type": "artist",
+            "uri": "spotify:artist:5NTEjLv3GEX1Vx0ITx9Pxe"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3xLU748QxpTmIVaiNXXg0P"
+            },
+            "href": "https://api.spotify.com/v1/artists/3xLU748QxpTmIVaiNXXg0P",
+            "id": "3xLU748QxpTmIVaiNXXg0P",
+            "name": "Encanto - Cast",
+            "type": "artist",
+            "uri": "spotify:artist:3xLU748QxpTmIVaiNXXg0P"
+          }
+        ],
+        "available_markets": [
+          "AD",
+          "AE",
+          "AG",
+          "AL",
+          "AM",
+          "AO",
+          "AR",
+          "AT",
+          "AU",
+          "AZ",
+          "BA",
+          "BB",
+          "BD",
+          "BE",
+          "BF",
+          "BG",
+          "BH",
+          "BI",
+          "BJ",
+          "BN",
+          "BO",
+          "BR",
+          "BS",
+          "BT",
+          "BW",
+          "BY",
+          "BZ",
+          "CA",
+          "CD",
+          "CG",
+          "CH",
+          "CI",
+          "CL",
+          "CM",
+          "CO",
+          "CR",
+          "CV",
+          "CW",
+          "CY",
+          "CZ",
+          "DE",
+          "DJ",
+          "DK",
+          "DM",
+          "DO",
+          "DZ",
+          "EC",
+          "EE",
+          "EG",
+          "ES",
+          "FI",
+          "FJ",
+          "FM",
+          "FR",
+          "GA",
+          "GB",
+          "GD",
+          "GE",
+          "GH",
+          "GM",
+          "GN",
+          "GQ",
+          "GR",
+          "GT",
+          "GW",
+          "GY",
+          "HK",
+          "HN",
+          "HR",
+          "HT",
+          "HU",
+          "ID",
+          "IE",
+          "IL",
+          "IN",
+          "IQ",
+          "IS",
+          "IT",
+          "JM",
+          "JO",
+          "JP",
+          "KE",
+          "KG",
+          "KH",
+          "KI",
+          "KM",
+          "KN",
+          "KR",
+          "KW",
+          "KZ",
+          "LA",
+          "LB",
+          "LC",
+          "LI",
+          "LK",
+          "LR",
+          "LS",
+          "LT",
+          "LU",
+          "LV",
+          "LY",
+          "MA",
+          "MC",
+          "MD",
+          "ME",
+          "MG",
+          "MH",
+          "MK",
+          "ML",
+          "MN",
+          "MO",
+          "MR",
+          "MT",
+          "MU",
+          "MV",
+          "MW",
+          "MX",
+          "MY",
+          "MZ",
+          "NA",
+          "NE",
+          "NG",
+          "NI",
+          "NL",
+          "NO",
+          "NP",
+          "NR",
+          "NZ",
+          "OM",
+          "PA",
+          "PE",
+          "PG",
+          "PH",
+          "PK",
+          "PL",
+          "PS",
+          "PT",
+          "PW",
+          "PY",
+          "QA",
+          "RO",
+          "RS",
+          "RU",
+          "RW",
+          "SA",
+          "SB",
+          "SC",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SL",
+          "SM",
+          "SN",
+          "SR",
+          "ST",
+          "SV",
+          "SZ",
+          "TD",
+          "TG",
+          "TH",
+          "TJ",
+          "TL",
+          "TN",
+          "TO",
+          "TR",
+          "TT",
+          "TV",
+          "TW",
+          "TZ",
+          "UA",
+          "UG",
+          "US",
+          "UY",
+          "UZ",
+          "VC",
+          "VE",
+          "VN",
+          "VU",
+          "WS",
+          "XK",
+          "ZA",
+          "ZM",
+          "ZW"
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/25L8ck3KGcmCo3901ztPzR"
+        },
+        "href": "https://api.spotify.com/v1/albums/25L8ck3KGcmCo3901ztPzR",
+        "id": "25L8ck3KGcmCo3901ztPzR",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273e1ac646ed6f25125e2a77229",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02e1ac646ed6f25125e2a77229",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851e1ac646ed6f25125e2a77229",
+            "width": 64
+          }
+        ],
+        "name": "Encanto (Original Motion Picture Soundtrack)",
+        "release_date": "2021-11-19",
+        "release_date_precision": "day",
+        "total_tracks": 44,
+        "type": "album",
+        "uri": "spotify:album:25L8ck3KGcmCo3901ztPzR"
+      },
+      "uri": "spotify:track:5X1kTi7KqUrAbQBohSV68x",
+      "href": "https://api.spotify.com/v1/tracks/5X1kTi7KqUrAbQBohSV68x"
     }
   ]
 }
