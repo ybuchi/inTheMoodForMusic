@@ -407,11 +407,20 @@ function saveSong(randomSong){ // saves data from our randomly generated song to
     body: JSON.stringify(trackData)
     }   
     console.log(randomSong)
-
+  
+  //Make a fetch PATCH request to the database to save the random song
   fetch(`http://localhost:4000/random_track/1`, trackDataConfigObj)
+  //Fetch the random song from the JSON DB
+  fetch(`http://localhost:4000/random_track/1`)
+  .then( res => res.json())
+  .then( data => {
+    displaySongInfo(data)
+    playTrack(data)
+  })
 }
 
 addToPlaylistBtn.addEventListener("click", () =>{
+  //Make a fetch call to add the random song to the playlist
   fetch(`http://localhost:4000/random_track/1`)
   .then( res => res.json())
   .then( data => {addSongToPlaylist(data)})
@@ -428,13 +437,6 @@ function addSongToPlaylist(song){
      li.addEventListener('click', () => playTrack(song))
      trackList.append(li)
 }
-
-fetch(`http://localhost:4000/random_track/1`)
-  .then( res => res.json())
-  .then( data => {
-    console.log(data)
-    displaySongInfo(data)
-    playTrack(data)})
 
 
 fetch("http://localhost:4000/user")
