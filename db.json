@@ -8,11 +8,47 @@
   ],
   "playlists": [
     {
-      "total": 92,
+      "total": 37,
       "items": [
         {
           "collaborative": false,
           "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/14365iAPNnJ7KDkuKLya7k"
+          },
+          "href": "https://api.spotify.com/v1/playlists/14365iAPNnJ7KDkuKLya7k",
+          "id": "14365iAPNnJ7KDkuKLya7k",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2733ddf80fb25359e11d9fe0bfe",
+              "width": 640
+            }
+          ],
+          "name": "Ciné",
+          "owner": {
+            "display_name": "Yannik",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/22f6lbhijdpuovffu3ngs2tya"
+            },
+            "href": "https://api.spotify.com/v1/users/22f6lbhijdpuovffu3ngs2tya",
+            "id": "22f6lbhijdpuovffu3ngs2tya",
+            "type": "user",
+            "uri": "spotify:user:22f6lbhijdpuovffu3ngs2tya"
+          },
+          "primary_color": null,
+          "public": true,
+          "snapshot_id": "MiwyNTlkMzRmNTczM2E2MzJlNzRiMTQ4MDI0MDM0OTlhYTQwMWFiMmU2",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/14365iAPNnJ7KDkuKLya7k/tracks",
+            "total": 1
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:14365iAPNnJ7KDkuKLya7k"
+        },
+        {
+          "collaborative": false,
+          "description": "Songs that ooze the sweet aroma of pancakes and eggs in the morning.",
           "external_urls": {
             "spotify": "https://open.spotify.com/playlist/7HL1Cd6dVbLJPcOGoVzjSq"
           },
@@ -71,7 +107,7 @@
               "width": 640
             }
           ],
-          "name": "Wings – Back To The Egg",
+          "name": "Iberia",
           "owner": {
             "display_name": "Eamon Sheil",
             "external_urls": {
@@ -84,10 +120,10 @@
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "MiwxZTZlODM1MjIzY2JiODdmZTZjMDA3NDYxMjgxYzFlNzdjYjllZTQz",
+          "snapshot_id": "MTEsYmEyZTllOTRiZmFjZTE2MGExMmQ2MGZjZGI5NTIzMTg5NDI3NDEwMQ==",
           "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/1YGMLg4cVrB3AqTpoYVYBz/tracks",
-            "total": 14
+            "href": "https://api.spotify.com/v1/playlists/6SPi0xT4e2j1JvXHMLSUwO/tracks",
+            "total": 7
           },
           "type": "playlist",
           "uri": "spotify:playlist:1YGMLg4cVrB3AqTpoYVYBz"
@@ -510,10 +546,10 @@
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "ODMsYzQ2OTFlNGQ2MDM3YmY2ZWFlOTUzMDBiMmViN2RhZGNmYWIzMmJkMw==",
+          "snapshot_id": "MTA5LGQ3Zjg1ODlmMTM2ZWM5YTJhNTQ1N2ZkMTJmYzlmZmQwM2VlNmRlNDk=",
           "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/1JbAjQvyM6kN1IvFd1lynI/tracks",
-            "total": 50
+            "href": "https://api.spotify.com/v1/playlists/0tdEMJ4vP9bdM74A2mUTVn/tracks",
+            "total": 102
           },
           "type": "playlist",
           "uri": "spotify:playlist:1JbAjQvyM6kN1IvFd1lynI"
@@ -547,11 +583,11 @@
             "uri": "spotify:user:spotify"
           },
           "primary_color": null,
-          "public": false,
-          "snapshot_id": "MCwwMDAwMDAwMGQ3NDQwMTFlMzJjODFlMTgxODU5MDUzY2RmZjZhZGI3",
+          "public": true,
+          "snapshot_id": "NzEsNWJlOWRhYzA0ZDk0YTlmYjhlMmMzYzcyMDQwZGE0NmQ0M2YwY2YxNw==",
           "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXcRRtnpbX785G/tracks",
-            "total": 30
+            "href": "https://api.spotify.com/v1/playlists/6ISOt3Tk4FPDkpw8dy3A6U/tracks",
+            "total": 60
           },
           "type": "playlist",
           "uri": "spotify:playlist:37i9dQZEVXcRRtnpbX785G"
@@ -734,43 +770,7 @@
             "total": 8
           },
           "type": "playlist",
-          "uri": "spotify:playlist:7eJVDDs7YTmzWBQsGCog1M"
-        },
-        {
-          "collaborative": false,
-          "description": "",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/playlist/0HLXu7J6jIV0JQva02LvTT"
-          },
-          "href": "https://api.spotify.com/v1/playlists/0HLXu7J6jIV0JQva02LvTT",
-          "id": "0HLXu7J6jIV0JQva02LvTT",
-          "images": [
-            {
-              "height": 640,
-              "url": "https://i.scdn.co/image/ab67616d0000b273a693e54b360f7ca0defd726c",
-              "width": 640
-            }
-          ],
-          "name": "Mark Turner – Mark Turner",
-          "owner": {
-            "display_name": "Eamon Sheil",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/user/124519097"
-            },
-            "href": "https://api.spotify.com/v1/users/124519097",
-            "id": "124519097",
-            "type": "user",
-            "uri": "spotify:user:124519097"
-          },
-          "primary_color": null,
-          "public": true,
-          "snapshot_id": "NCw5NjEzM2RlM2Q0ZGQ3MTJlODE5ZmI2N2E1OTYyMGM1MTg5NGQ5Yzdl",
-          "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/0HLXu7J6jIV0JQva02LvTT/tracks",
-            "total": 17
-          },
-          "type": "playlist",
-          "uri": "spotify:playlist:0HLXu7J6jIV0JQva02LvTT"
+          "uri": "spotify:playlist:6sGCZ0CVUDK3VzB3SYYzfA"
         }
       ],
       "id": 1

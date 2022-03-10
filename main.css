@@ -1,14 +1,16 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
 #welcome {
     margin-left: 20px;
-    font-size: 60px;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
 }
 #user-name {
   color: lightblue;
 }
-.user-info {
-  font-size: 30px;
-  font-family: "Sarina", cursive;
-}
+
 #user-pic {
   border-radius: 50%;
   border: solid black 2px;
@@ -32,11 +34,24 @@
   height: 1000px;
   overflow: scroll;
 }
+
+div#playlist-container h2 {
+    text-align: center;
+}
 .playlist-card {
-  margin: 5px;
-  height: 200px;
-  width: 200px;
+  margin: auto;
+  height: 300px;
+  width: 300px;
   background: white;
+}
+#playlist-tracks {
+    margin: 5px;
+    padding: 5px;
+}
+
+#record-player{
+    padding: 10px;
+    text-align: center;
 }
 #current-song-info{
     text-align: center;
@@ -53,11 +68,15 @@ div#playlists + h1 {
     margin: 20px 10px 30px 10px;
 }
 .playlist-item {
-    font-size: 25px;
-    text-align: center;
+    font-size: 15px;
 }
 .playlist-item:hover{
-    font-size: 27px;
+    background-color: black;
+    color: white;
+}
+.player-btn {
+    color: black;
+    margin: 5px;
 }
 #album-cover {
   margin: auto;
@@ -93,11 +112,23 @@ div#playlists + h1 {
 }
 #playlist-img {
     width: 400px;
-    border: solid black 4px;
     border-radius: 100%;
 }
 
 #cover-art {
     width: 200px;
     height: 200px;
+    border: white solid 3px;
+}
+
+.playlist-lbl{
+    background-color: rgba(255, 255, 255, 0.774);
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+    border-bottom: black solid 3px;
+}
+#current-playlist {
+    border: 2px black solid;
+    margin-right: 5px;
 }
