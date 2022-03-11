@@ -12,6 +12,9 @@ body {
     background-color: #415A77;
     border-bottom: #0D1B2A solid 3px;
 }
+#welcome:hover{
+    background-color:#0D1B2A;
+}
 .title-word{
     animation: color-animation 4s linear infinite;
 }
@@ -220,4 +223,10 @@ transform: scale(1.05);
 #playlist-adder{
     background-color: goldenrod;
     height: 35px;
+}
+.player-btn{
+    border-radius: 5px;
+}
+.player-btn:hover{
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.781), 0 2px 4px rgba(255, 255, 255, 0.52);
 }
