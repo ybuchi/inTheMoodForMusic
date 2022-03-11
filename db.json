@@ -21,20 +21,8 @@
           "images": [
             {
               "height": 640,
-
-              "url": "https://mosaic.scdn.co/640/ab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273512ced983959d4b2e259e907ab67616d0000b273dafa7c464c09d5bf5fc9c620ab67616d0000b273e207a14471e5356294146e9d",
-
+              "url": "https://i.scdn.co/image/ab67616d0000b273b31f6adf0da5659911b05c9b",
               "width": 640
-            },
-            {
-              "height": 300,
-              "url": "https://mosaic.scdn.co/300/ab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273512ced983959d4b2e259e907ab67616d0000b273dafa7c464c09d5bf5fc9c620ab67616d0000b273e207a14471e5356294146e9d",
-              "width": 300
-            },
-            {
-              "height": 60,
-              "url": "https://mosaic.scdn.co/60/ab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273512ced983959d4b2e259e907ab67616d0000b273dafa7c464c09d5bf5fc9c620ab67616d0000b273e207a14471e5356294146e9d",
-              "width": 60
             }
           ],
           "name": "Playlist of randomness",
@@ -50,12 +38,10 @@
           },
           "primary_color": null,
           "public": true,
-
-          "snapshot_id": "MTIsNGEyNjJlNDFiNmY2YWM4YTViYzc0ZTVkZjg0ZWRjMTI0ZmU0MWE2NA==",
+          "snapshot_id": "NSwxNmZmYTI1YTcyYTZkZGQ1ZDYwNzg3Y2Q3Y2IzMTM2NDJlMWY1M2Zk",
           "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/14365iAPNnJ7KDkuKLya7k/tracks",
-            "total": 11
-
+            "href": "https://api.spotify.com/v1/playlists/3ZmXQ7ZZ7hYovhQSaqopbn/tracks",
+            "total": 3
           },
           "type": "playlist",
           "uri": "spotify:playlist:3ZmXQ7ZZ7hYovhQSaqopbn"
@@ -791,55 +777,31 @@
   "random_track": [
     {
       "id": 1,
-
-      "name": "FRIENDS",
+      "name": "Never Til Now",
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/64KEffDW9EtZ1y2vBYgq8T"
+            "spotify": "https://open.spotify.com/artist/2qwXeRk8VBAegbUnf3xdyi"
           },
-          "href": "https://api.spotify.com/v1/artists/64KEffDW9EtZ1y2vBYgq8T",
-          "id": "64KEffDW9EtZ1y2vBYgq8T",
-          "name": "Marshmello",
+          "href": "https://api.spotify.com/v1/artists/2qwXeRk8VBAegbUnf3xdyi",
+          "id": "2qwXeRk8VBAegbUnf3xdyi",
+          "name": "Ashley Cooke",
           "type": "artist",
-          "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
-        },
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1zNqDE7qDGCsyzJwohVaoX"
-          },
-          "href": "https://api.spotify.com/v1/artists/1zNqDE7qDGCsyzJwohVaoX",
-          "id": "1zNqDE7qDGCsyzJwohVaoX",
-          "name": "Anne-Marie",
-          "type": "artist",
-          "uri": "spotify:artist:1zNqDE7qDGCsyzJwohVaoX"
-
+          "uri": "spotify:artist:2qwXeRk8VBAegbUnf3xdyi"
         }
       ],
       "album": {
-        "album_type": "single",
+        "album_type": "album",
         "artists": [
           {
             "external_urls": {
-
-              "spotify": "https://open.spotify.com/artist/64KEffDW9EtZ1y2vBYgq8T"
+              "spotify": "https://open.spotify.com/artist/2qwXeRk8VBAegbUnf3xdyi"
             },
-            "href": "https://api.spotify.com/v1/artists/64KEffDW9EtZ1y2vBYgq8T",
-            "id": "64KEffDW9EtZ1y2vBYgq8T",
-            "name": "Marshmello",
+            "href": "https://api.spotify.com/v1/artists/2qwXeRk8VBAegbUnf3xdyi",
+            "id": "2qwXeRk8VBAegbUnf3xdyi",
+            "name": "Ashley Cooke",
             "type": "artist",
-            "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
-          },
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/1zNqDE7qDGCsyzJwohVaoX"
-            },
-            "href": "https://api.spotify.com/v1/artists/1zNqDE7qDGCsyzJwohVaoX",
-            "id": "1zNqDE7qDGCsyzJwohVaoX",
-            "name": "Anne-Marie",
-            "type": "artist",
-            "uri": "spotify:artist:1zNqDE7qDGCsyzJwohVaoX"
-
+            "uri": "spotify:artist:2qwXeRk8VBAegbUnf3xdyi"
           }
         ],
         "available_markets": [
@@ -1029,42 +991,36 @@
           "ZW"
         ],
         "external_urls": {
-
-          "spotify": "https://open.spotify.com/album/1BmxOYHjQv1dKZRr13YRZM"
+          "spotify": "https://open.spotify.com/album/1gH6cnZFuxGpRqv7R1da7r"
         },
-        "href": "https://api.spotify.com/v1/albums/1BmxOYHjQv1dKZRr13YRZM",
-        "id": "1BmxOYHjQv1dKZRr13YRZM",
+        "href": "https://api.spotify.com/v1/albums/1gH6cnZFuxGpRqv7R1da7r",
+        "id": "1gH6cnZFuxGpRqv7R1da7r",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273569f64493ca55cd96fdee412",
-
+            "url": "https://i.scdn.co/image/ab67616d0000b273b1683795f34e3197115996d7",
             "width": 640
           },
           {
             "height": 300,
-
-            "url": "https://i.scdn.co/image/ab67616d00001e02569f64493ca55cd96fdee412",
-
+            "url": "https://i.scdn.co/image/ab67616d00001e02b1683795f34e3197115996d7",
             "width": 300
           },
           {
             "height": 64,
-
-            "url": "https://i.scdn.co/image/ab67616d00004851569f64493ca55cd96fdee412",
+            "url": "https://i.scdn.co/image/ab67616d00004851b1683795f34e3197115996d7",
             "width": 64
           }
         ],
-        "name": "FRIENDS",
-        "release_date": "2018-02-09",
+        "name": "Already Drank That Beer - Side A",
+        "release_date": "2021-08-27",
         "release_date_precision": "day",
-        "total_tracks": 1,
+        "total_tracks": 8,
         "type": "album",
-        "uri": "spotify:album:1BmxOYHjQv1dKZRr13YRZM"
+        "uri": "spotify:album:1gH6cnZFuxGpRqv7R1da7r"
       },
-      "uri": "spotify:track:08bNPGLD8AhKpnnERrAc6G",
-      "href": "https://api.spotify.com/v1/tracks/08bNPGLD8AhKpnnERrAc6G"
-
+      "uri": "spotify:track:2t6lQWC69f2ybmd6VTO2vU",
+      "href": "https://api.spotify.com/v1/tracks/2t6lQWC69f2ybmd6VTO2vU"
     }
   ],
   "current_playlist": [

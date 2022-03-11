@@ -265,6 +265,7 @@ function addTrackToPlayListContainer(track){
 }
 
 function playTrack(track){
+  playPauseBtn.className = "player-btn btn btn-outline-primary paused";
   console.log("This is the track", track);
   //First we need to get a list of devices
   access_token = localStorage.getItem("access_token")
@@ -491,21 +492,9 @@ function addSongToPlaylist(song, playlistId){
 playPauseBtn.addEventListener('click', () => {
   access_token = localStorage.getItem("access_token")
 
-  const deviceConfigObj = { //get device data - 
-    method: "GET", 
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer ' + access_token
-    }
-  }
-  fetch("https://api.spotify.com/v1/me/player/devices", deviceConfigObj)
-  .then(res => res.json())
-  .then(data => console.log(data))
+  if (playPauseBtn.className === "player-btn btn btn-outline-primary paused"){
 
-
-  //if status = unactive.....
-
- fetch(`https://api.spotify.com/v1/me/player/pause`, {
+    fetch(`https://api.spotify.com/v1/me/player/pause`, {
      method: "PUT",
      headers: {
         'Content-Type': 'application/json',
@@ -513,9 +502,22 @@ playPauseBtn.addEventListener('click', () => {
          Accept: 'application/json'
      }
  })
- 
-
-
-  
+    playPauseBtn.textContent = "▶︎"
+    playPauseBtn.className = "player-btn btn btn-outline-primary play";
 }
+
+  else if (playPauseBtn.className === "player-btn btn btn-outline-primary play"){
+    fetch(`https://api.spotify.com/v1/me/player/play`, {
+     method: "PUT",
+     headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + access_token,
+         Accept: 'application/json'
+        }
+      })
+      playPauseBtn.textContent = "||"
+    playPauseBtn.className = "player-btn btn btn-outline-primary paused";
+    }
+  }
 )
+
