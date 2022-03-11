@@ -421,29 +421,24 @@ function displaySongInfo(track){
   console.log(coverArt)
   albumCover.append(coverArt)
 }
-
+//Add to playlist button
 addToPlaylistBtn.addEventListener("click", () =>{
-  //Make a fetch GET call to add the random song to the playlist
+  
   let playlistId = currentPlaylistImg.value;
   console.log(playlistId);
 
+  //Make a fetch GET call to add the random song to the playlist
   fetch(`http://localhost:4000/random_track/1`)
   .then( res => res.json())
   .then( data => {
     addSongToPlaylist(data, playlistId);
-    addTrackToPlayListContainer(data);
   })
 })
 
 function addSongToPlaylist(song, playlistId){
-    //TO DO:
-    //IF there is no playlist selected, the prompt the user to select one
-    //IF there is a playlist selected, make a POST call to add the song to the playlist;
-
     //If track ID in currently playing box AND selected playlist contains song with same ID, then alert user
-    // if(trackList.innerHTML === "" || ){
-      console.log("Track ID from this", song.name)
-    if(trackList.innerHTML === "" ){
+    // if(trackList.innerHTML === "" || song.uri === playlistId){
+    if(trackList.innerHTML === ""){
       alert("Please select a playlist.")
     }else{
       //Add song to playlist
@@ -462,8 +457,10 @@ function addSongToPlaylist(song, playlistId){
         body: JSON.stringify(addSongObject)
       }
 
-      //Make a fetch call to add song to playlist;
+      //Make a POST fetch call to add song to playlist;
       fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks`, addSongConfigObj);
+
+      addTrackToPlayListContainer(song);
     }
     //  const artist = document.createElement('strong');
     //  artist.innerText = ` - ${song.artists[0].name}`;
