@@ -88,7 +88,7 @@ body {
 #album-cover {
   height: 200px;
   width: 200px;
-  background-color: lightgray;
+  background-color: rgb(13, 27, 42);
 }
 #playlists {
   background-color: #E0E1DD;
@@ -233,6 +233,8 @@ transform: scale(1.05);
     font-size: 30px;
     padding: 5px;
     border-bottom: black solid 3px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.233), 0 4px 8px rgba(0, 0, 0, 0.185);
+
 }
 #current-playlist {
     border: 2px black solid;
