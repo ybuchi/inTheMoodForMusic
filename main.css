@@ -3,17 +3,22 @@ body {
     background-color: #778DA9;
 }
 
+.brand{
+    font-size: 40px;
+}
+
 #welcome {
     margin-left: 0px;
     margin-top: 0px;
     padding: 20px 20px;
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Pacifico', cursive;
     background-color: #415A77;
     border-bottom: #0D1B2A solid 3px;
 }
 #welcome:hover{
     background-color:#0D1B2A;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.233), 0 4px 8px rgba(0, 0, 0, 0.185);
 }
 .title-word{
     animation: color-animation 4s linear infinite;
@@ -28,6 +33,23 @@ body {
     --color-1: #DBAD4A;
     --color-2: #ACCFCB;
     --color-3: #17494D;
+  }
+
+.title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  .title-word-5 {
+      --color-1: #DF8453;
+      --color-2: #E4A9A8;
+      --color-3: #3D8DAE;
   }
   
 @keyframes color-animation {
@@ -52,6 +74,9 @@ body {
   border-radius: 50%;
   border: solid black 2px;
   height: 80px;
+  -webkit-animation:spin 16s linear infinite;
+    -moz-animation:spin 16s linear infinite;
+    animation:spin 16s linear infinite;
 }
 #user-pic:hover {
   border: dashed lightcoral 4px;
