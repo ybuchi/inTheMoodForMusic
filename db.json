@@ -113,17 +113,17 @@
           "images": [
             {
               "height": 640,
-              "url": "https://mosaic.scdn.co/640/ab67616d0000b2734dba6cde1236bd752d2ba0faab67616d0000b27363f58f54f8c6598dad01ddc9ab67616d0000b273708576cb1537ec9900e82afdab67616d0000b273fe229e74967683bfacb89d40",
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b2734394ca9fbd7a2ab0e28f560dab67616d0000b2734dba6cde1236bd752d2ba0faab67616d0000b27363f58f54f8c6598dad01ddc9ab67616d0000b273fe229e74967683bfacb89d40",
               "width": 640
             },
             {
               "height": 300,
-              "url": "https://mosaic.scdn.co/300/ab67616d0000b2734dba6cde1236bd752d2ba0faab67616d0000b27363f58f54f8c6598dad01ddc9ab67616d0000b273708576cb1537ec9900e82afdab67616d0000b273fe229e74967683bfacb89d40",
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b2734394ca9fbd7a2ab0e28f560dab67616d0000b2734dba6cde1236bd752d2ba0faab67616d0000b27363f58f54f8c6598dad01ddc9ab67616d0000b273fe229e74967683bfacb89d40",
               "width": 300
             },
             {
               "height": 60,
-              "url": "https://mosaic.scdn.co/60/ab67616d0000b2734dba6cde1236bd752d2ba0faab67616d0000b27363f58f54f8c6598dad01ddc9ab67616d0000b273708576cb1537ec9900e82afdab67616d0000b273fe229e74967683bfacb89d40",
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b2734394ca9fbd7a2ab0e28f560dab67616d0000b2734dba6cde1236bd752d2ba0faab67616d0000b27363f58f54f8c6598dad01ddc9ab67616d0000b273fe229e74967683bfacb89d40",
               "width": 60
             }
           ],
@@ -140,10 +140,10 @@
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "MTEsYmEyZTllOTRiZmFjZTE2MGExMmQ2MGZjZGI5NTIzMTg5NDI3NDEwMQ==",
+          "snapshot_id": "MTIsOGUyOTQ5NmUwNjBlMWMzZTg5ZjE2YWQ3ZDlmMGQ0ZmE3NDg1ZDY0Yw==",
           "tracks": {
             "href": "https://api.spotify.com/v1/playlists/6SPi0xT4e2j1JvXHMLSUwO/tracks",
-            "total": 7
+            "total": 8
           },
           "type": "playlist",
           "uri": "spotify:playlist:6SPi0xT4e2j1JvXHMLSUwO"
