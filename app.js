@@ -66,6 +66,9 @@ function callAuthorizationApi(body){
 }
 
 function refreshAccessToken(){
+  if (this.status == 403) {
+    refreshAccessToken()
+  }
   refresh_token = localStorage.getItem("refresh_token");
   let body = "grant-type=refresh_token";
   body += "&refresh_token=" + refresh_token;
