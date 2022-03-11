@@ -1,14 +1,25 @@
 body {
     font-family: 'Roboto Mono', monospace;
+    background-color: #778DA9;
 }
 
 #welcome {
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 20px 20px;
     font-size: 50px;
     font-family: 'Pacifico', cursive;
+    background-color: #415A77;
+    border-bottom: #0D1B2A solid 3px;
+    color:black;
 }
+/* 0D1B2A -dark blue
+1B263B - less dark blue
+415A77 -gray
+778DA9 - neon green  */
+/* E0E1DD */
 #user-name {
-  color: lightblue;
+  color: #E0E1DD;
 }
 
 #user-pic {
@@ -29,11 +40,14 @@ body {
   background-color: lightgray;
 }
 #playlists {
-  background-color: sandybrown;
-  color: white;
+  background-color: #E0E1DD;
+  color: black;
   height: 1000px;
   overflow: scroll;
   border-radius: 5px;
+}
+#playlists:hover{
+    box-shadow: 0 25px 35px rgba(255, 255, 255, 0.781), 0 8px 16px rgba(255, 255, 255, 0.52);
 }
 
 div#playlist-container h2 {
@@ -52,9 +66,15 @@ div#playlist-container h2 {
 #playlist-tracks {
     margin-right: 5px;
     padding: 15px;
+    height: 630px;
 }
 #playlist-tracks:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.233), 0 4px 8px rgba(0, 0, 0, 0.185);
+}
+
+#tracklist{
+    height: 450px;
+    overflow: scroll;
 }
 
 #record-player{
@@ -108,10 +128,10 @@ div#playlists + h1 {
   text-align: center;
 }
 .row-section {
-  background-color: black;
+  background-color: #0D1B2A;
   color: white;
   border: black solid 3px;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-right: 5px;
   padding: 20px 10px;
 }
@@ -120,7 +140,7 @@ transform: scale(1.01);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.233), 0 4px 8px rgba(0, 0, 0, 0.185);
 }
 #current-album-row {
-    background-color: black;
+    background-color: #0D1B2A;
     color: white;
 }
 #playlist-img {
