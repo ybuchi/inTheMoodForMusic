@@ -11,16 +11,39 @@ body {
     font-family: 'Pacifico', cursive;
     background-color: #415A77;
     border-bottom: #0D1B2A solid 3px;
-    color:black;
 }
+.title-word{
+    animation: color-animation 4s linear infinite;
+}
+.title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
 /* 0D1B2A -dark blue
 1B263B - less dark blue
 415A77 -gray
 778DA9 - neon green  */
 /* E0E1DD */
-#user-name {
+/* #user-name {
   color: #E0E1DD;
-}
+} */
 
 #user-pic {
   border-radius: 50%;
@@ -183,4 +206,18 @@ transform: scale(1.05);
 #current-playlist {
     border: 2px black solid;
     margin-right: 5px;
+}
+
+#play-pause{
+    width: 60px;
+    height: 50px;
+    background-color: #E0E1DD;
+}
+#randomize{
+    background-color: goldenrod;
+    height: 35px;
+}
+#playlist-adder{
+    background-color: goldenrod;
+    height: 35px;
 }

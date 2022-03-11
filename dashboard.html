@@ -19,9 +19,9 @@
   <body onLoad="onPageLoad()">
     <h1 id="welcome">
       <img id="user-pic" />
-      Welcome,
+      <span class="title-word title-word-1">Welcome,</span>
       <!-- Username gets inserted here -->
-      <strong id="user-name"></strong>
+      <strong class= "title-word title-word-2" id="user-name"></strong>
     </h1>
     <div class="container-fluid" id="dashboard">
       <div class="row">
@@ -49,14 +49,12 @@
               </div>
               <div class="col-sm-12" id="track-btns">
                 <!-- Playback buttons -->
-                <button class="player-btn btn btn-outline-primary">&lt;</button>
                 <button
                   class="player-btn btn btn-outline-primary paused"
                   id="play-pause"
                 >
                   ||
                 </button>
-                <button class="player-btn btn btn-outline-primary">&gt;</button>
                 <br />
                 <button class="player-btn" id="randomize">
                   Play a Random Song
