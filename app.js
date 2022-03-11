@@ -266,6 +266,7 @@ function addTrackToPlayListContainer(track){
 
 function playTrack(track){
   playPauseBtn.className = "player-btn btn btn-outline-primary paused";
+  playPauseBtn.textContent = "||";
   console.log("This is the track", track);
   //Get a list of devices
   access_token = localStorage.getItem("access_token")
