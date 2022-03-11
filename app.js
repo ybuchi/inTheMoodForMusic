@@ -6,7 +6,7 @@ const currentPlaylistName = document.getElementById('playlist-name');
 const currentPlaylistImg = document.getElementById('playlist-img');
 const randomSongBtn = document.querySelector('#randomize');
 const currentTrackMetadata = document.querySelector("#current-track-metadata");
-
+const playPauseBtn = document.querySelector("#play-pause");
 const albumCover = document.querySelector("#album-cover");
 
 //Variables Needed for API Authorization
@@ -265,6 +265,7 @@ function addTrackToPlayListContainer(track){
 }
 
 function playTrack(track){
+  playPauseBtn.className = "player-btn btn btn-outline-primary paused";
   console.log("This is the track", track);
   //Get a list of devices
   access_token = localStorage.getItem("access_token")
@@ -471,3 +472,36 @@ function addSongToPlaylist(song, playlistId){
     //  li.addEventListener('click', () => playTrack(song));
     //  trackList.append(li);
 }
+
+playPauseBtn.addEventListener('click', () => {
+  access_token = localStorage.getItem("access_token")
+
+  if (playPauseBtn.className === "player-btn btn btn-outline-primary paused"){
+
+    fetch(`https://api.spotify.com/v1/me/player/pause`, {
+     method: "PUT",
+     headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + access_token,
+         Accept: 'application/json'
+     }
+ })
+    playPauseBtn.textContent = "▶︎"
+    playPauseBtn.className = "player-btn btn btn-outline-primary play";
+}
+
+  else if (playPauseBtn.className === "player-btn btn btn-outline-primary play"){
+    fetch(`https://api.spotify.com/v1/me/player/play`, {
+     method: "PUT",
+     headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + access_token,
+         Accept: 'application/json'
+        }
+      })
+      playPauseBtn.textContent = "||"
+    playPauseBtn.className = "player-btn btn btn-outline-primary paused";
+    }
+  }
+)
+
