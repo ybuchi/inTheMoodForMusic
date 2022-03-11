@@ -21,17 +21,17 @@
           "images": [
             {
               "height": 640,
-              "url": "https://mosaic.scdn.co/640/ab67616d0000b2732a038d3bf875d23e4aeaa84eab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273c6e5b04b2c40eb6272246998ab67616d0000b273dafa7c464c09d5bf5fc9c620",
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273512ced983959d4b2e259e907ab67616d0000b273dafa7c464c09d5bf5fc9c620ab67616d0000b273e207a14471e5356294146e9d",
               "width": 640
             },
             {
               "height": 300,
-              "url": "https://mosaic.scdn.co/300/ab67616d0000b2732a038d3bf875d23e4aeaa84eab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273c6e5b04b2c40eb6272246998ab67616d0000b273dafa7c464c09d5bf5fc9c620",
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273512ced983959d4b2e259e907ab67616d0000b273dafa7c464c09d5bf5fc9c620ab67616d0000b273e207a14471e5356294146e9d",
               "width": 300
             },
             {
               "height": 60,
-              "url": "https://mosaic.scdn.co/60/ab67616d0000b2732a038d3bf875d23e4aeaa84eab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273c6e5b04b2c40eb6272246998ab67616d0000b273dafa7c464c09d5bf5fc9c620",
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b2733ebc5b9d8942069d3b920550ab67616d0000b273512ced983959d4b2e259e907ab67616d0000b273dafa7c464c09d5bf5fc9c620ab67616d0000b273e207a14471e5356294146e9d",
               "width": 60
             }
           ],
@@ -48,10 +48,10 @@
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "OSwwZjNhZjEwYWEyZjM0NDI4ZTUwY2FjYmE2NmQ3MTBhY2RiNmI3ZjMw",
+          "snapshot_id": "MTIsNGEyNjJlNDFiNmY2YWM4YTViYzc0ZTVkZjg0ZWRjMTI0ZmU0MWE2NA==",
           "tracks": {
             "href": "https://api.spotify.com/v1/playlists/14365iAPNnJ7KDkuKLya7k/tracks",
-            "total": 8
+            "total": 11
           },
           "type": "playlist",
           "uri": "spotify:playlist:14365iAPNnJ7KDkuKLya7k"
@@ -777,31 +777,51 @@
   "random_track": [
     {
       "id": 1,
-      "name": "Rät",
+      "name": "FRIENDS",
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/3u6lPufHw4Oww6D88rv6sB"
+            "spotify": "https://open.spotify.com/artist/64KEffDW9EtZ1y2vBYgq8T"
           },
-          "href": "https://api.spotify.com/v1/artists/3u6lPufHw4Oww6D88rv6sB",
-          "id": "3u6lPufHw4Oww6D88rv6sB",
-          "name": "Penelope Scott",
+          "href": "https://api.spotify.com/v1/artists/64KEffDW9EtZ1y2vBYgq8T",
+          "id": "64KEffDW9EtZ1y2vBYgq8T",
+          "name": "Marshmello",
           "type": "artist",
-          "uri": "spotify:artist:3u6lPufHw4Oww6D88rv6sB"
+          "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1zNqDE7qDGCsyzJwohVaoX"
+          },
+          "href": "https://api.spotify.com/v1/artists/1zNqDE7qDGCsyzJwohVaoX",
+          "id": "1zNqDE7qDGCsyzJwohVaoX",
+          "name": "Anne-Marie",
+          "type": "artist",
+          "uri": "spotify:artist:1zNqDE7qDGCsyzJwohVaoX"
         }
       ],
       "album": {
-        "album_type": "album",
+        "album_type": "single",
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/3u6lPufHw4Oww6D88rv6sB"
+              "spotify": "https://open.spotify.com/artist/64KEffDW9EtZ1y2vBYgq8T"
             },
-            "href": "https://api.spotify.com/v1/artists/3u6lPufHw4Oww6D88rv6sB",
-            "id": "3u6lPufHw4Oww6D88rv6sB",
-            "name": "Penelope Scott",
+            "href": "https://api.spotify.com/v1/artists/64KEffDW9EtZ1y2vBYgq8T",
+            "id": "64KEffDW9EtZ1y2vBYgq8T",
+            "name": "Marshmello",
             "type": "artist",
-            "uri": "spotify:artist:3u6lPufHw4Oww6D88rv6sB"
+            "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1zNqDE7qDGCsyzJwohVaoX"
+            },
+            "href": "https://api.spotify.com/v1/artists/1zNqDE7qDGCsyzJwohVaoX",
+            "id": "1zNqDE7qDGCsyzJwohVaoX",
+            "name": "Anne-Marie",
+            "type": "artist",
+            "uri": "spotify:artist:1zNqDE7qDGCsyzJwohVaoX"
           }
         ],
         "available_markets": [
@@ -991,36 +1011,36 @@
           "ZW"
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/0G2RxSCixG5Nl6jpjwiw2g"
+          "spotify": "https://open.spotify.com/album/1BmxOYHjQv1dKZRr13YRZM"
         },
-        "href": "https://api.spotify.com/v1/albums/0G2RxSCixG5Nl6jpjwiw2g",
-        "id": "0G2RxSCixG5Nl6jpjwiw2g",
+        "href": "https://api.spotify.com/v1/albums/1BmxOYHjQv1dKZRr13YRZM",
+        "id": "1BmxOYHjQv1dKZRr13YRZM",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273512ced983959d4b2e259e907",
+            "url": "https://i.scdn.co/image/ab67616d0000b273569f64493ca55cd96fdee412",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e02512ced983959d4b2e259e907",
+            "url": "https://i.scdn.co/image/ab67616d00001e02569f64493ca55cd96fdee412",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d00004851512ced983959d4b2e259e907",
+            "url": "https://i.scdn.co/image/ab67616d00004851569f64493ca55cd96fdee412",
             "width": 64
           }
         ],
-        "name": "Public Void",
-        "release_date": "2020-09-25",
+        "name": "FRIENDS",
+        "release_date": "2018-02-09",
         "release_date_precision": "day",
-        "total_tracks": 7,
+        "total_tracks": 1,
         "type": "album",
-        "uri": "spotify:album:0G2RxSCixG5Nl6jpjwiw2g"
+        "uri": "spotify:album:1BmxOYHjQv1dKZRr13YRZM"
       },
-      "uri": "spotify:track:25z6kpmIwkCUqk2IORrJ5v",
-      "href": "https://api.spotify.com/v1/tracks/25z6kpmIwkCUqk2IORrJ5v"
+      "uri": "spotify:track:08bNPGLD8AhKpnnERrAc6G",
+      "href": "https://api.spotify.com/v1/tracks/08bNPGLD8AhKpnnERrAc6G"
     }
   ],
   "current_playlist": [

@@ -246,19 +246,22 @@ function renderPlaylistTracks(songInfo){
 
 
 function listTracks(trackInfo){
-   
-  const track = document.createElement('li');
-  const trackArtist = document.createElement('strong');
-
-  //Create an event listener for the list items. When clicked, play the track.
-  track.addEventListener('click', e => playTrack(trackInfo.track))
-
-  track.className = "playlist-item";
-  trackArtist.innerText = ` - ${trackInfo.track.artists[0].name}`;
-  track.innerText = trackInfo.track.name;
-  track.append(trackArtist);
-  trackList.append(track);
+  
+  let track = trackInfo.track
+  addTrackToPlayListContainer(track);
   // currentPlaylistName.innerText =
+}
+
+function addTrackToPlayListContainer(track){
+  const trackContainer = document.createElement('li');
+  const trackArtist = document.createElement('strong');
+  trackContainer.className = "playlist-item";
+  trackArtist.innerText = ` - ${track.artists[0].name}`;
+  trackContainer.innerText = track.name;
+  trackContainer.append(trackArtist);
+  trackList.append(trackContainer);
+  //Create an event listener for the list items. When clicked, play the track.
+  trackContainer.addEventListener('click', e => playTrack(track))
 }
 
 function playTrack(track){
@@ -396,13 +399,13 @@ function saveSong(randomSong){ // saves data from our randomly generated song to
   fetch(`http://localhost:4000/random_track/1`, trackDataConfigObj)
   .then(res => res.json())
   .then(data => {
-    //  Fetch the random song from the JSON DB
-   fetch(`http://localhost:4000/random_track/1`)
-   .then( res => res.json())
-   .then( data => {
-     displaySongInfo(data)
-     playTrack(data)
-   });
+        //  Fetch the random song from the JSON DB
+      fetch(`http://localhost:4000/random_track/1`)
+      .then( res => res.json())
+      .then( data => {
+        displaySongInfo(data);
+        playTrack(data);
+      });
   });
 }
 
@@ -434,7 +437,10 @@ addToPlaylistBtn.addEventListener("click", () =>{
 
   fetch(`http://localhost:4000/random_track/1`)
   .then( res => res.json())
-  .then( data => {addSongToPlaylist(data, playlistId)})
+  .then( data => {
+    addSongToPlaylist(data, playlistId);
+    addTrackToPlayListContainer(data);
+  })
 })
 
 function addSongToPlaylist(song, playlistId){
