@@ -75,7 +75,8 @@ div#playlists + h1 {
     margin: 20px 10px 30px 10px;
 }
 .playlist-item {
-    font-size: 15px;
+    font-size: 20px;
+    margin: 8px 0px;
 }
 .playlist-item:hover{
     background-color: black;

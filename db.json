@@ -777,27 +777,27 @@
   "random_track": [
     {
       "id": 1,
-      "name": "Clean White Noise - Loopable with no fade",
+      "name": "THRU THE NIGHT (feat. Bryson Tiller)",
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/4W12lEvVl5wectUtRNrvDh"
+            "spotify": "https://open.spotify.com/artist/2LIk90788K0zvyj2JJVwkJ"
           },
-          "href": "https://api.spotify.com/v1/artists/4W12lEvVl5wectUtRNrvDh",
-          "id": "4W12lEvVl5wectUtRNrvDh",
-          "name": "White Noise Baby Sleep",
+          "href": "https://api.spotify.com/v1/artists/2LIk90788K0zvyj2JJVwkJ",
+          "id": "2LIk90788K0zvyj2JJVwkJ",
+          "name": "Jack Harlow",
           "type": "artist",
-          "uri": "spotify:artist:4W12lEvVl5wectUtRNrvDh"
+          "uri": "spotify:artist:2LIk90788K0zvyj2JJVwkJ"
         },
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/4ZfEELHfyKd4odAb6YfDFw"
+            "spotify": "https://open.spotify.com/artist/2EMAnMvWE2eb56ToJVfCWs"
           },
-          "href": "https://api.spotify.com/v1/artists/4ZfEELHfyKd4odAb6YfDFw",
-          "id": "4ZfEELHfyKd4odAb6YfDFw",
-          "name": "White Noise for Babies",
+          "href": "https://api.spotify.com/v1/artists/2EMAnMvWE2eb56ToJVfCWs",
+          "id": "2EMAnMvWE2eb56ToJVfCWs",
+          "name": "Bryson Tiller",
           "type": "artist",
-          "uri": "spotify:artist:4ZfEELHfyKd4odAb6YfDFw"
+          "uri": "spotify:artist:2EMAnMvWE2eb56ToJVfCWs"
         }
       ],
       "album": {
@@ -805,23 +805,13 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/4W12lEvVl5wectUtRNrvDh"
+              "spotify": "https://open.spotify.com/artist/2LIk90788K0zvyj2JJVwkJ"
             },
-            "href": "https://api.spotify.com/v1/artists/4W12lEvVl5wectUtRNrvDh",
-            "id": "4W12lEvVl5wectUtRNrvDh",
-            "name": "White Noise Baby Sleep",
+            "href": "https://api.spotify.com/v1/artists/2LIk90788K0zvyj2JJVwkJ",
+            "id": "2LIk90788K0zvyj2JJVwkJ",
+            "name": "Jack Harlow",
             "type": "artist",
-            "uri": "spotify:artist:4W12lEvVl5wectUtRNrvDh"
-          },
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/4ZfEELHfyKd4odAb6YfDFw"
-            },
-            "href": "https://api.spotify.com/v1/artists/4ZfEELHfyKd4odAb6YfDFw",
-            "id": "4ZfEELHfyKd4odAb6YfDFw",
-            "name": "White Noise for Babies",
-            "type": "artist",
-            "uri": "spotify:artist:4ZfEELHfyKd4odAb6YfDFw"
+            "uri": "spotify:artist:2LIk90788K0zvyj2JJVwkJ"
           }
         ],
         "available_markets": [
@@ -1011,36 +1001,36 @@
           "ZW"
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/4CUvXoN2AD9Al5NnOzaR7W"
+          "spotify": "https://open.spotify.com/album/7xfcihbsBamUi6sezd0oOG"
         },
-        "href": "https://api.spotify.com/v1/albums/4CUvXoN2AD9Al5NnOzaR7W",
-        "id": "4CUvXoN2AD9Al5NnOzaR7W",
+        "href": "https://api.spotify.com/v1/albums/7xfcihbsBamUi6sezd0oOG",
+        "id": "7xfcihbsBamUi6sezd0oOG",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273a9c080fdc40e78a4b81e0520",
+            "url": "https://i.scdn.co/image/ab67616d0000b27357c38b379fbaa7bfef03934d",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e02a9c080fdc40e78a4b81e0520",
+            "url": "https://i.scdn.co/image/ab67616d00001e0257c38b379fbaa7bfef03934d",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d00004851a9c080fdc40e78a4b81e0520",
+            "url": "https://i.scdn.co/image/ab67616d0000485157c38b379fbaa7bfef03934d",
             "width": 64
           }
         ],
-        "name": "Best White Noise for Baby Sleep - Loopable with No Fade",
-        "release_date": "2017-01-08",
+        "name": "Confetti",
+        "release_date": "2019-09-20",
         "release_date_precision": "day",
-        "total_tracks": 7,
+        "total_tracks": 12,
         "type": "album",
-        "uri": "spotify:album:4CUvXoN2AD9Al5NnOzaR7W"
+        "uri": "spotify:album:7xfcihbsBamUi6sezd0oOG"
       },
-      "uri": "spotify:track:2bRKxuH1o7pTmb1y4GfdEc",
-      "href": "https://api.spotify.com/v1/tracks/2bRKxuH1o7pTmb1y4GfdEc"
+      "uri": "spotify:track:1AgSUWSzmza5jF6ER5R68v",
+      "href": "https://api.spotify.com/v1/tracks/1AgSUWSzmza5jF6ER5R68v"
     }
   ],
   "current_playlist": [
