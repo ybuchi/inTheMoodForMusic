@@ -21,8 +21,18 @@
           "images": [
             {
               "height": 640,
-              "url": "https://i.scdn.co/image/ab67616d0000b273b31f6adf0da5659911b05c9b",
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b2735cbdbac66584718e94a55c5aab67616d0000b2738544aa5ba43894b7103ec757ab67616d0000b2739a19b95d39db4009fd258e57ab67616d0000b273e24cbbd5cef05ca77ec67df6",
               "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b2735cbdbac66584718e94a55c5aab67616d0000b2738544aa5ba43894b7103ec757ab67616d0000b2739a19b95d39db4009fd258e57ab67616d0000b273e24cbbd5cef05ca77ec67df6",
+              "width": 300
+            },
+            {
+              "height": 60,
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b2735cbdbac66584718e94a55c5aab67616d0000b2738544aa5ba43894b7103ec757ab67616d0000b2739a19b95d39db4009fd258e57ab67616d0000b273e24cbbd5cef05ca77ec67df6",
+              "width": 60
             }
           ],
           "name": "Playlist of randomness",
@@ -38,10 +48,10 @@
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "NSwxNmZmYTI1YTcyYTZkZGQ1ZDYwNzg3Y2Q3Y2IzMTM2NDJlMWY1M2Zk",
+          "snapshot_id": "MzgsNmE1NDI0MzRkMGY3OWRjZjhjOGI5YTJjMjI1Y2Q5NTM0ZDU3MDY1ZA==",
           "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/3ZmXQ7ZZ7hYovhQSaqopbn/tracks",
-            "total": 3
+            "href": "https://api.spotify.com/v1/playlists/14365iAPNnJ7KDkuKLya7k/tracks",
+            "total": 9
           },
           "type": "playlist",
           "uri": "spotify:playlist:3ZmXQ7ZZ7hYovhQSaqopbn"
@@ -57,17 +67,17 @@
           "images": [
             {
               "height": 640,
-              "url": "https://mosaic.scdn.co/640/ab67616d0000b273c5e9e847ca9c0982b4c91d4bab67616d0000b273de0ccd19b3f72c1c4db92497ab67616d0000b273ea8ab1a548312b79ac955266ab67616d0000b273ed0ddbe4b2590f448e9845be",
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b273503aff3e57307af5164d6c11ab67616d0000b273defd7f3171f62b46f59e230fab67616d0000b273ece46afd34a7eeff4ba1cfc6ab67616d0000b273fe229e74967683bfacb89d40",
               "width": 640
             },
             {
               "height": 300,
-              "url": "https://mosaic.scdn.co/300/ab67616d0000b273c5e9e847ca9c0982b4c91d4bab67616d0000b273de0ccd19b3f72c1c4db92497ab67616d0000b273ea8ab1a548312b79ac955266ab67616d0000b273ed0ddbe4b2590f448e9845be",
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b273503aff3e57307af5164d6c11ab67616d0000b273defd7f3171f62b46f59e230fab67616d0000b273ece46afd34a7eeff4ba1cfc6ab67616d0000b273fe229e74967683bfacb89d40",
               "width": 300
             },
             {
               "height": 60,
-              "url": "https://mosaic.scdn.co/60/ab67616d0000b273c5e9e847ca9c0982b4c91d4bab67616d0000b273de0ccd19b3f72c1c4db92497ab67616d0000b273ea8ab1a548312b79ac955266ab67616d0000b273ed0ddbe4b2590f448e9845be",
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b273503aff3e57307af5164d6c11ab67616d0000b273defd7f3171f62b46f59e230fab67616d0000b273ece46afd34a7eeff4ba1cfc6ab67616d0000b273fe229e74967683bfacb89d40",
               "width": 60
             }
           ],
@@ -84,9 +94,9 @@
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "MjIsZmQzYzU4NjZkOWQxMTBmNDY1Y2E2OTY2YTQxYmZlM2M2YTRhNzc0Ng==",
+          "snapshot_id": "MTksZGM4NjU1MTNlOGM1MDZjOTZhZWIyYzUwNDFlMzFlNDk0YmIwOGEzNw==",
           "tracks": {
-            "href": "https://api.spotify.com/v1/playlists/7HL1Cd6dVbLJPcOGoVzjSq/tracks",
+            "href": "https://api.spotify.com/v1/playlists/2ILgxPkWDlFxZELDde8E9H/tracks",
             "total": 15
           },
           "type": "playlist",
@@ -777,17 +787,47 @@
   "random_track": [
     {
       "id": 1,
-      "name": "Never Til Now",
+      "name": "Let Me Go (with Alesso, Florida Georgia Line & watt)",
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/2qwXeRk8VBAegbUnf3xdyi"
+            "spotify": "https://open.spotify.com/artist/5p7f24Rk5HkUZsaS3BLG5F"
           },
-          "href": "https://api.spotify.com/v1/artists/2qwXeRk8VBAegbUnf3xdyi",
-          "id": "2qwXeRk8VBAegbUnf3xdyi",
-          "name": "Ashley Cooke",
+          "href": "https://api.spotify.com/v1/artists/5p7f24Rk5HkUZsaS3BLG5F",
+          "id": "5p7f24Rk5HkUZsaS3BLG5F",
+          "name": "Hailee Steinfeld",
           "type": "artist",
-          "uri": "spotify:artist:2qwXeRk8VBAegbUnf3xdyi"
+          "uri": "spotify:artist:5p7f24Rk5HkUZsaS3BLG5F"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4AVFqumd2ogHFlRbKIjp1t"
+          },
+          "href": "https://api.spotify.com/v1/artists/4AVFqumd2ogHFlRbKIjp1t",
+          "id": "4AVFqumd2ogHFlRbKIjp1t",
+          "name": "Alesso",
+          "type": "artist",
+          "uri": "spotify:artist:4AVFqumd2ogHFlRbKIjp1t"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3b8QkneNDz4JHKKKlLgYZg"
+          },
+          "href": "https://api.spotify.com/v1/artists/3b8QkneNDz4JHKKKlLgYZg",
+          "id": "3b8QkneNDz4JHKKKlLgYZg",
+          "name": "Florida Georgia Line",
+          "type": "artist",
+          "uri": "spotify:artist:3b8QkneNDz4JHKKKlLgYZg"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4olE3I5QU0dvSR7LIpqTXc"
+          },
+          "href": "https://api.spotify.com/v1/artists/4olE3I5QU0dvSR7LIpqTXc",
+          "id": "4olE3I5QU0dvSR7LIpqTXc",
+          "name": "WATT",
+          "type": "artist",
+          "uri": "spotify:artist:4olE3I5QU0dvSR7LIpqTXc"
         }
       ],
       "album": {
@@ -795,13 +835,23 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/2qwXeRk8VBAegbUnf3xdyi"
+              "spotify": "https://open.spotify.com/artist/5p7f24Rk5HkUZsaS3BLG5F"
             },
-            "href": "https://api.spotify.com/v1/artists/2qwXeRk8VBAegbUnf3xdyi",
-            "id": "2qwXeRk8VBAegbUnf3xdyi",
-            "name": "Ashley Cooke",
+            "href": "https://api.spotify.com/v1/artists/5p7f24Rk5HkUZsaS3BLG5F",
+            "id": "5p7f24Rk5HkUZsaS3BLG5F",
+            "name": "Hailee Steinfeld",
             "type": "artist",
-            "uri": "spotify:artist:2qwXeRk8VBAegbUnf3xdyi"
+            "uri": "spotify:artist:5p7f24Rk5HkUZsaS3BLG5F"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4AVFqumd2ogHFlRbKIjp1t"
+            },
+            "href": "https://api.spotify.com/v1/artists/4AVFqumd2ogHFlRbKIjp1t",
+            "id": "4AVFqumd2ogHFlRbKIjp1t",
+            "name": "Alesso",
+            "type": "artist",
+            "uri": "spotify:artist:4AVFqumd2ogHFlRbKIjp1t"
           }
         ],
         "available_markets": [
@@ -991,36 +1041,36 @@
           "ZW"
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/1gH6cnZFuxGpRqv7R1da7r"
+          "spotify": "https://open.spotify.com/album/3ggBBGRhkDVAu7pQRXRPXO"
         },
-        "href": "https://api.spotify.com/v1/albums/1gH6cnZFuxGpRqv7R1da7r",
-        "id": "1gH6cnZFuxGpRqv7R1da7r",
+        "href": "https://api.spotify.com/v1/albums/3ggBBGRhkDVAu7pQRXRPXO",
+        "id": "3ggBBGRhkDVAu7pQRXRPXO",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273b1683795f34e3197115996d7",
+            "url": "https://i.scdn.co/image/ab67616d0000b273523eb48df1fa22b6d450833e",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e02b1683795f34e3197115996d7",
+            "url": "https://i.scdn.co/image/ab67616d00001e02523eb48df1fa22b6d450833e",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d00004851b1683795f34e3197115996d7",
+            "url": "https://i.scdn.co/image/ab67616d00004851523eb48df1fa22b6d450833e",
             "width": 64
           }
         ],
-        "name": "Already Drank That Beer - Side A",
-        "release_date": "2021-08-27",
+        "name": "Let Me Go (with Alesso, Florida Georgia Line & watt)",
+        "release_date": "2017-09-08",
         "release_date_precision": "day",
         "total_tracks": 8,
         "type": "album",
-        "uri": "spotify:album:1gH6cnZFuxGpRqv7R1da7r"
+        "uri": "spotify:album:3ggBBGRhkDVAu7pQRXRPXO"
       },
-      "uri": "spotify:track:2t6lQWC69f2ybmd6VTO2vU",
-      "href": "https://api.spotify.com/v1/tracks/2t6lQWC69f2ybmd6VTO2vU"
+      "uri": "spotify:track:5Gu0PDLN4YJeW75PpBSg9p",
+      "href": "https://api.spotify.com/v1/tracks/5Gu0PDLN4YJeW75PpBSg9p"
     }
   ],
   "current_playlist": [

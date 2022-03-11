@@ -267,7 +267,7 @@ function addTrackToPlayListContainer(track){
 function playTrack(track){
   playPauseBtn.className = "player-btn btn btn-outline-primary paused";
   console.log("This is the track", track);
-  //First we need to get a list of devices
+  //Get a list of devices
   access_token = localStorage.getItem("access_token")
   const deviceConfigObj = {
     method: "GET", 
@@ -276,19 +276,19 @@ function playTrack(track){
       'Authorization': 'Bearer ' + access_token
     }
   }
-  //FETCH CALL TO GET DEVICES - REQUIRED TO PLAY FROM THE DEVICE
+  //FETCH CALL TO GET & ACTIVATE DEVICES - REQUIRED TO PLAY FROM THE DEVICE
   fetch("https://api.spotify.com/v1/me/player/devices", deviceConfigObj)
   .then(res => res.json())
   .then(data => setActiveDevice(data, track))
 }
 
 function setActiveDevice(deviceData, track){
-  console.log('This is the activeDeviceData:', deviceData.devices)
   //If there are any active devices, play from the active device. If none are active, play from the computer. If there are no computer devices, choose the first device and let the user know which device is being targeted.
   for (let i = 0; i < deviceData.devices.length; i++){
       console.log(deviceData.devices[i]);
       let device = deviceData.devices[i]
 
+  //Only computers are supported device 
       if(device.type === "Computer"){
         //Activate Device
         device.is_active = true;
@@ -311,15 +311,6 @@ function setActiveDevice(deviceData, track){
       }
   }
 }
-
-// function checkDeviceStatus(device) {
-//   if(device.is_active === true){
-//     //THEN play from this device (fetch call goes here)
-//     console.log(device.id)
-//   }else{
-//     //THEN 
-//   }
-// }
 
 function handleUserData(data){
   const userLabel = document.getElementById("user-name");
@@ -349,7 +340,7 @@ function handleUserInterface(data){
   fetch("http://localhost:4000/user/1", userConfigObj)
 }
 
-
+//RANDOM SONG BUTTON
 randomSongBtn.addEventListener('click', () => { // adds event listener on song button
     fetchRandomSong();
 })
@@ -399,24 +390,18 @@ function saveSong(randomSong){ // saves data from our randomly generated song to
   //Make a fetch PATCH request to the database to save the random song
   fetch(`http://localhost:4000/random_track/1`, trackDataConfigObj)
   .then(res => res.json())
-  .then(data => {
-        //  Fetch the random song from the JSON DB
-      fetch(`http://localhost:4000/random_track/1`)
-      .then( res => res.json())
-      .then( data => {
-        displaySongInfo(data);
-        playTrack(data);
-      });
-  });
+  .then(data => {fetchDBRandomSong(data)});
+};
 
-}
-fetch(`http://localhost:4000/random_track/1`)
-  .then( res => res.json())
-  .then( data => {
-    displaySongInfo(data)
-    playTrack(data)
-  })
-
+function fetchDBRandomSong(data){
+   //  Fetch the random song from the JSON DB
+   fetch(`http://localhost:4000/random_track/1`)
+   .then( res => res.json())
+   .then( data => {
+     displaySongInfo(data);
+     playTrack(data);
+   });
+};
 
 
 
@@ -437,24 +422,23 @@ function displaySongInfo(track){
   console.log(coverArt)
   albumCover.append(coverArt)
 }
-
+//Add to playlist button
 addToPlaylistBtn.addEventListener("click", () =>{
-  //Make a fetch GET call to add the random song to the playlist
+  
   let playlistId = currentPlaylistImg.value;
   console.log(playlistId);
 
+  //Make a fetch GET call to add the random song to the playlist
   fetch(`http://localhost:4000/random_track/1`)
   .then( res => res.json())
   .then( data => {
     addSongToPlaylist(data, playlistId);
-    addTrackToPlayListContainer(data);
   })
 })
 
 function addSongToPlaylist(song, playlistId){
-    //TO DO:
-    //IF there is no playlist selected, the prompt the user to select one
-    //IF there is a playlist selected, make a POST call to add the song to the playlist;
+    //If track ID in currently playing box AND selected playlist contains song with same ID, then alert user
+    // if(trackList.innerHTML === "" || song.uri === playlistId){
     if(trackList.innerHTML === ""){
       alert("Please select a playlist.")
     }else{
@@ -474,10 +458,10 @@ function addSongToPlaylist(song, playlistId){
         body: JSON.stringify(addSongObject)
       }
 
-      //Make a fetch call to add song to playlist;
-
-      //TO DO: add to client scope so that we can write on playlists;
+      //Make a POST fetch call to add song to playlist;
       fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks`, addSongConfigObj);
+
+      addTrackToPlayListContainer(song);
     }
     //  const artist = document.createElement('strong');
     //  artist.innerText = ` - ${song.artists[0].name}`;
