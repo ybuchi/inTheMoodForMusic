@@ -33,6 +33,7 @@ body {
   color: white;
   height: 1000px;
   overflow: scroll;
+  border-radius: 5px;
 }
 
 div#playlist-container h2 {
@@ -125,9 +126,9 @@ transform: scale(1.01);
 #playlist-img {
     width: 400px;
     border-radius: 100%;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+    -webkit-animation:spin 16s linear infinite;
+    -moz-animation:spin 16s linear infinite;
+    animation:spin 16s linear infinite;
 }
 @-moz-keyframes spin { 
     100% { -moz-transform: rotate(360deg); } 

@@ -21,17 +21,17 @@
           "images": [
             {
               "height": 640,
-              "url": "https://mosaic.scdn.co/640/ab67616d0000b273523eb48df1fa22b6d450833eab67616d0000b2735cbdbac66584718e94a55c5aab67616d0000b2739a19b95d39db4009fd258e57ab67616d0000b273e24cbbd5cef05ca77ec67df6",
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b273523eb48df1fa22b6d450833eab67616d0000b27357c38b379fbaa7bfef03934dab67616d0000b2739a19b95d39db4009fd258e57ab67616d0000b273e24cbbd5cef05ca77ec67df6",
               "width": 640
             },
             {
               "height": 300,
-              "url": "https://mosaic.scdn.co/300/ab67616d0000b273523eb48df1fa22b6d450833eab67616d0000b2735cbdbac66584718e94a55c5aab67616d0000b2739a19b95d39db4009fd258e57ab67616d0000b273e24cbbd5cef05ca77ec67df6",
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b273523eb48df1fa22b6d450833eab67616d0000b27357c38b379fbaa7bfef03934dab67616d0000b2739a19b95d39db4009fd258e57ab67616d0000b273e24cbbd5cef05ca77ec67df6",
               "width": 300
             },
             {
               "height": 60,
-              "url": "https://mosaic.scdn.co/60/ab67616d0000b273523eb48df1fa22b6d450833eab67616d0000b2735cbdbac66584718e94a55c5aab67616d0000b2739a19b95d39db4009fd258e57ab67616d0000b273e24cbbd5cef05ca77ec67df6",
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b273523eb48df1fa22b6d450833eab67616d0000b27357c38b379fbaa7bfef03934dab67616d0000b2739a19b95d39db4009fd258e57ab67616d0000b273e24cbbd5cef05ca77ec67df6",
               "width": 60
             }
           ],
@@ -48,10 +48,10 @@
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "MzksNzk2ZGI4Njg2ZWU4ZDQzYjY5OTRiYWZmNjRjZjMzMjI2NGUzNzM2MA==",
+          "snapshot_id": "NDAsZDY3ZGJkZjVhMjExMGJmNTIwYmM5ZjA4NWI4NDQ0MTdhNTM4YmRhNw==",
           "tracks": {
             "href": "https://api.spotify.com/v1/playlists/14365iAPNnJ7KDkuKLya7k/tracks",
-            "total": 10
+            "total": 11
           },
           "type": "playlist",
           "uri": "spotify:playlist:14365iAPNnJ7KDkuKLya7k"
@@ -777,41 +777,51 @@
   "random_track": [
     {
       "id": 1,
-      "name": "THRU THE NIGHT (feat. Bryson Tiller)",
+      "name": "Famous Friends",
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/2LIk90788K0zvyj2JJVwkJ"
+            "spotify": "https://open.spotify.com/artist/4BYxqVkZyFjtik7crYLg5Q"
           },
-          "href": "https://api.spotify.com/v1/artists/2LIk90788K0zvyj2JJVwkJ",
-          "id": "2LIk90788K0zvyj2JJVwkJ",
-          "name": "Jack Harlow",
+          "href": "https://api.spotify.com/v1/artists/4BYxqVkZyFjtik7crYLg5Q",
+          "id": "4BYxqVkZyFjtik7crYLg5Q",
+          "name": "Chris Young",
           "type": "artist",
-          "uri": "spotify:artist:2LIk90788K0zvyj2JJVwkJ"
+          "uri": "spotify:artist:4BYxqVkZyFjtik7crYLg5Q"
         },
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/2EMAnMvWE2eb56ToJVfCWs"
+            "spotify": "https://open.spotify.com/artist/3oSJ7TBVCWMDMiYjXNiCKE"
           },
-          "href": "https://api.spotify.com/v1/artists/2EMAnMvWE2eb56ToJVfCWs",
-          "id": "2EMAnMvWE2eb56ToJVfCWs",
-          "name": "Bryson Tiller",
+          "href": "https://api.spotify.com/v1/artists/3oSJ7TBVCWMDMiYjXNiCKE",
+          "id": "3oSJ7TBVCWMDMiYjXNiCKE",
+          "name": "Kane Brown",
           "type": "artist",
-          "uri": "spotify:artist:2EMAnMvWE2eb56ToJVfCWs"
+          "uri": "spotify:artist:3oSJ7TBVCWMDMiYjXNiCKE"
         }
       ],
       "album": {
-        "album_type": "album",
+        "album_type": "single",
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/2LIk90788K0zvyj2JJVwkJ"
+              "spotify": "https://open.spotify.com/artist/4BYxqVkZyFjtik7crYLg5Q"
             },
-            "href": "https://api.spotify.com/v1/artists/2LIk90788K0zvyj2JJVwkJ",
-            "id": "2LIk90788K0zvyj2JJVwkJ",
-            "name": "Jack Harlow",
+            "href": "https://api.spotify.com/v1/artists/4BYxqVkZyFjtik7crYLg5Q",
+            "id": "4BYxqVkZyFjtik7crYLg5Q",
+            "name": "Chris Young",
             "type": "artist",
-            "uri": "spotify:artist:2LIk90788K0zvyj2JJVwkJ"
+            "uri": "spotify:artist:4BYxqVkZyFjtik7crYLg5Q"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3oSJ7TBVCWMDMiYjXNiCKE"
+            },
+            "href": "https://api.spotify.com/v1/artists/3oSJ7TBVCWMDMiYjXNiCKE",
+            "id": "3oSJ7TBVCWMDMiYjXNiCKE",
+            "name": "Kane Brown",
+            "type": "artist",
+            "uri": "spotify:artist:3oSJ7TBVCWMDMiYjXNiCKE"
           }
         ],
         "available_markets": [
@@ -1001,36 +1011,36 @@
           "ZW"
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/7xfcihbsBamUi6sezd0oOG"
+          "spotify": "https://open.spotify.com/album/0CIbEKfFhnHbwJwVHb4KE1"
         },
-        "href": "https://api.spotify.com/v1/albums/7xfcihbsBamUi6sezd0oOG",
-        "id": "7xfcihbsBamUi6sezd0oOG",
+        "href": "https://api.spotify.com/v1/albums/0CIbEKfFhnHbwJwVHb4KE1",
+        "id": "0CIbEKfFhnHbwJwVHb4KE1",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b27357c38b379fbaa7bfef03934d",
+            "url": "https://i.scdn.co/image/ab67616d0000b2734394ca9fbd7a2ab0e28f560d",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e0257c38b379fbaa7bfef03934d",
+            "url": "https://i.scdn.co/image/ab67616d00001e024394ca9fbd7a2ab0e28f560d",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d0000485157c38b379fbaa7bfef03934d",
+            "url": "https://i.scdn.co/image/ab67616d000048514394ca9fbd7a2ab0e28f560d",
             "width": 64
           }
         ],
-        "name": "Confetti",
-        "release_date": "2019-09-20",
+        "name": "Famous Friends",
+        "release_date": "2020-11-20",
         "release_date_precision": "day",
-        "total_tracks": 12,
+        "total_tracks": 1,
         "type": "album",
-        "uri": "spotify:album:7xfcihbsBamUi6sezd0oOG"
+        "uri": "spotify:album:0CIbEKfFhnHbwJwVHb4KE1"
       },
-      "uri": "spotify:track:1AgSUWSzmza5jF6ER5R68v",
-      "href": "https://api.spotify.com/v1/tracks/1AgSUWSzmza5jF6ER5R68v"
+      "uri": "spotify:track:4iXDn9pu5Q9sxv45vE8Lak",
+      "href": "https://api.spotify.com/v1/tracks/4iXDn9pu5Q9sxv45vE8Lak"
     }
   ],
   "current_playlist": [
