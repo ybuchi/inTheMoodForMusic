@@ -6,7 +6,7 @@ const currentPlaylistName = document.getElementById('playlist-name');
 const currentPlaylistImg = document.getElementById('playlist-img');
 const randomSongBtn = document.querySelector('#randomize');
 const currentTrackMetadata = document.querySelector("#current-track-metadata");
-
+const playPauseBtn = document.querySelector("#play-pause");
 const albumCover = document.querySelector("#album-cover");
 
 //Variables Needed for API Authorization
@@ -407,7 +407,14 @@ function saveSong(randomSong){ // saves data from our randomly generated song to
         playTrack(data);
       });
   });
+
 }
+fetch(`http://localhost:4000/random_track/1`)
+  .then( res => res.json())
+  .then( data => {
+    displaySongInfo(data)
+    playTrack(data)
+  })
 
 
 
@@ -480,3 +487,35 @@ function addSongToPlaylist(song, playlistId){
     //  li.addEventListener('click', () => playTrack(song));
     //  trackList.append(li);
 }
+
+playPauseBtn.addEventListener('click', () => {
+  access_token = localStorage.getItem("access_token")
+
+  const deviceConfigObj = { //get device data - 
+    method: "GET", 
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + access_token
+    }
+  }
+  fetch("https://api.spotify.com/v1/me/player/devices", deviceConfigObj)
+  .then(res => res.json())
+  .then(data => console.log(data))
+
+
+  //if status = unactive.....
+
+ fetch(`https://api.spotify.com/v1/me/player/pause`, {
+     method: "PUT",
+     headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + access_token,
+         Accept: 'application/json'
+     }
+ })
+ 
+
+
+  
+}
+)
