@@ -49,8 +49,11 @@ div#playlist-container h2 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.233), 0 4px 8px rgba(0, 0, 0, 0.185);
 }
 #playlist-tracks {
-    margin: 5px;
-    padding: 5px;
+    margin-right: 5px;
+    padding: 15px;
+}
+#playlist-tracks:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.233), 0 4px 8px rgba(0, 0, 0, 0.185);
 }
 
 #record-player{
@@ -110,6 +113,10 @@ div#playlists + h1 {
   margin-right: 5px;
   padding: 20px 10px;
 }
+.row-section:hover{
+transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.233), 0 4px 8px rgba(0, 0, 0, 0.185);
+}
 #current-album-row {
     background-color: black;
     color: white;
@@ -138,6 +145,10 @@ div#playlists + h1 {
     width: 200px;
     height: 200px;
     border: white solid 3px;
+    box-shadow: 0 25px 35px rgba(255, 255, 255, 0.781), 0 8px 16px rgba(255, 255, 255, 0.52);
+}
+#cover-art:hover{
+transform: scale(1.05);
 }
 
 .playlist-lbl{
