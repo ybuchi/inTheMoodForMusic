@@ -1,5 +1,5 @@
 # ChuneItUp
-ChuneItUp is an application that allows users to curate their digital records (Spotify playlists) in a fun and interesting user interface. 
+ChuneItUp is an application that lets users curate their digital records (Spotify playlists) in a fun and interesting user interface. 
 
 Looking for some new chunes? Generate a random song, see if it fits in any of the playlists in your library, and then add it with a click of a button. You'll actually see these changes in your Spotify account!
 
