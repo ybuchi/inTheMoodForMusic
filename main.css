@@ -201,6 +201,9 @@ transform: scale(1.01);
     -moz-animation:spin 16s linear infinite;
     animation:spin 16s linear infinite;
 }
+#playlist-img:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.233), 0 4px 8px rgba(0, 0, 0, 0.185);
+}
 @-moz-keyframes spin { 
     100% { -moz-transform: rotate(360deg); } 
 }

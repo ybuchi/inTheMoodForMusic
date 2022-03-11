@@ -57,11 +57,11 @@
           "images": [
             {
               "height": null,
-              "url": "https://i.scdn.co/image/ab67706c0000bebbc7cc922c8cb417beeab9217a",
+              "url": "https://i.scdn.co/image/ab67706c0000bebbeb83a831ac008f7ce860070d",
               "width": null
             }
           ],
-          "name": "Petit déjeuner ",
+          "name": "Ptit dèj ",
           "owner": {
             "display_name": "Yannik",
             "external_urls": {
@@ -74,7 +74,7 @@
           },
           "primary_color": null,
           "public": true,
-          "snapshot_id": "MjAsN2M1NjQxMjAwN2M5NGY0ZjVkMDFiMzUyMGJjYjE0MmY4NGJlMGZjOA==",
+          "snapshot_id": "MjIsMGNmYmNhNzNlZGY3MzM0MmY0MzYzZWUyZWNhYmYwNDIzNGMzMmQ2Mg==",
           "tracks": {
             "href": "https://api.spotify.com/v1/playlists/2ILgxPkWDlFxZELDde8E9H/tracks",
             "total": 15
