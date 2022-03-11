@@ -246,19 +246,22 @@ function renderPlaylistTracks(songInfo){
 
 
 function listTracks(trackInfo){
-   
-  const track = document.createElement('li');
-  const trackArtist = document.createElement('strong');
-
-  //Create an event listener for the list items. When clicked, play the track.
-  track.addEventListener('click', e => playTrack(trackInfo.track))
-
-  track.className = "playlist-item";
-  trackArtist.innerText = ` - ${trackInfo.track.artists[0].name}`;
-  track.innerText = trackInfo.track.name;
-  track.append(trackArtist);
-  trackList.append(track);
+  
+  let track = trackInfo.track
+  addTrackToPlayListContainer(track);
   // currentPlaylistName.innerText =
+}
+
+function addTrackToPlayListContainer(track){
+  const trackContainer = document.createElement('li');
+  const trackArtist = document.createElement('strong');
+  trackContainer.className = "playlist-item";
+  trackArtist.innerText = ` - ${track.artists[0].name}`;
+  trackContainer.innerText = track.name;
+  trackContainer.append(trackArtist);
+  trackList.append(trackContainer);
+  //Create an event listener for the list items. When clicked, play the track.
+  trackContainer.addEventListener('click', e => playTrack(track))
 }
 
 function playTrack(track){
@@ -347,7 +350,7 @@ function handleUserInterface(data){
 
 
 randomSongBtn.addEventListener('click', () => { // adds event listener on song button
-    fetchRandomSong()
+    fetchRandomSong();
 })
 
 function fetchRandomSong(){ //function that grabs a 'random' song
@@ -368,11 +371,13 @@ function fetchRandomSong(){ //function that grabs a 'random' song
   .then( res => res.json())
   .then( data => {
     const randomSong = data.tracks.items[Math.floor(Math.random() * 20)]
-    saveSong(randomSong)
+    saveSong(randomSong);
     })
 }
 
 function saveSong(randomSong){ // saves data from our randomly generated song to the db.json file
+  console.log('This is the random song:', randomSong);
+ 
   let trackData = {
      "id": 1,
      "name": randomSong.name,
@@ -389,13 +394,20 @@ function saveSong(randomSong){ // saves data from our randomly generated song to
         },
     body: JSON.stringify(trackData)
     }   
-    console.log(randomSong)
   
   //Make a fetch PATCH request to the database to save the random song
   fetch(`http://localhost:4000/random_track/1`, trackDataConfigObj)
-  console.log("Random song:", randomSong.name);
-  //Fetch the random song from the JSON DB
-  
+  .then(res => res.json())
+  .then(data => {
+        //  Fetch the random song from the JSON DB
+      fetch(`http://localhost:4000/random_track/1`)
+      .then( res => res.json())
+      .then( data => {
+        displaySongInfo(data);
+        playTrack(data);
+      });
+  });
+
 }
 fetch(`http://localhost:4000/random_track/1`)
   .then( res => res.json())
@@ -403,6 +415,9 @@ fetch(`http://localhost:4000/random_track/1`)
     displaySongInfo(data)
     playTrack(data)
   })
+
+
+
 
 function displaySongInfo(track){
 
@@ -429,7 +444,10 @@ addToPlaylistBtn.addEventListener("click", () =>{
 
   fetch(`http://localhost:4000/random_track/1`)
   .then( res => res.json())
-  .then( data => {addSongToPlaylist(data, playlistId)})
+  .then( data => {
+    addSongToPlaylist(data, playlistId);
+    addTrackToPlayListContainer(data);
+  })
 })
 
 function addSongToPlaylist(song, playlistId){
