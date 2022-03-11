@@ -18,5 +18,6 @@ Using the Spotify API to play music has certain limitations:
 1. You can only play a song through the Spotify app to one of the devices you have registered in your Spotify account.
 2. For now, our application limits the ability to play a song to a device of type "Computer". 
 3. This application will work best for people logging in with a Spotify Premium account. Non-premium members may encounter issues when trying to play tracks.
+4.
 
 
